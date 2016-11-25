@@ -1,0 +1,39 @@
+h1, h2, h3, .pub-date {
+    width: 90%;
+    max-width: 950px;
+    text-align: center;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 8rem;
+}
+h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+h3 {
+    font-size: 1.4rem;
+    font-family: "McClatchy Sans", Helvetica, Arial, sans-serif;
+    /*color: red;*/
+}
+p {
+    max-width: 650px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lyon',Georgia,serif;
+    font-size: 1.7rem;
+}
+.pub-date {
+    margin: 0.5rem auto 6rem;
+}
+.intro {
+    font-size: 2.4rem;
+}
+.dropcap {
+    float: left;
+    font-size: 15rem;
+    line-height: 10rem;
+    margin: 0rem .5rem 0rem 0rem;
+    padding-top: 0rem;
+}
