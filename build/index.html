@@ -478,27 +478,27 @@ display: block; } }
             </style>
             <script type="text/javascript">
                 /*
-                                var $window = $window || $(window);
-                                var $nav = $(document.getElementById("main-nav-container"));
-                                var $toggle = $nav.find(".navbar-header").find(".navbar-toggle");
-                                var $dropdown = $(".dropdown");
-                                var $navbarNav = $nav.find(".navbar-nav");
-                                var $navbarDropdown = $navbarNav.find(".dropdown-menu");
-                                if ( location.hostname.split('.')[ 1 ] === "elnuevoherald" || language === "es" ) {
-                                $toggle.prepend('<span class="nav-label hidden-xs">Secciones</span>');
-                                $dropdown.find(".form-control").attr('placeholder', 'Búsqueda');
-                                }
-                                else {
-                                // add Menu label to nav toggle for small and up
-                                $toggle.prepend('<span class="nav-label hidden-xs">Full Menu</span>');
-                                }
-                                $dropdown.children('a').attr('data-target', '#');
-                                // Make subnav same height as main nav
-                                $(document.getElementById('navbar-collapse-1')).on('shown.bs.collapse', function () {
-                                var navHeight = $navbarNav.height();
-                                $navbarDropdown.css("min-height", navHeight + "px");
-                                });
-                                */
+                                                var $window = $window || $(window);
+                                                var $nav = $(document.getElementById("main-nav-container"));
+                                                var $toggle = $nav.find(".navbar-header").find(".navbar-toggle");
+                                                var $dropdown = $(".dropdown");
+                                                var $navbarNav = $nav.find(".navbar-nav");
+                                                var $navbarDropdown = $navbarNav.find(".dropdown-menu");
+                                                if ( location.hostname.split('.')[ 1 ] === "elnuevoherald" || language === "es" ) {
+                                                $toggle.prepend('<span class="nav-label hidden-xs">Secciones</span>');
+                                                $dropdown.find(".form-control").attr('placeholder', 'Búsqueda');
+                                                }
+                                                else {
+                                                // add Menu label to nav toggle for small and up
+                                                $toggle.prepend('<span class="nav-label hidden-xs">Full Menu</span>');
+                                                }
+                                                $dropdown.children('a').attr('data-target', '#');
+                                                // Make subnav same height as main nav
+                                                $(document.getElementById('navbar-collapse-1')).on('shown.bs.collapse', function () {
+                                                var navHeight = $navbarNav.height();
+                                                $navbarDropdown.css("min-height", navHeight + "px");
+                                                });
+                                                */
                 if (location.hostname.split('.')[1] == 'elnuevoherald') {
                     jQuery('#main-nav-container .navbar-header .navbar-toggle').prepend('<span class="nav-label hidden-xs">Secciones</span>');
                     jQuery('.dropdown .form-control').attr('placeholder', 'Búsqueda');
@@ -551,69 +551,74 @@ display: block; } }
                 <div class="col-sm-12">
 
                     <!-- custom dependencies -->
-                        <link rel="stylesheet" type="text/css" href="../static/css/custom.css">
-                        <script type="text/javascript" src="../static/scripts/custom.js"></script>
+                    <link rel="stylesheet" type="text/css" href="../static/css/custom.css">
+                    <script type="text/javascript" src="../static/scripts/custom.js"></script>
                     <!-- custom body code -->
-                        <div class="ng_mm_link2">
+                    <div class="ng_mm_link2">
+                        <div class="loader-wrapper">
                             <div class="loader">
+                                <div class="loader-logo"></div>
                                 <div class="spinner">
-                                  <div class="bounce1"></div>
-                                  <div class="bounce2"></div>
-                                  <div class="bounce3"></div>
+                                    <div class="bounce1"></div>
+                                    <div class="bounce2"></div>
+                                    <div class="bounce3"></div>
                                 </div>
                             </div>
-                            <figure>
-                                <img src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png" class="full-width" style="width:100%;margin-top:20px" />
-                                <figcaption>Caption information goes here. PHOTOGRAPHER NAME / Publication</figcaption>
-                            </figure>
-                            <h1 class="head">Headline lives here</h1>
-                            <h2 class="deck">This is the story of a deckhead that will grow up to live on this story page</h2>
-                            <p class="byline">Byline Name Here | Title Here</p>
-                            <p class="pub-date">Month ##, Year 0:00 AM</p>
                         </div>
+                        <figure>
+                            <img src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png" class="full-width" style="width:100%;margin-top:20px" />
+                            <figcaption>Caption information goes here. PHOTOGRAPHER NAME / Publication</figcaption>
+                        </figure>
+                        <h1 class="head">Headline lives here</h1>
+                        <h2 class="deck">This is the story of a deckhead that will grow up to live on this story page</h2>
+                        <p class="byline">Byline Name Here | Title Here</p>
+                        <p class="pub-date">Month ##, Year 0:00 AM</p>
+                    </div>
 
-                        <div class="ng_mm_link3">
-                            <p class="intro"><span class="dropcap">B</span>acon ipsum dolor amet ham hock ribeye mollit andouille lorem duis. Sed cillum drumstick consequat biltong laboris. Nostrud et voluptate enim ut, anim qui aliquip est cupim kielbasa aliqua. Culpa occaecat
-                                fatback, cow reprehenderit sirloin pork chop pastrami ea elit incididunt sunt andouille. Ex bacon capicola, veniam flank cupim ullamco sint pariatur duis. Brisket fatback tongue pastrami cow swine sunt adipisicing eiusmod turducken
-                                duis doner non. Tri-tip pariatur rump meatloaf enim.</p>
-                        </div>
+                    <div class="ng_mm_link3">
+                        <p class="intro"><span class="dropcap">B</span>acon ipsum dolor amet ham hock ribeye mollit andouille lorem duis. Sed cillum drumstick consequat biltong laboris. Nostrud et voluptate enim ut, anim qui aliquip est cupim kielbasa aliqua. Culpa occaecat
+                            fatback, cow reprehenderit sirloin pork chop pastrami ea elit incididunt sunt andouille. Ex bacon capicola, veniam flank cupim ullamco sint pariatur duis. Brisket fatback tongue pastrami cow swine sunt adipisicing eiusmod turducken
+                            duis doner non. Tri-tip pariatur rump meatloaf enim.</p>
+                    </div>
 
-                        <p>Drumstick officia ullamco kielbasa, ex burgdoggen kevin andouille tail irure. Enim biltong in eu, ham hock proident prosciutto sunt voluptate pork loin et meatloaf hamburger. Pig enim kevin pariatur, ham flank corned beef biltong cupim
-                            nisi tongue. Landjaeger meatloaf ullamco, bresaola aliqua beef ribs ut consequat deserunt fatback leberkas.</p>
-                        <p>Proident pork belly leberkas shank bacon, occaecat jowl turducken. Sed eu nulla incididunt jowl, short ribs labore aliquip cillum deserunt anim et swine. Tongue est in pancetta duis pork belly. Frankfurter shoulder ea, aliqua laborum
-                            id ham hock jowl tenderloin do short ribs ut leberkas rump deserunt. Id aute dolore nulla dolore pork deserunt corned beef picanha nisi.</p>
-                        <p>Proident rump kevin cupim, cillum exercitation capicola cupidatat meatloaf ipsum ham. Ut pork chop consequat cow. Pariatur burgdoggen ipsum, bresaola leberkas kielbasa quis lorem pork chop cupim. Strip steak leberkas fugiat officia,
-                            cupim jerky sausage laborum sirloin t-bone mollit. In meatloaf eiusmod cupim. Duis ball tip ullamco ut in magna.</p>
-                        <p>Jowl flank magna picanha ham hock short ribs aute dolore tri-tip cupidatat. Magna ut quis enim labore, cillum deserunt nostrud pork belly. Tempor nostrud beef porchetta, kevin ham hock ullamco chuck fatback bacon. Alcatra bresaola
-                            pork belly, pariatur porchetta drumstick fugiat est shankle jowl sirloin sint t-bone swine.</p>
-                        <p>Meatball fatback alcatra, kevin swine kielbasa doner sint eu lorem strip steak elit dolor in. Kielbasa ground round aliqua, strip steak ea landjaeger sunt. Andouille ex quis short loin ball tip prosciutto. Leberkas andouille aliquip
-                            in cupidatat. Venison corned beef enim adipisicing proident, ground round excepteur cupim id turducken doner.</p>
-                        <p>Occaecat officia nisi turducken veniam prosciutto duis. Occaecat dolore ground round, labore t-bone sunt pig boudin. Dolor kevin ut, in eu ea esse. Enim culpa pig ipsum tri-tip. Beef ribs pig cupidatat burgdoggen pork occaecat ea in
-                            kielbasa enim adipisicing jowl ex. Et landjaeger porchetta flank exercitation nostrud alcatra short loin sirloin.</p>
-                        <p>In pork belly veniam hamburger. Ipsum leberkas in cillum ut, ea cupim. Occaecat culpa enim, beef ribs shoulder anim dolore kevin veniam officia eiusmod aliquip minim pork tempor. Burgdoggen nisi id shank ham, tri-tip ham hock dolore.
-                            In tail ipsum do. Capicola laborum eu ham hock, andouille tongue jerky.</p>
-                        <p>Tongue culpa shank tail ut eiusmod occaecat short ribs ground round leberkas non nulla eu pork belly. Ut cupidatat magna quis culpa kielbasa dolor. Nulla id in sint aute ham tail alcatra sirloin dolore sausage shankle cupidatat velit.
-                            Turkey laboris eu, sint ground round burgdoggen occaecat ball tip exercitation deserunt pastrami. Salami ground round rump, landjaeger nisi adipisicing hamburger excepteur in drumstick doner aliqua porchetta sirloin. Est dolore
-                            jerky incididunt excepteur cupim. Shankle voluptate in, biltong jerky meatloaf aliqua commodo bacon alcatra short loin sausage lorem boudin consequat.</p>
-                        <p>Ham hock ball tip veniam labore shoulder, cillum pastrami doner anim aliquip velit ground round rump ham. Pig laborum exercitation, minim officia quis nisi andouille alcatra incididunt cupim sirloin shankle. Cow sed officia pork belly
-                            drumstick alcatra non flank reprehenderit adipisicing aute swine ipsum. Anim ex strip steak, alcatra ham eiusmod cillum occaecat irure ribeye venison turkey pancetta ad.</p>
-                        <p>Sausage venison elit qui jerky, do beef ribs meatball anim. Eu ribeye velit chuck, dolore incididunt sint pig commodo ipsum short loin nulla drumstick pariatur picanha. In pancetta sed tongue, andouille cow quis eu kevin swine est
-                            turducken. Cupim pork dolore occaecat officia pancetta, sirloin pork loin. Swine frankfurter officia shoulder pork loin kevin sirloin beef ribs eiusmod do consectetur doner. Ipsum ham exercitation laboris frankfurter short loin
-                            reprehenderit meatloaf. Leberkas quis sed culpa burgdoggen pork chop chicken adipisicing ad alcatra.</p>
-                        <p>Ut ipsum duis shoulder, velit laborum pork loin jowl tail non doner fatback. In velit landjaeger, non hamburger sausage tail ex in nostrud id aliquip venison. Dolore magna excepteur quis ut. Cow consequat turkey sed, porchetta ex ground
-                            round capicola exercitation pork chop adipisicing elit eu in. Cupidatat pancetta alcatra, id lorem laboris jerky non shank drumstick duis t-bone. Eu dolore ham hock capicola bresaola porchetta, ipsum duis ea nostrud biltong sed
-                            leberkas excepteur.</p>
-                        <p>Qui rump adipisicing voluptate capicola frankfurter prosciutto occaecat kielbasa ut tongue dolore salami. Andouille ut ad quis. Anim capicola minim frankfurter, labore adipisicing culpa proident do venison brisket jowl sint. Meatloaf
-                            rump eiusmod pariatur lorem. Nostrud jowl in, capicola est velit esse beef short ribs brisket tongue. Ball tip qui tri-tip bresaola. Exercitation andouille in flank.</p>
-                        <p>Short loin excepteur venison t-bone salami. Burgdoggen minim enim eiusmod mollit. Adipisicing ex ham cow beef ribs tail porchetta et turkey shank. Picanha rump laborum cupim minim sed beef turkey prosciutto dolor tongue commodo. Boudin
-                            sed minim ut, rump pork loin bacon ball tip et tail nostrud. Pig doner chuck culpa incididunt. Boudin duis aliquip, non irure dolore mollit kevin leberkas rump culpa ribeye pancetta fatback labore.</p>
-                        <p>Lorem elit nostrud, venison tenderloin eu sed prosciutto incididunt chicken shankle pork cow andouille. Pig pastrami corned beef, ipsum fatback qui short loin tail culpa veniam est picanha meatloaf ham salami. Strip steak turkey pig,
-                            jerky swine excepteur exercitation capicola ground round venison esse kielbasa andouille. Aliqua biltong in, sausage spare ribs filet mignon capicola pork.</p>
+                    <p>Drumstick officia ullamco kielbasa, ex burgdoggen kevin andouille tail irure. Enim biltong in eu, ham hock proident prosciutto sunt voluptate pork loin et meatloaf hamburger. Pig enim kevin pariatur, ham flank corned beef biltong cupim
+                        nisi tongue. Landjaeger meatloaf ullamco, bresaola aliqua beef ribs ut consequat deserunt fatback leberkas.</p>
+                    <p>Proident pork belly leberkas shank bacon, occaecat jowl turducken. Sed eu nulla incididunt jowl, short ribs labore aliquip cillum deserunt anim et swine. Tongue est in pancetta duis pork belly. Frankfurter shoulder ea, aliqua laborum
+                        id ham hock jowl tenderloin do short ribs ut leberkas rump deserunt. Id aute dolore nulla dolore pork deserunt corned beef picanha nisi.</p>
+                    <p>Proident rump kevin cupim, cillum exercitation capicola cupidatat meatloaf ipsum ham. Ut pork chop consequat cow. Pariatur burgdoggen ipsum, bresaola leberkas kielbasa quis lorem pork chop cupim. Strip steak leberkas fugiat officia,
+                        cupim jerky sausage laborum sirloin t-bone mollit. In meatloaf eiusmod cupim. Duis ball tip ullamco ut in magna.</p>
+                    <p>Jowl flank magna picanha ham hock short ribs aute dolore tri-tip cupidatat. Magna ut quis enim labore, cillum deserunt nostrud pork belly. Tempor nostrud beef porchetta, kevin ham hock ullamco chuck fatback bacon. Alcatra bresaola
+                        pork belly, pariatur porchetta drumstick fugiat est shankle jowl sirloin sint t-bone swine.</p>
+                    <p>Meatball fatback alcatra, kevin swine kielbasa doner sint eu lorem strip steak elit dolor in. Kielbasa ground round aliqua, strip steak ea landjaeger sunt. Andouille ex quis short loin ball tip prosciutto. Leberkas andouille aliquip
+                        in cupidatat. Venison corned beef enim adipisicing proident, ground round excepteur cupim id turducken doner.</p>
+                    <p>Occaecat officia nisi turducken veniam prosciutto duis. Occaecat dolore ground round, labore t-bone sunt pig boudin. Dolor kevin ut, in eu ea esse. Enim culpa pig ipsum tri-tip. Beef ribs pig cupidatat burgdoggen pork occaecat ea in
+                        kielbasa enim adipisicing jowl ex. Et landjaeger porchetta flank exercitation nostrud alcatra short loin sirloin.</p>
+                    <p>In pork belly veniam hamburger. Ipsum leberkas in cillum ut, ea cupim. Occaecat culpa enim, beef ribs shoulder anim dolore kevin veniam officia eiusmod aliquip minim pork tempor. Burgdoggen nisi id shank ham, tri-tip ham hock dolore.
+                        In tail ipsum do. Capicola laborum eu ham hock, andouille tongue jerky.</p>
+                    <p>Tongue culpa shank tail ut eiusmod occaecat short ribs ground round leberkas non nulla eu pork belly. Ut cupidatat magna quis culpa kielbasa dolor. Nulla id in sint aute ham tail alcatra sirloin dolore sausage shankle cupidatat velit.
+                        Turkey laboris eu, sint ground round burgdoggen occaecat ball tip exercitation deserunt pastrami. Salami ground round rump, landjaeger nisi adipisicing hamburger excepteur in drumstick doner aliqua porchetta sirloin. Est dolore
+                        jerky incididunt excepteur cupim. Shankle voluptate in, biltong jerky meatloaf aliqua commodo bacon alcatra short loin sausage lorem boudin consequat.</p>
+                    <p>Ham hock ball tip veniam labore shoulder, cillum pastrami doner anim aliquip velit ground round rump ham. Pig laborum exercitation, minim officia quis nisi andouille alcatra incididunt cupim sirloin shankle. Cow sed officia pork belly
+                        drumstick alcatra non flank reprehenderit adipisicing aute swine ipsum. Anim ex strip steak, alcatra ham eiusmod cillum occaecat irure ribeye venison turkey pancetta ad.</p>
+                    <p>Sausage venison elit qui jerky, do beef ribs meatball anim. Eu ribeye velit chuck, dolore incididunt sint pig commodo ipsum short loin nulla drumstick pariatur picanha. In pancetta sed tongue, andouille cow quis eu kevin swine est
+                        turducken. Cupim pork dolore occaecat officia pancetta, sirloin pork loin. Swine frankfurter officia shoulder pork loin kevin sirloin beef ribs eiusmod do consectetur doner. Ipsum ham exercitation laboris frankfurter short loin
+                        reprehenderit meatloaf. Leberkas quis sed culpa burgdoggen pork chop chicken adipisicing ad alcatra.</p>
+                    <p>Ut ipsum duis shoulder, velit laborum pork loin jowl tail non doner fatback. In velit landjaeger, non hamburger sausage tail ex in nostrud id aliquip venison. Dolore magna excepteur quis ut. Cow consequat turkey sed, porchetta ex ground
+                        round capicola exercitation pork chop adipisicing elit eu in. Cupidatat pancetta alcatra, id lorem laboris jerky non shank drumstick duis t-bone. Eu dolore ham hock capicola bresaola porchetta, ipsum duis ea nostrud biltong sed
+                        leberkas excepteur.</p>
+                    <p>Qui rump adipisicing voluptate capicola frankfurter prosciutto occaecat kielbasa ut tongue dolore salami. Andouille ut ad quis. Anim capicola minim frankfurter, labore adipisicing culpa proident do venison brisket jowl sint. Meatloaf
+                        rump eiusmod pariatur lorem. Nostrud jowl in, capicola est velit esse beef short ribs brisket tongue. Ball tip qui tri-tip bresaola. Exercitation andouille in flank.</p>
+                    <p>Short loin excepteur venison t-bone salami. Burgdoggen minim enim eiusmod mollit. Adipisicing ex ham cow beef ribs tail porchetta et turkey shank. Picanha rump laborum cupim minim sed beef turkey prosciutto dolor tongue commodo. Boudin
+                        sed minim ut, rump pork loin bacon ball tip et tail nostrud. Pig doner chuck culpa incididunt. Boudin duis aliquip, non irure dolore mollit kevin leberkas rump culpa ribeye pancetta fatback labore.</p>
+                    <p>Lorem elit nostrud, venison tenderloin eu sed prosciutto incididunt chicken shankle pork cow andouille. Pig pastrami corned beef, ipsum fatback qui short loin tail culpa veniam est picanha meatloaf ham salami. Strip steak turkey pig,
+                        jerky swine excepteur exercitation capicola ground round venison esse kielbasa andouille. Aliqua biltong in, sausage spare ribs filet mignon capicola pork.</p>
 
-                        <div class="ng_mm_link15">
+                    <div class="ng_mm_link15">
+                        <div class="comments">
                             <h1 class="heading">Comments</h1>
                             <div class="fb-comments" data-href="http://www.mcclatchydc.com/news/nation-world/world/article117747598.html" data-numposts="10" data-width="100%" data-colorscheme="light"></div>
                         </div>
+                    </div>
                     <!-- end custom body code -->
 
                     <script type="text/javascript" language="javascript">
