@@ -1,0 +1,140 @@
+#masthead-container,
+.masthead-row {
+    z-index: 9999;
+}
+
+.content-header {
+    width: 90%;
+    max-width: 950px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+h1 {
+    &.head {
+        @extend .content-header;
+        font-size: 8rem;
+        margin: 4.8rem auto 2.4rem;
+        line-height: 9.6rem;
+    }
+}
+
+h2 {
+    &.deck {
+        @extend .content-header;
+        font-size: 4rem;
+        line-height: 6rem;
+        margin-bottom: 3.6rem;
+    }
+}
+
+.byline {
+    @extend .content-header;
+    font-size: 1.4rem;
+    font-family: "McClatchy Sans", Helvetica, Arial, sans-serif;
+}
+
+.pub-date {
+    @extend .content-header;
+    margin: 0.5rem auto 6rem;
+}
+
+figcaption {
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+}
+
+.intro {
+    font-size: 2.6rem !important;
+    line-height: 4.8rem !important;
+    /*font-family: 'McClatchy Serif';
+  font-weight: 600;*/
+}
+
+p {
+    max-width: 700px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lyon',Georgia,serif;
+    font-size: 2rem !important;
+    margin-bottom: 2.4rem;
+    line-height: 3.6rem;
+}
+
+.head-img {
+    display: none;
+    height: auto;
+    width: 100%;
+}
+
+.dropcap {
+    float: left;
+    font-size: 19rem;
+    line-height: 17rem;
+    margin: 0 0.5rem -3rem 0;
+    padding-top: 0;
+}
+
+.loader {
+    background: #1d2e5c;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100vh;
+    height: calc(100vh + 20px);
+    z-index: 8888;
+    left: 0;
+    right: 0;
+    margin: -260px auto 260px;
+}
+
+.spinner {
+    margin: 100px auto 0;
+    width: 70px;
+    text-align: center;
+}
+
+.spinner > div {
+    width: 18px;
+    height: 18px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+@-webkit-keyframes sk-bouncedelay {
+    0%,
+    100%,
+    80% {
+        -webkit-transform: scale(0);
+    }
+
+    40% {
+        -webkit-transform: scale(1.0);
+    }
+}
+@keyframes sk-bouncedelay {
+    0%,
+    100%,
+    80% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
