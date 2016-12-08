@@ -19,6 +19,11 @@
     font-size: 8rem;
     margin: 7.2rem auto 2.4rem;
     line-height: 9.6rem;
+
+    @media (max-width: 768px) {
+        font-size: 7rem;
+        line-height: 8.4rem;
+    }
 }
 
 .deck {
@@ -26,12 +31,16 @@
     font-size: 4rem;
     line-height: 6rem;
     margin-bottom: 3.6rem;
+
+    @media (max-width: 768px) {
+        font-size: 3rem;
+        line-height: 4.8rem;
+    }
 }
 
 .byline {
     @extend .content-header;
     font-size: 1.4rem;
-    font-family: "McClatchy Sans", Helvetica, Arial, sans-serif;
 }
 
 .pub-date {
@@ -51,6 +60,11 @@ figcaption {
 .intro {
     font-size: 2.6rem !important;
     line-height: 4.8rem !important;
+
+    @media (max-width: 768px) {
+        font-size: 2.4rem !important;
+        line-height: 3.6rem !important;
+    }
 }
 
 p {
@@ -62,6 +76,11 @@ p {
     font-size: 2rem !important;
     margin-bottom: 2.4rem;
     line-height: 3.6rem;
+
+    @media (max-width: 768px) {
+        font-size: 2rem !important;
+        line-height: 3.6rem !important;
+    }
 }
 
 .dropcap {
@@ -70,6 +89,11 @@ p {
     line-height: 17rem;
     margin: 0 0.5rem -3rem 0;
     padding-top: 0;
+
+    @media (max-width: 768px) {
+        font-size: 14rem;
+        line-height: 12rem;
+    }
 }
 
 .loader-wrapper {
@@ -77,18 +101,23 @@ p {
     position: fixed;
     min-width: 100%;
     min-height: 100%;
-    width: 100vh;
-    height: calc(100vh + 20px);
-    z-index: 9999;
+    width: 100vw;
+    height: calc(100vh + 290px);
+    z-index: 9999999999; /* 2147483647 is the z-index of lightbox ads 12/08/16 */
     left: 0;
     right: 0;
-    margin: -290px auto 260px;
+    margin-top: -290px;
+
+    @media (max-width: 768px) {
+        height: calc(100vh + 165px);
+        margin-top: -165px;
+    }
 
     .loader {
         position: absolute;
         left: 0;
         right: 0;
-        top: 50%;
+        top: 40%;
         -ms-transform: translateY(-50%);
         /* IE 9 */
         -webkit-transform: translateY(-50%);
@@ -145,6 +174,10 @@ p {
             }
         }
     }
+}
+
+#comments-heading {
+    float: left;
 }
 
 .comments {

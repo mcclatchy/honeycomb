@@ -1,16 +1,23 @@
 $(document).ready(function() {
+
+    // adds logo to loader
     var logo = $('#masthead-logo').html();
     $('.loader-logo').html(logo);
-    // turns off scroll while loader is active
-    $('body').css('overflow','hidden');
-    // makes container full-width
+
+    // makes container and row full-width
     $(".full-width").closest("section").removeClass("container").addClass("container-fluid");
-    // when everything is loaded, do these things
-    $(window).load(function() {
-        $('.full-width').show();
+    $(".full-width").closest("section").find('.row').removeClass("row").addClass("row-fluid");
+
+    // loader scripts while elements load/rewrite
+        // removes scroll
+        $('body').css('overflow','hidden');
+        // shows full-width img after delay for rewriting
+        $('.full-width').delay(3000).show();
+        // fades out loader content
+        $(".loader").delay(2000).fadeOut("slow");
+        // scrolls to top during fade if user has scrolled
+        $(".loader-wrapper").delay(3000).fadeOut("slow");
         $("html, body").scrollTop(0);
-        $(".loader").fadeOut("fast");
-        $(".loader-wrapper").fadeOut("slow");
-        $('body').css('overflow','auto');
-    });
+        // shows scroll bar after loader fades
+        $('body').delay(4000).css('overflow','auto');
 });
