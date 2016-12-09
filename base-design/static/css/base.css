@@ -1,10 +1,25 @@
-.full-width, figcaption {
+.story-img {
+  width: 90%;
+  max-width: 700px;
+  display: block;
+  margin: 0 auto; }
+
+.container-img {
+  width: 100%;
+  display: block;
+  margin: 0 auto; }
+
+.fluid-img {
   display: none;
   height: auto;
   width: 100%;
   max-width: 100vw;
   display: block;
   margin: 0 auto; }
+
+figcaption {
+  padding-top: 0.5rem;
+  padding-left: 1rem; }
 
 .content-header, .head, .deck, .byline, .pub-date, .comments {
   width: 90%;
@@ -35,10 +50,6 @@
 
 .pub-date {
   margin: 0.5rem auto 6rem; }
-
-figcaption {
-  padding-top: 0.5rem;
-  padding-left: 1rem; }
 
 .intro {
   font-size: 2.6rem !important;
