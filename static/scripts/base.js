@@ -1,12 +1,14 @@
 $(document).ready(function() {
-
     // adds logo to loader
-    var logo = $('#masthead-logo').html();
-    $('.loader-logo').html(logo);
+        var logo = $('#masthead-logo').html();
+        $('.loader-logo').html(logo);
 
     // makes container and row full-width
-    $(".full-width").closest("section").removeClass("container").addClass("container-fluid");
-    $(".full-width").closest("section").find('.row').removeClass("row").addClass("row-fluid");
+        var fullWidth = $(".full-width").closest("section");
+        fullWidth.removeClass("container").addClass("container-fluid");
+        fullWidth.find('.row').removeClass("row").addClass("row-fluid");
+        fullWidth.find(".col-sm-12").css('padding', '0');
+        // $(".full-width").closest(".col-sm-12").css('padding', '0');
 
     // loader scripts while elements load/rewrite
         // removes scroll

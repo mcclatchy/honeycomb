@@ -1,8 +1,8 @@
-.full-width {
+.full-width, figcaption {
   display: none;
   height: auto;
   width: 100%;
-  max-width: 1600px;
+  max-width: 100vw;
   display: block;
   margin: 0 auto; }
 
@@ -38,11 +38,7 @@
 
 figcaption {
   padding-top: 0.5rem;
-  padding-left: 1rem;
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1600px; }
+  padding-left: 1rem; }
 
 .intro {
   font-size: 2.6rem !important;
@@ -140,4 +136,4 @@ p {
 #comments-heading {
   float: left; }
 
-/*# sourceMappingURL=custom.css.map */
+/*# sourceMappingURL=base.css.map */
