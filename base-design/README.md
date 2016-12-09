@@ -1,6 +1,6 @@
 # Base Design
 
-#### What is Base Design?
+#### What is it?
 1-2 sentences that explains what the base design is.
 
 #### Who is it for?
