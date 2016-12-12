@@ -19,15 +19,15 @@ Make sure you have a [GitHub](https://github.com/) account and [Git](https://git
 4. Clone the forked repository by pasting `git clone [YOUR REPO URL]` into your terminal.
 
 ## Navigating Base Design Files
-*index.html* comes pre-built with all of the code you need to view your project as if it were published on one of our standardized market sites.
+`index.html` comes pre-built with all of the code you need to view your project as if it were published on one of our standardized market sites.
 - Add custom dependencies after `<!-- custom dependencies -->` in index.html
 - Add custom html after `<!-- custom body code -->`
 
 *Existing dependencies*
-- *css/base.css* contains all of your base styles. (Note: *sass/base.scss* is available and set up to compile into *css/base.css* if you prefer to write in Sass.
-- *css/custom.css* is a clean stylesheet to build upon or overwrite styles established in *base.css*.
+- `css/base.css` contains all of your base styles. (Note: `sass/base.scss` is available and set up to compile into `css/base.css` if you prefer to write in Sass.
+- `css/custom.css` is a clean stylesheet to build upon or overwrite styles established in `base.css`.
 
-*scss/custom.scss* is a clean stylesheet to build upon or overwrite styles established in base.css
+`scss/custom.scss` is a clean stylesheet to build upon or overwrite styles established in base.css
 
 ## Transferring to Newsgate
 1. Step one
