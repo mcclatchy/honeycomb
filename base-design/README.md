@@ -23,10 +23,10 @@ Make sure you have a [GitHub](https://github.com/) account and [Git](https://git
 - Add custom dependencies after `<!-- custom dependencies -->` in index.html
 - Add custom html after `<!-- custom body code -->`
 
-*Existing dependencies*
+####Existing dependencies
 - `css/base.css` contains all of your base styles. Changes to this file are not recommended. 
 - `css/custom.css` is a clean stylesheet to build upon or overwrite styles established in `base.css`.
-(Note: `sass/base.scss` and `sass/custom.scss` are available and ready to compile into their `.css` counterparts if you prefer [Sass](http://sass-lang.com/install). 
+- (Note: `sass/base.scss` and `sass/custom.scss` are available and ready to compile into their `.css` counterparts if you prefer [writing with Sass](http://sass-lang.com/install). 
 
 
 ## Transferring to Newsgate
