@@ -15,8 +15,8 @@ Make sure you have a [GitHub](https://github.com/) account and [Git](https://git
 
 1. Create an account or sign into GitHub and fork the [base-design](https://github.com/mcclatchy/special-project-template/tree/master/base-design) repository to your account
 2. Click *clone or download* and copy the URL
-3. Clone the forked repository by pasting
-`git clone [YOUR REPO URL]`into your terminal
+3. Open your terminal and navigate to the directory that your project will live in.
+4. Clone the forked repository by pasting `git clone [YOUR REPO URL]` into your terminal.
 
 ## Navigating Base Design Files
 *index.html* comes pre-built with all of the code you need to view your project as if it were published on one of our standardized market sites.
