@@ -1,40 +1,38 @@
 # Base Design
 
 #### What is it?
-1-2 sentences that explains what the base design is.
-
-#### Who is it for?
-Id tenderloin mollit cillum ham hock pork belly ullamco flank veniam. Picanha meatloaf turducken beef leberkas, lorem kielbasa rump non laborum spare ribs. Prosciutto cupim pariatur, pork belly aute frankfurter boudin cow. Picanha boudin id excepteur irure. In ham hock jowl turkey. Tempor drumstick deserunt salami ea jerky. Labore minim laborum, landjaeger swine pig ut beef ribs tail ipsum culpa pariatur enim.
+This is a starting design for McClatchy's Special Projects Template. It has been created for local development that can easily be moved over to Newsgate for testing and publishing. 
 
 #### Why use it?
-Id tenderloin mollit cillum ham hock pork belly ullamco flank veniam. Picanha meatloaf turducken beef leberkas, lorem kielbasa rump non laborum spare ribs. Prosciutto cupim pariatur, pork belly aute frankfurter boudin cow. Picanha boudin id excepteur irure. In ham hock jowl turkey. Tempor drumstick deserunt salami ea jerky. Labore minim laborum, landjaeger swine pig ut beef ribs tail ipsum culpa pariatur enim.
+Base Design standardizes and streamlines the process of creating special project designs within Newsgate/Escenic by providing HTML, styles and scripts to give news developers a running start at customization.
+
+#### Who is it for?
+Base Design is for McClatchy front-end developers who want to give projects a special treatment beyond the standard article page.
 
 ## Setup
 
 Make sure you have a [GitHub](https://github.com/) account and [Git](https://git-scm.com/downloads) installed on your computer.
 
-1. Create an account or sign into GitHub and fork the [base-design](https://github.com/mcclatchy/special-project-template/tree/master/base-design) repository to your account
-2. Click *clone or download* and copy the URL
+1. Fork the [base-design](https://github.com/mcclatchy/special-project-template/tree/master/base-design) repository to your GitHub account.
+2. Click `clone or download` and copy the URL from your forked repository.
 3. Open your terminal and navigate to the directory that your project will live in.
-4. Clone the forked repository by pasting `git clone [YOUR REPO URL]` into your terminal.
+4. Clone the forked repository by pasting `git clone YOUR REPO URL` into your terminal.
 
-## Navigating Base Design Files
-`index.html` comes pre-built with all of the code you need to view your project as if it were published on one of our standardized market sites.
-- Add custom dependencies after `<!-- custom dependencies -->` in index.html
-- Add custom html after `<!-- custom body code -->`
+## Navigating Base Design files
+`index.html` comes pre-built with all of the code you need to view your project as if it were published on one of our standardized market sites. There are two sections you may customize:
+- `<!-- custom dependencies -->` is where you may add dependencies.
+- `<!-- custom body -->` is where you may add HTML.
 
 ####Existing dependencies
-- `css/base.css` contains all of your base styles. Changes to this file are not recommended. 
-- `css/custom.css` is a clean stylesheet to build upon or overwrite styles established in `base.css`.
-- (Note: `sass/base.scss` and `sass/custom.scss` are available and ready to compile into their `.css` counterparts if you prefer [writing with Sass](http://sass-lang.com/install). 
-
+- `css/base.css` and `scripts/base.js` contain all of the base styles and scripts. Changes to these files are not recommended. 
+- `css/custom.css` is where new styles should be added to build upon or overwrite those established in `css/base.css`.
+- `scripts/custom.js` is where new scripts should be added.
+- Note: `sass/base.scss` and `sass/custom.scss` are available and ready to compile into their .css counterparts if you prefer [writing with Sass](http://sass-lang.com/install). 
 
 ## Transferring to Newsgate
-1. Step one
-2. Step two
-
-## Changelog
-No changes... yet.
+1. Upload your `img`, `css` and `scripts` directories to your server.
+2. Update your `custom dependencies` in `index.html` with their new URLs.
+3. Paste your `custom body code` (excluding body copy) from `index.html` into Newsgate's `mm_link` sections. Include their `mm_embed` counterparts within the story copy.
 
 ## Code Cookbook
 
@@ -104,3 +102,6 @@ Facebook comments only load in published story pages on the server (not local fi
     <div class="fb-comments" data-href="http://LINK TO YOUR STORY PAGE GOES HERE.html" data-numposts="10" data-width="100%" data-colorscheme="light"></div>
 </div>
 ```
+
+## Changelog
+No changes... yet.
