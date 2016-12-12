@@ -29,3 +29,61 @@ Make sure you have a [GitHub](https://github.com/) account and [Git](https://git
 
 ## Changelog
 No changes... yet.
+
+## Code Cookbook
+
+### Loader
+
+```html
+<div class="loader-wrapper">
+    <div class="loader">
+        <div class="loader-logo"></div>
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+</div>
+```
+***
+
+### Images
+
+* Story-width
+
+```html
+<figure class="story-img">
+    <img src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
+    <figcaption>Caption information goes here. (Photographer Name, Publication)</figcaption>
+</figure>
+```
+
+* Container-width
+
+```html
+<figure class="container-img">
+    <img src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
+    <figcaption>Caption information goes here. (Photographer Name, Publication)</figcaption>
+</figure>
+```
+
+* Full-width
+
+```html
+<figure class="fluid-img">
+    <img src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
+    <figcaption>Caption information goes here. (Photographer Name, Publication)</figcaption>
+</figure>
+```
+***
+
+### Facebook comments
+
+Facebook comments only load in published story pages on the server (not local files).
+```html
+<div class="comments">
+    <h1 id="comments-heading" class="heading">Comments</h1>
+    <div class="fb-comments" data-href="http://LINK TO YOUR STORY PAGE GOES HERE.html" data-numposts="10" data-width="100%" data-colorscheme="light"></div>
+</div>
+```
