@@ -37,7 +37,7 @@ figcaption {
 
 .head {
   font-size: 8rem;
-  margin: 6rem auto 2.4rem;
+  margin: 6rem auto 1.2rem;
   line-height: 9.6rem; }
   @media (max-width: 768px) {
     .head {
@@ -57,7 +57,12 @@ figcaption {
   font-size: 1.4rem; }
 
 .pub-date {
-  margin: 0.5rem auto 6rem; }
+  margin: 0 auto 1.2rem; }
+
+.share-icons {
+  max-width: 650px;
+  margin: 0 auto 6rem;
+  text-align: center; }
 
 .intro {
   font-size: 2.6rem !important;

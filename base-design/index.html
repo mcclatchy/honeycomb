@@ -550,9 +550,12 @@ display: block; } }
 
                     <!-- custom dependencies -->
                     <link rel="stylesheet" type="text/css" href="static/css/base.css">
-                    <script type="text/javascript" src="static/scripts/base.js"></script>
+                    <link rel="stylesheet" type="text/css" href="static/css/custom.css">
 
-                    <!-- custom body code -->
+                    <script type="text/javascript" src="static/scripts/base.js"></script>
+                    <script type="text/javascript" src="static/scripts/custom.js"></script>
+
+                    <!-- custom body -->
                         <!-- mm_link -->
                         <div class="loader-wrapper">
                             <div class="loader">
@@ -572,6 +575,24 @@ display: block; } }
                         <h2 class="deck">This is the story of a deckhead that will grow up to live on this story page</h2>
                         <p class="byline">Byline Name Here | Title Here</p>
                         <p class="pub-date">Month ##, Year 0:00 AM</p>
+
+                        <ul class="share-icons">
+                            <li class="facebook">
+                                <a class="facebook-share" href="http://www.facebook.com/sharer/sharer.php?u=http://www.mcclatchydc.com/news/politics-government/election/article110800312.html" id="vmtc_fb_share" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"
+                                    title="Share on Facebook"></a>
+                                <div class="glyphicon glyphicon-facebook"></div>
+                            </li>
+                            <li class="twitter">
+                                <a href="https://twitter.com/intent/tweet?text=Voters%20Make%20the%20Call%3A%2025%20States%2069%20Sentiments%20http://www.mcclatchydc.com/news/politics-government/election/article110800312.html" id="vmtc_tw_share" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"
+                                    title="Share on Twitter"></a>
+                                <div class="glyphicon glyphicon-twitter"></div>
+                            </li>
+                            <li class="email">
+                                <a href="mailto:?subject=Voters Make the Call: 69 voicemails from 25 states&amp;body=http://www.mcclatchydc.com/news/politics-government/election/article110800312.html" id="vmtc_em_share"></a>
+                                <div class="glyphicon glyphicon-envelope"></div>
+                            </li>
+                        </ul>
+
                         <!-- /end mm_link -->
 
                         <!-- mm_link -->
@@ -623,7 +644,7 @@ display: block; } }
                             <div class="fb-comments" data-href="http://www.mcclatchydc.com/news/nation-world/world/article117747598.html" data-numposts="10" data-width="100%" data-colorscheme="light"></div>
                         </div>
                         <!-- /end mm_link -->
-                    <!-- /end custom body code -->
+                    <!-- /end custom body -->
 
                     <script type="text/javascript" language="javascript">
                         $(document).ready(function() {
