@@ -1,12 +1,11 @@
 .figure-style, .paragraph-img, .container-img, .fluid-img {
   display: block;
-  margin: 0 auto 2.4rem;
+  margin: 1.2rem auto 3.6rem;
   height: auto; }
 
 .paragraph-img {
   width: 90%;
-  max-width: 650px;
-  margin: 0 auto 2.4rem; }
+  max-width: 650px; }
   .paragraph-img img {
     width: 100%;
     height: auto; }
