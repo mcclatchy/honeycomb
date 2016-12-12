@@ -24,10 +24,10 @@ Make sure you have a [GitHub](https://github.com/) account and [Git](https://git
 - Add custom html after `<!-- custom body code -->`
 
 *Existing dependencies*
-- `css/base.css` contains all of your base styles. (Note: `sass/base.scss` is available and set up to compile into `css/base.css` if you prefer to write in Sass.
+- `css/base.css` contains all of your base styles. Changes to this file are not recommended. 
 - `css/custom.css` is a clean stylesheet to build upon or overwrite styles established in `base.css`.
+(Note: `sass/base.scss` and `sass/custom.scss` are available and ready to compile into their `.css` counterparts if you prefer [Sass](http://sass-lang.com/install). 
 
-`scss/custom.scss` is a clean stylesheet to build upon or overwrite styles established in base.css
 
 ## Transferring to Newsgate
 1. Step one
