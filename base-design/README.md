@@ -32,14 +32,14 @@ No changes... yet.
 
 ## Code Cookbook
 
-#### Loader
-#### Images
-#### Graphics
-#### Fact boxes
-#### Pull quotes
-#### Videos
-#### About section
-#### Correction
+- Loader
+- Images
+- Graphics
+- Fact boxes
+- Pull quotes
+- Videos
+- About section
+- Correction
 
 ### Loader
 
