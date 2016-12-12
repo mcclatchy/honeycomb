@@ -20,8 +20,14 @@ Make sure you have a [GitHub](https://github.com/) account and [Git](https://git
 
 ## Navigating Base Design Files
 *index.html* comes pre-built with all of the code you need to view your project as if it were published on one of our standardized market sites.
-4. Add custom dependencies after `<!-- custom dependencies -->` in index.html
-5. Add custom html after `<!-- custom body code -->`
+- Add custom dependencies after `<!-- custom dependencies -->` in index.html
+- Add custom html after `<!-- custom body code -->`
+
+*Existing dependencies*
+- *css/base.css* contains all of your base styles. (Note: *sass/base.scss* is available and set up to compile into *css/base.css* if you prefer to write in Sass.
+- *css/custom.css* is a clean stylesheet to build upon or overwrite styles established in *base.css*.
+
+*scss/custom.scss* is a clean stylesheet to build upon or overwrite styles established in base.css
 
 ## Transferring to Newsgate
 1. Step one
