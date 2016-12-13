@@ -47,7 +47,7 @@ figcaption {
 .deck {
   font-size: 4rem;
   line-height: 6rem;
-  margin-bottom: 3.6rem; }
+  margin-bottom: 2.4rem; }
   @media (max-width: 768px) {
     .deck {
       font-size: 3rem;
@@ -57,12 +57,15 @@ figcaption {
   font-size: 1.4rem; }
 
 .pub-date {
-  margin: 0 auto 1.2rem; }
+  margin: 0 auto 2.4rem; }
 
 .share-icons {
   max-width: 650px;
   margin: 0 auto 6rem;
   text-align: center; }
+  .share-icons li .glyphicon {
+    left: 0;
+    right: 0; }
 
 .intro {
   font-size: 2.6rem !important;
