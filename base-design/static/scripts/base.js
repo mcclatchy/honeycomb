@@ -44,6 +44,8 @@ $(document).ready(function() {
         var emailPartial = "mailto:?subject=Voters Make the Call: 69 voicemails from 25 states&body=";
         var emailURL = emailPartial + projectURL;
         $("#email-share").attr("href", emailURL);
+
+
     }
 
     function amperOctoPlus(s) {

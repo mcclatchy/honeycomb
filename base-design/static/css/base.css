@@ -65,7 +65,8 @@ figcaption {
   text-align: center; }
   .share-icons li .glyphicon {
     left: 0;
-    right: 0; }
+    right: 0;
+    background: #C0BDBE; }
 
 .intro {
   font-size: 2.6rem !important;
