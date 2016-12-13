@@ -19,9 +19,10 @@ Make sure you have a [GitHub](https://github.com/) account and [Git](https://git
 4. Clone the forked repository by pasting `git clone YOUR REPO URL` into your terminal.
 
 ## Navigating Base Design files
-`index.html` comes pre-built with all of the code you need to view your project as if it were published on one of our standardized market sites. There are two sections you may customize:
-- `<!-- custom dependencies -->` is where you may add dependencies.
+`index.html` comes built with all of the code you need to view your project as if it were published on one of our standardized market sites. There are three sections you may customize:
+- `<!-- custom head -->` is where you may add style and miscellaneous dependencies.
 - `<!-- custom body -->` is where you may add HTML.
+- `<!-- custom scripts -->` is where you may add JS or other script dependencies.
 
 ####Existing dependencies
 - `css/base.css` and `scripts/base.js` contain all of the base styles and scripts. Changes to these files are not recommended. 
