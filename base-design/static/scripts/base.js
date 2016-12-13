@@ -26,16 +26,32 @@ $(document).ready(function() {
 
     function setShareURL() {
         var projectURL = window.location.href;
+        projectURL = "http://www.mcclatchydc.com/news/nation-world/world/article117747598.html";
 
         var facebookURL = "http://www.facebook.com/sharer/sharer.php?u=" + projectURL;
         $('#facebook-share').attr("href", facebookURL);
 
-        var twitterPartial = "https://twitter.com/intent/tweet?text=Voters%20Make%20the%20Call%3A%2025%20States%2069%20Sentiments%20";
-        var twitterURL = twitterPartial + projectURL;
+        /* Clean up ampersands, octothorpes, and pluses */
+        var metaTitle = $('meta[name=title]').attr('content');
+        var title = metaTitle.split(' | ');
+
+        var twitterPartial = encodeURI(title[0]);
+        twitterPartial = amperOctoPlus(twitterPartial);
+        var twitterURL = "https://twitter.com/home?status=" + twitterPartial + "%20" + projectURL;
         $("#twitter-share").attr("href", twitterURL);
+        console.log(twitterURL);
 
         var emailPartial = "mailto:?subject=Voters Make the Call: 69 voicemails from 25 states&body=";
         var emailURL = emailPartial + projectURL;
         $("#email-share").attr("href", emailURL);
+    }
+
+    function amperOctoPlus(s) {
+    	s = s.replace(/&/g, '%26');
+    	s = s.replace(/#/g, '%23');
+    	s = s.replace(/\+/g, '%2B');
+    	s = s.replace(/@/g, '%40');
+    	s = s.replace(/:/g, '%3A');
+    	return s;
     }
 });
