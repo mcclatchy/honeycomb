@@ -1,3 +1,8 @@
+$lighter: #C0BDBE;
+$site-primary: #fcfffe; // This color gets changed out with JS based on your site's primary color;
+
+$sans: 'McClatchy Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif !important;
+
 .figure-style {
     display: block;
     margin: 1.2rem auto 3.6rem;
@@ -39,8 +44,6 @@
 
 figcaption {
     padding: 0.5rem 1rem 0;
-    padding-top: 0.5rem;
-    padding-left: 1rem;
 }
 
 .content-header {
@@ -55,7 +58,6 @@ figcaption {
     font-size: 8rem;
     margin: 6rem auto 1.2rem;
     line-height: 9.6rem;
-
     @media (max-width: 768px) {
         font-size: 7rem;
         line-height: 8.4rem;
@@ -67,7 +69,6 @@ figcaption {
     font-size: 4rem;
     line-height: 6rem;
     margin-bottom: 2.4rem;
-
     @media (max-width: 768px) {
         font-size: 3rem;
         line-height: 4.8rem;
@@ -81,7 +82,7 @@ figcaption {
 
 .pub-date {
     @extend .content-header;
-    margin:0 auto 2.4rem;
+    margin: 0 auto 2.4rem;
 }
 
 .share-icons {
@@ -93,7 +94,7 @@ figcaption {
         .glyphicon {
             left: 0;
             right: 0;
-            background: #C0BDBE;
+            background: $lighter;
         }
     }
 }
@@ -101,7 +102,6 @@ figcaption {
 .intro {
     font-size: 2.6rem !important;
     line-height: 4.8rem !important;
-
     @media (max-width: 768px) {
         font-size: 2.4rem !important;
         line-height: 3.6rem !important;
@@ -117,7 +117,6 @@ p {
     font-size: 2rem !important;
     margin-bottom: 2.4rem;
     line-height: 3.6rem;
-
     @media (max-width: 768px) {
         font-size: 2rem !important;
         line-height: 3.6rem !important;
@@ -130,10 +129,51 @@ p {
     line-height: 17rem;
     margin: 0 0.5rem -3rem 0;
     padding-top: 0;
-
     @media (max-width: 768px) {
         font-size: 14rem;
         line-height: 12rem;
+    }
+}
+
+h3 {
+    font-family: $site-primary;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.background {
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+
+    h3 {
+
+    }
+    p {
+        width: 100%;
+    }
+}
+
+.corrections,
+.sources {
+    color: $lighter;
+    font-size: 1.2rem !important;
+    font-family: $sans;
+    line-height: 1.5rem;
+    margin: 0 auto 1.2rem;
+}
+
+.credits {
+    width: 90%;
+    max-width: 650px;
+    margin: 0 auto 4.8rem;
+    font-size: 1.2rem;
+    padding-top: 1.2rem;
+    border-top: 0.5px solid $lighter;
+
+    div {
+        display: inline-block;
+        padding: 0 2rem 0 0;
     }
 }
 
@@ -144,11 +184,11 @@ p {
     min-height: 100%;
     width: 100vw;
     height: calc(100vh + 290px);
-    z-index: 9999999999; /* 2147483647 is the z-index of lightbox ads 12/08/16 */
+    z-index: 9999999999;
+    /* 2147483647 is the z-index of lightbox ads 12/08/16 */
     left: 0;
     right: 0;
     margin-top: -290px;
-
     @media (max-width: 768px) {
         height: calc(100vh + 165px);
         margin-top: -165px;
@@ -173,7 +213,7 @@ p {
             > div {
                 width: 18px;
                 height: 18px;
-                background-color: rgba(255, 255, 255, 0.5);
+                background-color: $lighter;
                 border-radius: 100%;
                 display: inline-block;
                 -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;

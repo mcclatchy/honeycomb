@@ -56,4 +56,8 @@ $(document).ready(function() {
     	s = s.replace(/:/g, '%3A');
     	return s;
     }
+
+    function getSiteColor() {
+        $('.heading').css('background-color');
+    }
 });
