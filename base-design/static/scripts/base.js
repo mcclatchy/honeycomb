@@ -1,9 +1,5 @@
 $(document).ready(function() {
 
-    addLoader();
-    setImgWidth();
-    setShareURL();
-
     function addLoader() {
         var logo = $('#masthead-logo').html();
         $('.loader-logo').html(logo);
@@ -39,13 +35,10 @@ $(document).ready(function() {
         twitterPartial = amperOctoPlus(twitterPartial);
         var twitterURL = "https://twitter.com/home?status=" + twitterPartial + "%20" + projectURL;
         $("#twitter-share").attr("href", twitterURL);
-        console.log(twitterURL);
 
         var emailPartial = "mailto:?subject=Voters Make the Call: 69 voicemails from 25 states&body=";
         var emailURL = emailPartial + projectURL;
         $("#email-share").attr("href", emailURL);
-
-
     }
 
     function amperOctoPlus(s) {
@@ -57,7 +50,29 @@ $(document).ready(function() {
     	return s;
     }
 
-    function getSiteColor() {
-        $('.heading').css('background-color');
+    $.getJSON('static/scripts/colors.json', function(data) {
+        addSiteColor(data);
+        addLoader();
+        setImgWidth();
+        setShareURL();
+    });
+
+    // look through all site urls and find the one that your page matches
+    // add the class that corresponds to that url
+    function addSiteColor(data) {
+        var siteURL = mast_options.publicationUrl;
+
+        $.each(data, function(k, v) {
+            if (v.site === siteURL) {
+                $('.primary-color').addClass(v.name + "-primary-color");
+                $('.primary-background').addClass(v.name + "-primary-background");
+                $('.primary-color').addClass(v.name + "-primary-color");
+                $('.primary-background').addClass(v.name + "-primary-background");
+            }
+        });
     }
+
+    // if (siteURL === 'http://www.islandpacket.com/') {
+    //     $('.primary-background').addClass('beaufortgazette-primary-background');
+    // }
 });

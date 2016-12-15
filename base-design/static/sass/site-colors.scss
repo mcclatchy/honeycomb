@@ -1,0 +1,61 @@
+// Adding .primary-color to an element will tell JS to add your site's unique color class and override the white default.
+.primary-color {
+    color: white;
+}
+.primary-background {
+    background-color: white;
+}
+
+@each $paper-name, $primary-color, $accent-color in
+    (beaufortgazette, #1E4971, #0184C1),
+    (bellinghamherald, #013B61, #0280D3),
+    (bnd, #145288, #0078B2),
+    (bradenton #1E4971, #0184BE),
+    (centredaily, #0A4170, #3582C3),
+    (charlotteobserver, #206FA8, #3AA2D7),
+    (elnuevoherald, #0079C1, #33B6E6),
+    (encubahoy, #24418F, #EC1D25),
+    (flkeysnews, #2E3192, #D3B31B),
+    (fresnobee, #27395A, #4C699A),
+    (heraldonline, #7C1D21, #D02D34),
+    (idahostatesman, #1F405F, #2678C4),
+    (incubatoday, #24418F, #EC1D25),
+    (islandpacket, #1E4971, #0184C1),
+    (kansas, #005EAB, #0093D0),
+    (kansascity, #145288, #0093D0),
+    (kentucky, #094D73, #1074AC),
+    (kentuckysports, #18569E, #3D7EC9),
+    (ledgerenquirer, #174673, #2F76C1),
+    (lexgo, #DB8200, #FFA016),
+    (losbanosenterprise, #0080B7, #56A9CC),
+    (macon, #1F3366, #3B6CBD),
+    (mcclatchydc, #1D2E5C, #CDA01E),
+    (mercedsunstar, #113511, #2E6D2F),
+    (miamiherald, #0066B3, #379AD3),
+    (modbee, #145288, #0093D0),
+    (myrtlebeachonline, #004377, #A72A2B),
+    (newsobserver, #424242, #BA2814),
+    (sacbee, #145288, #0093D0),
+    (sanluisobispo, #314B65, #437BB3),
+    (sierrastar, #446896, #7991C4),
+    (startelegram, #8394AA, #5E6B7A),
+    (sunherald, #035A84, #008FD4),
+    (thenewstribune, #0D6898, #00A0EF),
+    (theolympian, #2E6D2F, #204D21),
+    (thestate, #3B4858, #708095),
+    (tricityherald, #2656A3, #1991EC),
+    (vidaenelvalle, #034A78, #0280D3) {
+
+        .#{$paper-name}-primary-color {
+            color: $primary-color;
+        }
+        .#{$paper-name}-accent-color {
+            color: $accent-color;
+        }
+        .#{$paper-name}-primary-background {
+            background-color: $primary-color;
+        }
+        .#{$paper-name}-accent-background {
+            background-color: $accent-color;
+        }
+}

@@ -1,5 +1,4 @@
 $lighter: #C0BDBE;
-$site-primary: #fcfffe; // This color gets changed out with JS based on your site's primary color;
 
 $sans: 'McClatchy Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif !important;
 
@@ -136,7 +135,6 @@ p {
 }
 
 h3 {
-    font-family: $site-primary;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
@@ -178,7 +176,6 @@ h3 {
 }
 
 .loader-wrapper {
-    background: #1d2e5c;
     position: fixed;
     min-width: 100%;
     min-height: 100%;
@@ -213,7 +210,7 @@ h3 {
             > div {
                 width: 18px;
                 height: 18px;
-                background-color: $lighter;
+                background-color: white;
                 border-radius: 100%;
                 display: inline-block;
                 -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
