@@ -1,10 +1,154 @@
 [
     {
         "name": "beaufortgazette",
-        "site": "http://www.islandpacket.com/"
+        "site": "SUB PUBLICATION http://www.islandpacket.com/"
     },
     {
         "name": "bellinghamherald",
         "site": "http://www.bellinghamherald.com/"
+    },
+    {
+        "name": "bnd",
+        "site": "http://www.bnd.com/"
+    },
+    {
+        "name": "bradenton",
+        "site": "http://www.bradenton.com/"
+    },
+    {
+        "name": "centredaily",
+        "site": "http://www.centredaily.com/"
+    },
+    {
+        "name": "charlotteobserver",
+        "site": "http://www.charlotteobserver.com/"
+    },
+    {
+        "name": "elnuevoherald",
+        "site": "http://www.elnuevoherald.com/"
+    },
+    {
+        "name": "encubahoy",
+        "site": "http://www.incubatoday.com/"
+    },
+    {
+        "name": "flkeysnews",
+        "site": "http://www.flkeysnews.com/"
+    },
+    {
+        "name": "fresnobee",
+        "site": "http://www.fresnobee.com/"
+    },
+    {
+        "name": "heraldonline",
+        "site": "http://www.heraldonline.com/"
+    },
+    {
+        "name": "idahostatesman",
+        "site": "http://www.idahostatesman.com/"
+    },
+    {
+        "name": "incubatoday",
+        "site": "http://www.incubatoday.com/"
+    },
+    {
+        "name": "islandpacket",
+        "site": "http://www.islandpacket.com/"
+    },
+    {
+        "name": "kansas",
+        "site": "http://www.kansas.com/"
+    },
+    {
+        "name": "kansascity",
+        "site": "http://www.kansascity.com/"
+    },
+    {
+        "name": "kentucky",
+        "site": "http://www.kentucky.com/"
+    },
+    {
+        "name": "kentuckysports",
+        "site": "SUB PUBLICATION http://www.kentucky.com/"
+    },
+    {
+        "name": "ledgerenquirer",
+        "site": "http://www.ledger-enquirer.com/"
+    },
+    {
+        "name": "lexgo",
+        "site": "SUB PUBLICATION http://www.kentucky.com/"
+    },
+    {
+        "name": "losbanosenterprise",
+        "site": "http://www.losbanosenterprise.com/"
+    },
+    {
+        "name": "macon",
+        "site": "http://www.macon.com/"
+    },
+    {
+        "name": "mcclatchydc",
+        "site": "http://www.mcclatchydc.com/"
+    },
+    {
+        "name": "mercedsunstar",
+        "site": "http://www.mercedsunstar.com/"
+    },
+    {
+        "name": "miamiherald",
+        "site": "http://www.miamiherald.com/"
+    },
+    {
+        "name": "modbee",
+        "site": "http://www.modbee.com/"
+    },
+    {
+        "name": "myrtlebeachonline",
+        "site": "http://www.myrtlebeachonline.com/"
+    },
+    {
+        "name": "newsobserver",
+        "site": "http://www.newsobserver.com/"
+    },
+    {
+        "name": "sacbee",
+        "site": "http://www.sacbee.com/"
+    },
+    {
+        "name": "sanluisobispo",
+        "site": "http://www.sanluisobispo.com/"
+    },
+    {
+        "name": "sierrastar",
+        "site": "http://www.sierrastar.com/"
+    },
+    {
+        "name": "star-telegram",
+        "site": "http://www.star-telegram.com/"
+    },
+    {
+        "name": "sunherald",
+        "site": "http://www.sunherald.com/"
+    },
+    {
+        "name": "thenewstribune",
+        "site": "http://www.thenewstribune.com/"
+    },
+    {
+        "name": "theolympian",
+        "site": "http://www.theolympian.com/"
+    },
+    {
+        "name": "thestate",
+        "site": "http://www.thestate.com/"
+    },
+    {
+        "name": "tri-cityherald",
+        "site": "http://www.tri-cityherald.com/"
+    },
+    {
+        "name": "vidaenelvalle",
+        "site": "http://www.vidaenelvalle.com/"
     }
 ]
