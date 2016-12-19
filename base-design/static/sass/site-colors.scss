@@ -1,16 +1,25 @@
-// Adding .primary-color to an element will tell JS to add your site's unique color class and override the white default.
+// Adding one of these four classes to an element will tell JS to add your site's unique color class and override the white default.
 .primary-color {
     color: white;
 }
+
 .primary-background {
     background-color: white;
 }
 
-@each $paper-name, $primary-color, $accent-color in
+.accent-color {
+    color: white;
+}
+
+.accent-background {
+    background-color: white;
+}
+
+@each $paper-name, $primary, $accent in
     (beaufortgazette, #1E4971, #0184C1),
     (bellinghamherald, #013B61, #0280D3),
     (bnd, #145288, #0078B2),
-    (bradenton #1E4971, #0184BE),
+    (bradenton, #1E4971, #0184BE),
     (centredaily, #0A4170, #3582C3),
     (charlotteobserver, #206FA8, #3AA2D7),
     (elnuevoherald, #0079C1, #33B6E6),
@@ -47,15 +56,18 @@
     (vidaenelvalle, #034A78, #0280D3) {
 
         .#{$paper-name}-primary-color {
-            color: $primary-color;
+            color: $primary;
         }
-        .#{$paper-name}-accent-color {
-            color: $accent-color;
-        }
+
         .#{$paper-name}-primary-background {
-            background-color: $primary-color;
+            background-color: $primary;
         }
+
+        .#{$paper-name}-accent-color {
+            color: $accent;
+        }
+
         .#{$paper-name}-accent-background {
-            background-color: $accent-color;
+            background-color: $accent;
         }
 }

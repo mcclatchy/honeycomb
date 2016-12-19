@@ -1,5 +1,4 @@
 $lighter: #C0BDBE;
-
 $sans: 'McClatchy Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif !important;
 
 .figure-style {
@@ -76,12 +75,16 @@ figcaption {
 
 .byline {
     @extend .content-header;
-    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 2.6rem !important;
+    margin-bottom: 0;
 }
 
 .pub-date {
     @extend .content-header;
     margin: 0 auto 2.4rem;
+    font-size: 1.4rem !important;
+    font-family: $sans;
 }
 
 .share-icons {
@@ -137,16 +140,15 @@ p {
 h3 {
     font-weight: bold;
     margin-bottom: 0.5rem;
+    font-family: $sans;
 }
 
-.background {
+.about-project {
     width: 90%;
     max-width: 650px;
     margin: auto;
+    border: 0.5px solid $lighter;
 
-    h3 {
-
-    }
     p {
         width: 100%;
     }
