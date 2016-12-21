@@ -63,7 +63,7 @@ figcaption {
   font-size: 1.4rem !important;
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif !important; }
 
-.view-sources {
+.sources-btn, .sources-head {
   display: block;
   margin: 1.2rem auto 6rem;
   border: none;
@@ -73,11 +73,15 @@ figcaption {
   border: 1px solid #a7a3a4;
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif !important;
   font-size: 1.2rem; }
-  .view-sources:hover {
+  .sources-btn:hover, .sources-head:hover {
     background: #f2f1f1;
     color: #756f71; }
-  .view-sources:focus {
+  .sources-btn:focus, .sources-head:focus {
     outline: none; }
+
+.sources-head {
+  display: none;
+  margin: 1.2rem auto 6rem; }
 
 .share-icons {
   max-width: 650px;
@@ -167,7 +171,7 @@ h4 {
     font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif !important;
     margin: 0 auto 1.2rem !important; }
 
-.sources p {
+.sources-footer p, .sources-head p {
   color: #a7a3a4;
   margin: 0 auto;
   font-size: 1.2rem !important;

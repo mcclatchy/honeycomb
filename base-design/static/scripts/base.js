@@ -74,4 +74,17 @@ $(document).ready(function() {
         url = url.replace(/:/g, '%3A');
         return url;
     }
+
+    var sourcesList = $('.sources-footer').html();
+    $('.sources-head').html(sourcesList);
+
+    $('.sources-btn').click(function() {
+        $('.sources-btn').hide();
+        $('.sources-head').show().css('display', 'block');
+    });
+
+    $('.sources-head').click(function() {
+        $('.sources-head').hide();
+        $('.sources-btn').show().css('display', 'block');
+    });
 });

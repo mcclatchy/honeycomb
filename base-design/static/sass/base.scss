@@ -89,7 +89,7 @@ figcaption {
     font-family: $sans;
 }
 
-.view-sources {
+.sources-btn {
     display: block;
     margin: 1.2rem auto 6rem;
     border: none;
@@ -104,9 +104,17 @@ figcaption {
         background: lighten($lighter, 30%);
         color: darken($lighter, 20%);
     }
+
     &:focus {
         outline: none;
     }
+}
+
+.sources-head {
+    display: none;
+    @extend .sources-footer;
+    @extend .sources-btn;
+    margin: 1.2rem auto 6rem;
 }
 
 .share-icons {
@@ -206,6 +214,7 @@ h4 {
 
 .note {
     margin: 2.4rem auto;
+
     p {
         color: $lighter;
         font-size: 1.4rem !important;
@@ -215,7 +224,7 @@ h4 {
     }
 }
 
-.sources {
+.sources-footer {
     p {
         color: $lighter;
         margin: 0 auto;
@@ -231,7 +240,6 @@ h4 {
     margin: 0 auto 4.8rem;
     font-size: 1.2rem;
     padding-top: 1.2rem;
-
     @media (max-width: 480px) {
         margin: 1.2rem;
     }
@@ -239,7 +247,6 @@ h4 {
     div {
         display: inline-block;
         padding: 0 2rem 0 0;
-
         @media (max-width: 480px) {
             display: block;
         }
