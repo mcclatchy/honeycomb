@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    console.log("hello");
 
     $.getJSON('static/scripts/sites.json', function(data) {
         addSiteColor(data);
