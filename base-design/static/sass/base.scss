@@ -1,5 +1,7 @@
 $lighter: darken(#C0BDBE, 10%);
 $sans: 'McClatchy Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif !important;
+$serif: 'Lyon',Georgia,serif;
+$slab: 'McClatchy Slab',Georgia,Times,'Times New Roman',serif;
 
 .figure-style {
     display: block;
@@ -56,7 +58,7 @@ figcaption {
     font-size: 8rem;
     margin: 2.4re auto 1.2rem;
     line-height: 9.6rem;
-    @media (max-width: 768px) {
+    @media (max-width: 480px) {
         font-size: 7rem;
         line-height: 8.4rem;
     }
@@ -67,7 +69,7 @@ figcaption {
     font-size: 4rem;
     line-height: 6rem;
     margin-bottom: 2.4rem;
-    @media (max-width: 768px) {
+    @media (max-width: 480px) {
         font-size: 3rem;
         line-height: 4.8rem;
     }
@@ -115,6 +117,16 @@ figcaption {
     @extend .sources-footer;
     @extend .sources-btn;
     margin: 1.2rem auto 6rem;
+    width: 90%;
+
+    &:hover {
+        background: lighten($lighter, 30%);
+        color: darken($lighter, 20%);
+    }
+
+    &:focus {
+        outline: none;
+    }
 }
 
 .share-icons {
@@ -134,7 +146,7 @@ figcaption {
 .intro {
     font-size: 2.6rem !important;
     line-height: 4.8rem !important;
-    @media (max-width: 768px) {
+    @media (max-width: 480px) {
         font-size: 2.4rem !important;
         line-height: 3.6rem !important;
     }
@@ -157,13 +169,15 @@ p {
 
 .dropcap {
     float: left;
-    font-size: 19rem;
-    line-height: 17rem;
-    margin: 0 0.5rem -3rem 0;
+    font-size: 17rem;
+    line-height: 18rem;
+    margin: 0 0.5rem -8rem 0;
     padding-top: 0;
-    @media (max-width: 768px) {
-        font-size: 14rem;
-        line-height: 12rem;
+    font-family: $slab;
+    @media (max-width: 480px) {
+        font-size: 13rem;
+        line-height: 14rem;
+        margin-bottom: -5rem;
     }
 }
 
@@ -184,6 +198,73 @@ h4 {
     margin: auto;
     font-size: 2rem !important;
     line-height: 3rem;
+}
+
+blockquote {
+    border: none;
+    width: 90%;
+    max-width: 650px;
+    margin: 3.6rem auto;
+    position: relative;
+    padding: 0;
+
+    .quotemark-desk {
+        display: inline-block;
+        font-family: $slab;
+        font-size: 20rem;
+        font-weight: bold;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: -13rem;
+        margin-top: -5rem;
+        font-style: italic;
+
+        @media (max-width: 900px) {
+            display: none;
+        }
+    }
+
+    .quotemark-mob {
+        display: none;
+
+        @media (max-width: 900px) {
+            display: inline-block;
+            font-size: 15rem;
+            float: left;
+            line-height: 12rem;
+            margin: 0 2rem -10rem 0;
+            padding: 0;
+            padding-top: 0;
+            font-family: $slab;
+        }
+    }
+
+    p {
+        font-family: $serif !important;
+        font-size: 4.8rem !important;
+        font-weight: bold;
+        width: 100% !important;
+        font-style: italic;
+        line-height: 6rem !important;
+
+        @media (max-width: 480px) {
+            font-size: 3.6rem !important;
+            line-height: 4.8rem !important;
+        }
+    }
+
+    .attribution {
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-align: right;
+        font-style: italic;
+        padding-right: 4rem;
+
+        @media (max-width: 678px) {
+            font-size: 1.5rem;
+        }
+    }
 }
 
 .special-section {

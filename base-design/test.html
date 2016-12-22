@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+ <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Official NORAD Santa Tracker</title>
+    <meta name="description" content="Follow Santa as he makes his magical journey!">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="./css/normalize.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./TrackSanta.css" />
+    <!--
+    Script for AppInsight - do not modify
+    -->
+    <script type="text/javascript">
+            var appInsights = window.appInsights || function (config) {
+                function r(config) { t[config] = function () { var i = arguments; t.queue.push(function () { t[config].apply(t, i) }) } } var t = { config: config }, u = document, e = window, o = "script", s = u.createElement(o), i, f; for (s.src = config.url || "//az416426.vo.msecnd.net/scripts/a/ai.0.js", u.getElementsByTagName(o)[0].parentNode.appendChild(s), t.cookie = u.cookie, t.queue = [], i = ["Event", "Exception", "Metric", "PageView", "Trace"]; i.length;) r("track" + i.pop()); return r("setAuthenticatedUserContext"), r("clearAuthenticatedUserContext"), config.disableExceptionTracking || (i = "onerror", r("_" + i), f = e[i], e[i] = function (config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t["_" + i](config, r, u, e, o), s }), t
+            }({
+                samplingPercentage: 25,
+                disableAjaxTracking: true,
+                disableExceptionTracking: true,
+                instrumentationKey: "40bb0e6b-12de-4ba9-8636-8d71fb7f0d4b"
+            });
+
+            window.appInsights = appInsights;
+            appInsights.trackPageView();
+    </script>
+    <script>
+        try {
+            if (document.domain.split('.').length > 2) {
+                document.domain = document.domain.substr(document.domain.indexOf(".") + 1);
+            }
+        } catch (e) { }
+    </script>
+    <script type="text/javascript" src="../../../script/jquery.js"></script>
+    <script src="../../../script/jquery.cookie.js"></script>
+    <script src="../../../script/jquery.localize.js"></script>
+    <script src="../../../script/carousel.js"></script>
+
+    <script src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+    <script src="./es5-shim.js"></script>
+    <script data-dojo-config="baseUrl:'.', locale: $.cookie('langName')" src="./dojo/dojo.js"></script>
+
+    <script type="text/javascript">
+        // resize monitor window based on screen size.
+        function resizeTrackerMonitorContainer(displaytype) {
+            var vphTracker = $(window).height();
+
+            var logoHeaderHeight = $('#logoHeader').height();
+            var infoDisplaysHeight = $('#infoDisplays').outerHeight(true);
+            var imgCarouselHeight = Math.max($('#imgCarousel_nav').height(), $('#imgCarousel').height());
+
+            $('#infoDisplays').css({ 'top': logoHeaderHeight });
+            $('#trackerMonitorContainer').css({ 'top': logoHeaderHeight + infoDisplaysHeight });
+
+            if (displaytype == "mobile") {
+
+                $('#trackerMonitorContainer').css({ 'height': vphTracker - logoHeaderHeight - infoDisplaysHeight });
+            } else {
+                $('#trackerMonitorContainer').css({ 'height': vphTracker - logoHeaderHeight - infoDisplaysHeight - imgCarouselHeight });
+            }
+
+            $('#trackerMonitorContainer').css({ 'width': $('#logoHeader').width() });
+        }
+
+        function showCarousel() {
+            // let's set up the content holder to be fully responsive
+            var iOS = /(iPhone|iPod)/g.test(navigator.userAgent);
+            //var iPad = /(iPad)/g.test(navigator.userAgent);
+            var vpw = $(window).width();
+            //var Android = "";
+            if (iOS || vpw < 700) {
+                $('#imgCarousel__wrapper').css('display', 'none');
+                resizeTrackerMonitorContainer("mobile");
+            } else {
+                loadCarousel();
+                $('#imgCarousel__wrapper').css('display', 'inherit');
+                resizeTrackerMonitorContainer("fullexperience");
+            }
+        }
+
+        $(document).ready(function () {
+            var opts = { language: $.cookie('langName'), pathPrefix: "../../../loc" };
+            $("[data-localize]").localize("lang", opts, { skipLanguage: "en-US" });
+
+            if (top.location.pathname.indexOf('static/privacy') > -1) {
+                $('#conditionalBackButton').hide();
+            }
+
+            showCarousel();
+        });
+
+        $(window).resize(function () {
+            showCarousel();
+        });
+
+
+        //$('#infoDisplays').on('resize', resizeTrackerMonitorContainer);
+
+    </script>
+    <script>
+        //var IEOld = /(MSIE 8.0|MSIE 9.0|MSIE 10.0|MSIE 10.6)/g.test(navigator.userAgent);
+        var IEOld = /(MSIE 11)/g.test(navigator.userAgent);
+
+        if (IEOld) {
+            $('#bt3').css('display', 'none');
+        }
+    </script>
+
+    <script src="./TrackSantaStartup.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <div class="popup__wrapper__Tracker">
+        <div class="popup__contentwrapper">
+            <div class="popup__header">
+
+            </div>
+    <!-- monitor container with background tile  -->
+    <div id="trackerMonitorContainer">
+        <!-- this is where the monitor sides are, and the content itself-->
+        <div id="trackerContentArea">
+            <!-- tracker content from js -->
+            <div id="trackSantaContainer"></div>
+        </div>
+    </div>
+
+    <section id="logoHeader">
+        <div class="logoHeader--btnHolder">
+            <div id="bt1">
+        <div id="logoHeader--video"></div>
+                <div id="logoHeader--videolabel" data-localize="navigation.movies">Videos</div>
+            </div><div id="bt2">
+                <div id="logoHeader--instructions"></div>
+                <div id="logoHeader--instructionslabel" data-localize="tracking.instructions">Instructions</div>
+            </div><div id="bt3"><div id="logoHeader--2d3d"></div>
+                <div id="lbl2d" class="logoHeader--label label2d3d" data-localize="tracking.view2D">2D</div>
+                <div id="lbl3d" class="logoHeader--label label2d3d hidden" data-localize="tracking.view3D">3D</div>
+            </div>
+    </div>
+    </section>
+
+    <!-- info displays-->
+    <div id="infoDisplays">
+        <!-- PREPARATIONS -->
+        <div class="preparations hidden" id="preparations">
+            <div class="title" id="preparationsTitle" data-localize="earthPageDec24.lastSeen">Last Spotted</div>
+            <span class="preparationsMessage"></span>
+        </div>
+        <!-- LAST SPOTTED -->
+        <div class="santaStopsContainer" id="lastSpotted">
+            <div class="title" id="earthPageDec24_lastSeen" data-localize="earthPageDec24.lastSeen">Last Spotted</div>
+            <div class="santaStops">
+                <span class="lastSpotted"></span>
+            </div>
+        </div>
+        <!-- HEADED FOR -->
+        <div class="santaStopsContainer" id="headedFor">
+            <div class="title" id="earthPageDec24_headingFor" data-localize="earthPageDec24.headingFor">Headed For</div>
+            <div class="santaStops">
+                        <span class="headedFor"></span> <span data-localize="tracking.timeto.in"> in </span> <span class="remainingTime"></span>
+            </div>
+        </div>
+        <!-- GIFT COUNT -->
+        <div class="giftCount" id="giftCount">
+            <div class="title" id="earthPageDec24_giftsDelivered" data-localize="earthPageDec24.giftsDelivered">Gifts Delivered</div>
+            <div class="giftCounter"></div>
+        </div>
+    </div>
+    <!-- end infodisplays-->
+    <!-- JD I added this div for the carousel -->
+    <div id="imgCarousel__wrapper">
+    <div id="imgCarousel" class="imgCarousel--expanded">
+        <div class="carousel__closebtn">&lt;&lt; close</div>
+        <nav class="navCarousel__container" id="imgCarousel_nav">
+            <div id="navCarousel">
+                <div class="navCarousel--inner"></div>
+            </div>
+            <a href="javascript:void(0)" id="leftArrow" class="buttonHolder popupLibrary__navarrows"><img src="../../../img/pop/christmastide/leftArrow.png" alt="" /></a>
+            <a href="javascript:void(0)" id="rightArrow" class="buttonHolder popupLibrary__navarrows"><img src="../../../img/pop/christmastide/rightArrow.png" alt="" /></a>
+            <div id="carousel__openbtn" class="dockthumb"><img src="../map/weltFlag.png" alt="Expand Carousel Image" /></div>
+            <div class="navCarousel--message">
+                <div class="navCarousel--message__courtesymsg" style="float: left;"><p style="width: 100%;"><span data-localize="tracking.carouselmessage">These are some places Santa visits during his journey! Have you visited there?</span> <span class="courtesy">Photos courtesy Getty Images</span></p></div>
+                <div class="navCarousel--message__locationmsg" style="float: right;"><p><span id="stadt_title"><!-- title --></span></p></div>
+            </div>
+        </nav>
+        <div class="clearfix"></div>
+    </div>
+    </div>
+    <!-- end div for the carousel -->
+    <div class="mobiletrackercheck"></div>
+        </div>
+    </div>
+
+    <div style="position:fixed;bottom:0;color:white;width:1px;left:0;background:#333;border:1px solid black"></div>
+
+    <script>
+        // shrink the close button when the tracker is up
+        $(document).ready(function () {
+            window.parent.$('.b-close').find('img').removeClass('closeimg--tracker').addClass('closeimg--tracker');
+        });
+        // make sure to return the close button to its normal state when closing the window.
+        window.parent.$('.b-close').find('img').click(function () {
+            window.parent.$('.b-close').find('img').removeClass('closeimg--tracker');
+        });
+    </script>
+
+    <script>
+        // set carousel with proper class based on orientation
+        var mobiletrackercheck = $('.mobiletrackercheck').css('display')
+        console.log(mobiletrackercheck);
+        $(window).ready(function () {
+            if ( mobiletrackercheck == 'block' ) {
+            if ($(window).height() >= $(window).width()) {
+                expandCarousel();
+            } else {
+                dockCarousel();
+            }
+            }
+        });
+        $(window).resize(function () {
+            if ( mobiletrackercheck == 'block' ) {
+                if ($(window).height() >= $(window).width()) {
+                    expandCarousel();
+                } else {
+                    dockCarousel();
+                }
+            }
+
+
+        });
+        $(window).on('orientationchange', function (event) {
+            if ( mobiletrackercheck == 'block' ) {
+            if (event.orientation == 'portrait') {
+                expandCarousel()
+            } else if (event.orientation == 'landscape') {
+                dockCarousel()
+            }
+            }
+        });
+
+    </script>
+    <script>
+
+        var in3d = 1;
+
+        $(window).on('trackSantaDisable3D', function () {
+            in3d = 0;
+            $('#bt3').children().hide();
+            $('#bt3').off('click');
+            $(window).off('trackSantaDisable3D');
+        });
+
+        $(window).on('trackSantaHideButtons', function () {
+            $('.logoHeader--btnHolder').hide();
+        });
+
+        $(window).on('trackSantaShowButtons', function () {
+            $('.logoHeader--btnHolder').show();
+        });
+
+        $('#bt1').on('click', function () {
+            window.trackSanta.showVideos();
+        });
+        $('#bt2').on('click', function () {
+            window.trackSanta.showInstructions();
+        });
+        $('#bt3').on('click', function () {
+            //will thsi cover every 3d/2d scenario?
+
+            if (in3d) {
+                window.trackSanta.switchTo2D();
+                $('#logoHeader--2d3d').css('background', "url('buttons.png') no-repeat -60px 0");
+                $('#lbl3d').removeClass("hidden");
+                $('#lbl2d').addClass("hidden");
+                in3d = 0;
+            } else {
+                window.trackSanta.switchTo3D();
+                $('#logoHeader--2d3d').css('background', "url('buttons.png') no-repeat -6px 0");
+                $('#lbl3d').addClass("hidden");
+                $('#lbl2d').removeClass("hidden");
+                in3d = 1;
+
+            }
+        });
+
+    </script>
+
+
+    <script type="text/javascript">
+
+                        var _gaq = _gaq || [];
+                        _gaq.push(['_setAccount', 'UA-46120476-1']);
+                        _gaq.push(['_setDomainName', 'noradsanta.org']);
+                        _gaq.push(['_trackPageview']);
+
+                        (function () {
+                            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                        })();
+
+    </script>
+    <!-- START OF SmartSource Data Collector TAG -->
+    <!-- Copyright (c) 1996-2009 WebTrends Inc.  All rights reserved. -->
+    <!-- Version: MS.3.0.0 -->
+    <script src="/script/wt.js" type="text/javascript"></script>
+
+    <!-- ----------------------------------------------------------------------------------- -->
+    <!-- Warning: The two script blocks below must remain inline. Moving them to an external -->
+    <!-- JavaScript include file can cause serious problems with cross-domain tracking.      -->
+    <!-- ----------------------------------------------------------------------------------- -->
+    <script type="text/javascript">
+                        //<![CDATA[
+                        var _tag = new WebTrends();
+                        _tag.dcsid = "dcsp2uy0j10000wkh81xr6hxe_9q3s";
+                        _tag.fpcdom = ".noradsanta.org";
+                        _tag.dcsGetId();
+                        _tag.trackevents = true;
+                        //]]>>
+    </script>
+
+    <script type="text/javascript">
+                        //<![CDATA[
+                        // Add custom parameters here.
+                        //_tag.DCSext.param_name=param_value;
+                        _tag.dcsCollect();
+                        //]]>>
+    </script>
+
+    <noscript>
+        <div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="http://m.webtrends.com.com/dcsp2uy0j10000wkh81xr6hxe_9q3s/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=MS.3.0.0" /></div>
+    </noscript>
+    <!-- END OF SmartSource Data Collector TAG -->
+</body>
+
+</html>

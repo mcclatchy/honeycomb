@@ -37,7 +37,7 @@ figcaption {
   font-size: 8rem;
   margin: 2.4re auto 1.2rem;
   line-height: 9.6rem; }
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
     .head {
       font-size: 7rem;
       line-height: 8.4rem; } }
@@ -46,7 +46,7 @@ figcaption {
   font-size: 4rem;
   line-height: 6rem;
   margin-bottom: 2.4rem; }
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
     .deck {
       font-size: 3rem;
       line-height: 4.8rem; } }
@@ -81,7 +81,13 @@ figcaption {
 
 .sources-head {
   display: none;
-  margin: 1.2rem auto 6rem; }
+  margin: 1.2rem auto 6rem;
+  width: 90%; }
+  .sources-head:hover {
+    background: #f2f1f1;
+    color: #756f71; }
+  .sources-head:focus {
+    outline: none; }
 
 .share-icons {
   max-width: 650px;
@@ -95,7 +101,7 @@ figcaption {
 .intro {
   font-size: 2.6rem !important;
   line-height: 4.8rem !important; }
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
     .intro {
       font-size: 2.4rem !important;
       line-height: 3.6rem !important; } }
@@ -116,14 +122,16 @@ p {
 
 .dropcap {
   float: left;
-  font-size: 19rem;
-  line-height: 17rem;
-  margin: 0 0.5rem -3rem 0;
-  padding-top: 0; }
-  @media (max-width: 768px) {
+  font-size: 17rem;
+  line-height: 18rem;
+  margin: 0 0.5rem -8rem 0;
+  padding-top: 0;
+  font-family: "McClatchy Slab", Georgia, Times, "Times New Roman", serif; }
+  @media (max-width: 480px) {
     .dropcap {
-      font-size: 14rem;
-      line-height: 12rem; } }
+      font-size: 13rem;
+      line-height: 14rem;
+      margin-bottom: -5rem; } }
 
 h3 {
   width: 90%;
@@ -141,6 +149,60 @@ h4 {
   margin: auto;
   font-size: 2rem !important;
   line-height: 3rem; }
+
+blockquote {
+  border: none;
+  width: 90%;
+  max-width: 650px;
+  margin: 3.6rem auto;
+  position: relative;
+  padding: 0; }
+  blockquote .quotemark-desk {
+    display: inline-block;
+    font-family: "McClatchy Slab", Georgia, Times, "Times New Roman", serif;
+    font-size: 20rem;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -13rem;
+    margin-top: -5rem;
+    font-style: italic; }
+    @media (max-width: 900px) {
+      blockquote .quotemark-desk {
+        display: none; } }
+  blockquote .quotemark-mob {
+    display: none; }
+    @media (max-width: 900px) {
+      blockquote .quotemark-mob {
+        display: inline-block;
+        font-size: 15rem;
+        float: left;
+        line-height: 12rem;
+        margin: 0 2rem -10rem 0;
+        padding: 0;
+        padding-top: 0;
+        font-family: "McClatchy Slab", Georgia, Times, "Times New Roman", serif; } }
+  blockquote p {
+    font-family: "Lyon", Georgia, serif !important;
+    font-size: 4.8rem !important;
+    font-weight: bold;
+    width: 100% !important;
+    font-style: italic;
+    line-height: 6rem !important; }
+    @media (max-width: 480px) {
+      blockquote p {
+        font-size: 3.6rem !important;
+        line-height: 4.8rem !important; } }
+  blockquote .attribution {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: right;
+    font-style: italic;
+    padding-right: 4rem; }
+    @media (max-width: 678px) {
+      blockquote .attribution {
+        font-size: 1.5rem; } }
 
 .special-section {
   max-width: 850px;
