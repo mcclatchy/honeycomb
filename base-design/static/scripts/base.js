@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+    // $(function(){
+    // $("#head").load("head.html");
+    // // $("#body").load("body.html");
+    // // $("#custom").load("custom.html");
+    // // $("#footer").load("footer.html");
+    // });
+
     $.getJSON('static/scripts/sites.json', function(data) {
         addSiteColor(data);
         addLoader();
