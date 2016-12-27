@@ -1,11 +1,13 @@
 $(document).ready(function() {
 
-    // $(function(){
-    // $("#head").load("head.html");
-    // // $("#body").load("body.html");
-    // // $("#custom").load("custom.html");
-    // // $("#footer").load("footer.html");
-    // });
+    $(window).scroll(function() {
+		var distanceFromTop = $(this).scrollTop();
+		if (distanceFromTop >= $('.hero').offset().top + $('.project-nav').height()) {
+			$('.project-nav').fadeIn().addClass('fixed');
+		} else {
+			$('.project-nav').fadeOut().removeClass('fixed');
+		}
+    });
 
     $.getJSON('static/scripts/sites.json', function(data) {
         addSiteColor(data);

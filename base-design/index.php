@@ -547,7 +547,7 @@ display: block; } }
         <section class="container" role="main">
             <div class="row">
                 <div class="col-sm-12">
-                    
+
                     <?php
                         include 'custom.php';
                     ?>

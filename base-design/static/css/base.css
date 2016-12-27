@@ -57,6 +57,47 @@
   40% {
     -webkit-transform: scale(1);
     transform: scale(1); } }
+.project-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  margin: 0;
+  height: 40px;
+  box-shadow: 0 0px 2px 1px #9a9a9a; }
+  .project-nav .nav-head {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    padding-top: 10px;
+    color: white;
+    font-family: "McClatchy Sans Cond", "Roboto Condensed Medium", "HelveticaNeue-CondensedBold", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 2rem;
+    font-size: 1.6rem; }
+  .project-nav ul {
+    float: left;
+    width: 50%; }
+    .project-nav ul li {
+      height: 40px;
+      float: left;
+      width: calc(100% / 4);
+      text-align: center;
+      padding-top: 10px;
+      cursor: pointer; }
+      .project-nav ul li:last-child {
+        border-right: none; }
+      .project-nav ul li:hover {
+        background: rgba(255, 255, 255, 0.1); }
+      .project-nav ul li a {
+        color: white;
+        text-transform: uppercase;
+        font-family: "McClatchy Sans Cond", "Roboto Condensed Medium", "HelveticaNeue-CondensedBold", sans-serif;
+        font-size: 1.2rem; }
+
 .figure-style, .paragraph-img, .container-img, .fluid-img {
   display: block;
   margin: 1.2rem auto 3.6rem;
@@ -295,7 +336,7 @@ blockquote {
   padding-top: 1.2rem; }
   @media (max-width: 480px) {
     .credits {
-      margin: 1.2rem; } }
+      margin: 1.2 auto 4.8rem; } }
   .credits div {
     display: inline-block;
     padding: 0 2rem 0 0; }
@@ -315,8 +356,9 @@ blockquote {
     font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif !important;
     margin-bottom: 1.2rem; }
 
-h5.related {
-  font-weight: bold !important; }
+h5.related-head {
+  font-weight: bold !important;
+  text-align: left; }
 
 .related-articles {
   max-width: 850px;
@@ -329,7 +371,31 @@ h5.related {
   float: left;
   display: inline-block; }
   .article:last-child {
-    padding: 0; }
+    margin-right: 0; }
+  @media (max-width: 480px) {
+    .article {
+      width: 100%;
+      margin-right: 0; } }
+
+.related-deck {
+  font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif !important;
+  font-size: 1.2rem !important;
+  line-height: 1.8rem !important;
+  text-align: left;
+  margin: 0;
+  width: 100%; }
+
+@media (max-width: 480px) {
+  .related-img {
+    width: calc(50% - 3%) !important;
+    float: left;
+    margin-right: 3%;
+    display: inline-block; } }
+
+@media (max-width: 480px) {
+  .description-wrapper {
+    width: 50%;
+    float: left; } }
 
 #related-heading {
   text-align: left;

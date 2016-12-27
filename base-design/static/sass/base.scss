@@ -2,6 +2,7 @@ $lighter: darken(#C0BDBE, 10%);
 $sans: 'McClatchy Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif !important;
 $serif: 'Lyon',Georgia,serif;
 $slab: 'McClatchy Slab',Georgia,Times,'Times New Roman',serif;
+$cond: 'McClatchy Sans Cond','Roboto Condensed Medium','HelveticaNeue-CondensedBold',sans-serif;
 
 .loader-wrapper {
     position: fixed;
@@ -77,6 +78,58 @@ $slab: 'McClatchy Slab',Georgia,Times,'Times New Roman',serif;
                     -webkit-transform: scale(1.0);
                     transform: scale(1.0);
                 }
+            }
+        }
+    }
+}
+
+.project-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    margin: 0;
+    height: 40px;
+    box-shadow: 0 0px 2px 1px rgb(154, 154, 154);
+
+    .nav-head {
+        display: inline-block;
+        width: 50%;
+        float: left;
+        padding-top: 10px;
+        color: white;
+        font-family: $cond;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-left: 2rem;
+        font-size: 1.6rem;
+    }
+    ul {
+        float: left;
+        width: 50%;
+        li {
+            height: 40px;
+            float: left;
+            width: calc(100% / 4);
+            text-align: center;
+            padding-top: 10px;
+            cursor: pointer;
+
+            &:last-child {
+                border-right: none;
+            }
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.1);
+            }
+
+            a {
+                color: white;
+                text-transform: uppercase;
+                font-family: $cond;
+                font-size: 1.2rem;
             }
         }
     }
@@ -386,7 +439,7 @@ blockquote {
     font-size: 1.2rem;
     padding-top: 1.2rem;
     @media (max-width: 480px) {
-        margin: 1.2rem;
+        margin: 1.2 auto 4.8rem;
     }
 
     div {
@@ -415,8 +468,9 @@ blockquote {
 }
 
 h5 {
-    &.related {
+    &.related-head {
         font-weight: bold !important;
+        text-align: left;
     }
 }
 
@@ -434,7 +488,37 @@ h5 {
     display: inline-block;
 
     &:last-child {
-        padding: 0;
+        margin-right: 0;
+    }
+
+    @media (max-width: 480px) {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.related-deck {
+    font-family: $sans;
+    font-size: 1.2rem !important;
+    line-height: 1.8rem !important;
+    text-align: left;
+    margin: 0;
+    width: 100%;
+}
+
+.related-img {
+    @media (max-width: 480px) {
+        width: calc(50% - 3%) !important;
+        float: left;
+        margin-right: 3%;
+        display: inline-block;
+    }
+}
+
+.description-wrapper {
+    @media (max-width: 480px) {
+        width: 50%;
+        float: left;
     }
 }
 

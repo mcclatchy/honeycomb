@@ -4,7 +4,26 @@
     <link rel="stylesheet" type="text/css" href="static/css/custom.css">
 
 <!-- custom body -->
-    <figure class="container-img">
+
+    <nav class="project-nav primary-background">
+        <div class="nav-head">Name of project goes here</div>
+        <ul>
+            <li>
+                <a href="FILL THIS IN">Part one head</a>
+            </li>
+            <li>
+                <a href="FILL THIS IN">Part two head</a>
+            </li>
+            <li>
+                <a href="FILL THIS IN">Part three head</a>
+            </li>
+            <li>
+                <a href="FILL THIS IN">Part four head</a>
+            </li>
+        </ul>
+    </nav>
+
+    <figure class="container-img hero">
         <img src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
         <figcaption>Caption information goes here. (Photographer Name, Publication)</figcaption>
     </figure>
@@ -106,11 +125,11 @@
     jerky swine excepteur exercitation capicola ground round venison esse kielbasa andouille. Aliqua biltong in, sausage spare ribs filet mignon capicola pork.</p>
     <!-- /end body copy for local developing -->
 
-    <section class="note">
+    <!-- <section class="note">
         <p>This is a note. Short loin excepteur venison t-bone salami. Burgdoggen minim enim eiusmod mollit. Adipisicing ex ham cow beef ribs tail porchetta et turkey shank. Picanha rump laborum cupim minim sed beef turkey prosciutto dolor tongue commodo.</p>
 
         <p>Boudinsed minim ut, rump pork loin bacon ball tip et tail nostrud. Pig doner chuck culpa incididunt. Boudin duis aliquip, non irure dolore mollit kevin leberkas rump culpa ribeye pancetta fatback.</p>
-    </section>
+    </section> -->
 
     <div class="sources-footer">
         <p><strong>Sources: </strong>thisIsMySource.com, The Real Source Or Else, sorcify.com, thisIsMySource.com, The Real Source Or Else, sorcify.com, thisIsMySource.com, The Real Source Or Else, sorcify.com</p>
@@ -139,20 +158,29 @@
         <div class="articles-wrapper">
             <div class="article">
                 <figure class="container-img">
-                    <img src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
-                    <h5 class="related">Headline that describes this story</h5>
+                    <img class="related-img" src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
+                    <div class="description-wrapper">
+                        <h5 class="related-head">Headline that describes this story</h5>
+                        <p class="related-deck">Deckhead that describes the story goes here. Should be complete sentences.</p>
+                    </div>
                 </figure>
             </div>
             <div class="article">
                 <figure class="container-img">
-                    <img src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
-                    <h5 class="related">Headline that describes this story</h5>
+                    <img class="related-img" src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
+                    <div class="description-wrapper">
+                        <h5 class="related-head">Headline that describes this story</h5>
+                        <p class="related-deck">Deckhead that describes the story goes here. Should be complete sentences.</p>
+                    </div>
                 </figure>
             </div>
             <div class="article">
                 <figure class="container-img">
-                    <img src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
-                    <h5 class="related">Headline that describes this story</h5>
+                    <img class="related-img" src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
+                    <div class="description-wrapper">
+                        <h5 class="related-head">Headline that describes this story</h5>
+                        <p class="related-deck">Deckhead that describes the story goes here. Should be complete sentences.</p>
+                    </div>
                 </figure>
             </div>
         </div>
