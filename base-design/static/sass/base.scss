@@ -103,33 +103,34 @@ $cond: 'McClatchy Sans Cond','Roboto Condensed Medium','HelveticaNeue-CondensedB
         font-family: $cond;
         text-transform: uppercase;
         font-weight: bold;
-        padding-left: 2rem;
+        padding-left: 4rem;
         font-size: 1.6rem;
     }
     ul {
-        float: left;
+        float: right;
         width: 50%;
-        li {
-            height: 40px;
-            float: left;
-            width: calc(100% / 4);
-            text-align: center;
-            padding-top: 10px;
-            cursor: pointer;
+        max-width: 600px;
+        a {
+            color: white;
+            text-transform: uppercase;
+            font-family: $cond;
+            font-size: 1.2rem;
 
-            &:last-child {
-                border-right: none;
-            }
+            li {
+                height: 40px;
+                float: left;
+                width: calc(100% / 4);
+                text-align: center;
+                padding-top: 12px;
+                cursor: pointer;
 
-            &:hover {
-                background: rgba(255, 255, 255, 0.1);
-            }
+                &:last-child {
+                    border-right: none;
+                }
 
-            a {
-                color: white;
-                text-transform: uppercase;
-                font-family: $cond;
-                font-size: 1.2rem;
+                &:hover {
+                    background: rgba(255, 255, 255, 0.1);
+                }
             }
         }
     }

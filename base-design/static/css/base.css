@@ -76,27 +76,28 @@
     font-family: "McClatchy Sans Cond", "Roboto Condensed Medium", "HelveticaNeue-CondensedBold", sans-serif;
     text-transform: uppercase;
     font-weight: bold;
-    padding-left: 2rem;
+    padding-left: 4rem;
     font-size: 1.6rem; }
   .project-nav ul {
-    float: left;
-    width: 50%; }
-    .project-nav ul li {
-      height: 40px;
-      float: left;
-      width: calc(100% / 4);
-      text-align: center;
-      padding-top: 10px;
-      cursor: pointer; }
-      .project-nav ul li:last-child {
-        border-right: none; }
-      .project-nav ul li:hover {
-        background: rgba(255, 255, 255, 0.1); }
-      .project-nav ul li a {
-        color: white;
-        text-transform: uppercase;
-        font-family: "McClatchy Sans Cond", "Roboto Condensed Medium", "HelveticaNeue-CondensedBold", sans-serif;
-        font-size: 1.2rem; }
+    float: right;
+    width: 50%;
+    max-width: 600px; }
+    .project-nav ul a {
+      color: white;
+      text-transform: uppercase;
+      font-family: "McClatchy Sans Cond", "Roboto Condensed Medium", "HelveticaNeue-CondensedBold", sans-serif;
+      font-size: 1.2rem; }
+      .project-nav ul a li {
+        height: 40px;
+        float: left;
+        width: calc(100% / 4);
+        text-align: center;
+        padding-top: 12px;
+        cursor: pointer; }
+        .project-nav ul a li:last-child {
+          border-right: none; }
+        .project-nav ul a li:hover {
+          background: rgba(255, 255, 255, 0.1); }
 
 .figure-style, .paragraph-img, .container-img, .fluid-img {
   display: block;

@@ -8,18 +8,18 @@
     <nav class="project-nav primary-background">
         <div class="nav-head">Name of project goes here</div>
         <ul>
-            <li>
-                <a href="FILL THIS IN">Part one head</a>
-            </li>
-            <li>
-                <a href="FILL THIS IN">Part two head</a>
-            </li>
-            <li>
-                <a href="FILL THIS IN">Part three head</a>
-            </li>
-            <li>
-                <a href="FILL THIS IN">Part four head</a>
-            </li>
+            <a href="FILL THIS IN">
+                <li>Part one head</li>
+            </a>
+            <a href="FILL THIS IN">
+                <li>Part two head</li>
+            </a>
+            <a href="FILL THIS IN">
+                <li>Part three head</li>
+            </a>
+            <a href="FILL THIS IN">
+                <li>Part four head</li>
+            </a>
         </ul>
     </nav>
 

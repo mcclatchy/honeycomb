@@ -3,9 +3,9 @@ $(document).ready(function() {
     $(window).scroll(function() {
 		var distanceFromTop = $(this).scrollTop();
 		if (distanceFromTop >= $('.hero').offset().top + $('.project-nav').height()) {
-			$('.project-nav').fadeIn().addClass('fixed');
+			$('.project-nav').slideDown().addClass('fixed');
 		} else {
-			$('.project-nav').fadeOut().removeClass('fixed');
+			$('.project-nav').slideUp().removeClass('fixed');
 		}
     });
 
