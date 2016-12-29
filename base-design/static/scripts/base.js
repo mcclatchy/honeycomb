@@ -1,19 +1,29 @@
 $(document).ready(function() {
 
-    $(window).scroll(function() {
-		var distanceFromTop = $(this).scrollTop();
-		if (distanceFromTop >= $('.hero').offset().top + $('.project-nav').height()) {
-			$('.project-nav').slideDown().addClass('fixed');
-		} else {
-			$('.project-nav').slideUp().removeClass('fixed');
-		}
-    });
-
     $.getJSON('static/scripts/sites.json', function(data) {
         addSiteColor(data);
         addLoader();
         setImgWidth();
         setShareURL();
+    });
+
+    $(window).scroll(function() {
+		var distanceFromTop = $(this).scrollTop();
+		if (distanceFromTop >= $('#bd-hero').offset().top + $('#bd-nav-header').height()) {
+			$('#bd-nav-header').slideDown();
+		} else {
+			$('#bd-nav-header').slideUp();
+		}
+    });
+
+    $('#bd-hamburger').click(function () {
+        $('#bd-nav-mob').show();
+        $('.bd-shadow').show();
+    });
+
+    $('#bd-nav-close').click(function () {
+        $('#bd-nav-mob').hide();
+        $('.bd-shadow').hide();
     });
 
     // look through all site urls and find the one that your page matches
@@ -23,33 +33,32 @@ $(document).ready(function() {
 
         $.each(data, function(k, v) {
             if (v.site === siteURL) {
-                $('.primary-color').addClass(v.name + "-primary-color");
-                $('.primary-background').addClass(v.name + "-primary-background");
-                $('.accent-color').addClass(v.name + "-accent-color");
-                $('.accent-background').addClass(v.name + "-accent-background");
-                var accentColor = v.name + "-accent-color";
+                $('.bd-primary-color').addClass(v.name + "-primary-color");
+                $('.bd-primary-background').addClass(v.name + "-primary-background");
+                $('.bd-accent-color').addClass(v.name + "-accent-color");
+                $('.bd-accent-background').addClass(v.name + "-accent-background");
             }
         });
     }
 
     function addLoader() {
         var logo = $('#masthead-logo').html();
-        $('.loader-logo').html(logo);
+        $('.bd-loader-logo').html(logo);
 
         $('body').css('overflow', 'hidden');
-        $('.fluid-img').delay(3000).show();
-        $('.loader').delay(2000).fadeOut('slow');
-        $('.loader-wrapper').delay(3000).fadeOut('slow');
+        $('.bd-fluid-img').delay(3000).show();
+        $('.bd-loader').delay(2000).fadeOut('slow');
+        $('.bd-loader-wrapper').delay(3000).fadeOut('slow');
         $('html, body').scrollTop(0);
         $('body').delay(4000).css('overflow', 'auto');
     }
 
     function setImgWidth() {
-        var fluidImg = $('.fluid-img').closest('section');
+        var fluidImg = $('.bd-fluid-img').closest('section');
         fluidImg.removeClass('container').addClass('container-fluid');
         fluidImg.find('.row').removeClass('row').addClass('row-fluid');
         fluidImg.find('.col-sm-12').css('padding', '0');
-        $('.container-img').closest('section').find('.col-sm-12').css('padding', '0');
+        $('.bd-container-img').closest('section').find('.col-sm-12').css('padding', '0');
     }
 
     function setShareURL() {
@@ -58,7 +67,7 @@ $(document).ready(function() {
 
         // Facebook
         var facebookURL = "http://www.facebook.com/sharer/sharer.php?u=" + projectURL;
-        $('#facebook-share').attr("href", facebookURL);
+        $('#bd-facebook-share').attr("href", facebookURL);
 
         // Twitter
         var metaTitle = $('meta[name=title]').attr('content');
@@ -66,12 +75,12 @@ $(document).ready(function() {
         var twitterPartial = encodeURI(title[0]);
         twitterPartial = amperOctoPlus(twitterPartial);
         var twitterURL = "https://twitter.com/home?status=" + twitterPartial + "%20" + projectURL;
-        $("#twitter-share").attr("href", twitterURL);
+        $("#bd-twitter-share").attr("href", twitterURL);
 
         // Email
         var emailPartial = "mailto:?subject=Voters Make the Call: 69 voicemails from 25 states&body=";
         var emailURL = emailPartial + projectURL;
-        $("#email-share").attr("href", emailURL);
+        $("#bd-email-share").attr("href", emailURL);
     }
 
     // Clean up ampersands, octothorpes, and pluses
@@ -84,16 +93,16 @@ $(document).ready(function() {
         return url;
     }
 
-    var sourcesList = $('.sources-footer').html();
-    $('.sources-head').html(sourcesList);
+    var sourcesList = $('#bd-sources-footer').html();
+    $('.bd-sources-header').html(sourcesList);
 
-    $('.sources-btn').click(function() {
-        $('.sources-btn').hide();
-        $('.sources-head').show().css('display', 'block');
+    $('.bd-sources-btn').click(function() {
+        $('.bd-sources-btn').hide();
+        $('.bd-sources-header').show().css('display', 'block');
     });
 
-    $('.sources-head').click(function() {
-        $('.sources-head').hide();
-        $('.sources-btn').show().css('display', 'block');
+    $('.bd-sources-header').click(function() {
+        $('.bd-sources-header').hide();
+        $('.bd-sources-btn').show().css('display', 'block');
     });
 });

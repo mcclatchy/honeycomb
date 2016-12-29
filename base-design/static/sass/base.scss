@@ -1,232 +1,94 @@
-$lighter: darken(#C0BDBE, 10%);
-$sans: 'McClatchy Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif !important;
-$serif: 'Lyon',Georgia,serif;
-$slab: 'McClatchy Slab',Georgia,Times,'Times New Roman',serif;
-$cond: 'McClatchy Sans Cond','Roboto Condensed Medium','HelveticaNeue-CondensedBold',sans-serif;
+@import "variables.scss";
+@import "extendables.scss";
 
-.loader-wrapper {
-    position: fixed;
-    min-width: 100%;
-    min-height: 100%;
-    width: 100vw;
-    height: calc(100vh + 290px);
-    z-index: 9999999999;
-    /* 2147483647 is the z-index of lightbox ads 12/08/16 */
-    left: 0;
-    right: 0;
-    margin-top: -290px;
-    @media (max-width: 768px) {
-        height: calc(100vh + 165px);
-        margin-top: -165px;
-    }
+/*
+TABLE OF CONTENTS
+-----------------
+I     Content header
+II    Content well
+III   Content footer
+IV    Section-head, subhead
+V     Images: paragraph, container, fluid
+VI    Video embeds
+VII   Blockquotes
+VIII  Related links and fact boxes
+IX    Breakout boxes
+X     Notes and corrections
+XI    Sources
+XII   Credits
+XIII  Suggested stories
+XIV   Nav
+XV    Loader
 
-    .loader {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 40%;
-        -ms-transform: translateY(-50%);
-        /* IE 9 */
-        -webkit-transform: translateY(-50%);
-        /* Safari */
-        transform: translateY(-50%);
+/*
+-------------------------------------------
+I. Content header
+-------------------------------------------
+*/
 
-        .spinner {
-            margin: 3.6rem auto 0;
-            width: 70px;
-            text-align: center;
-
-            > div {
-                width: 18px;
-                height: 18px;
-                background-color: white;
-                border-radius: 100%;
-                display: inline-block;
-                -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-                animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-            }
-
-            .bounce1 {
-                -webkit-animation-delay: -0.32s;
-                animation-delay: -0.32s;
-            }
-
-            .bounce2 {
-                -webkit-animation-delay: -0.16s;
-                animation-delay: -0.16s;
-            }
-            @-webkit-keyframes sk-bouncedelay {
-                0%,
-                100%,
-                80% {
-                    -webkit-transform: scale(0);
-                }
-
-                40% {
-                    -webkit-transform: scale(1.0);
-                }
-            }
-            @keyframes sk-bouncedelay {
-                0%,
-                100%,
-                80% {
-                    -webkit-transform: scale(0);
-                    transform: scale(0);
-                }
-
-                40% {
-                    -webkit-transform: scale(1.0);
-                    transform: scale(1.0);
-                }
-            }
-        }
-    }
+#bd-header {
+    margin-bottom: 6rem;
 }
 
-.project-nav {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    width: 100%;
-    margin: 0;
-    height: 40px;
-    box-shadow: 0 0px 2px 1px rgb(154, 154, 154);
-
-    .nav-head {
-        display: inline-block;
-        width: 50%;
-        float: left;
-        padding-top: 10px;
-        color: white;
-        font-family: $cond;
-        text-transform: uppercase;
-        font-weight: bold;
-        padding-left: 4rem;
-        font-size: 1.6rem;
-    }
-    ul {
-        float: right;
-        width: 50%;
-        max-width: 600px;
-        a {
-            color: white;
-            text-transform: uppercase;
-            font-family: $cond;
-            font-size: 1.2rem;
-
-            li {
-                height: 40px;
-                float: left;
-                width: calc(100% / 4);
-                text-align: center;
-                padding-top: 12px;
-                cursor: pointer;
-
-                &:last-child {
-                    border-right: none;
-                }
-
-                &:hover {
-                    background: rgba(255, 255, 255, 0.1);
-                }
-            }
-        }
-    }
-}
-
-.figure-style {
-    display: block;
-    margin: 1.2rem auto 3.6rem;
-    height: auto;
-}
-
-.paragraph-img {
-    @extend .figure-style;
-    width: 90%;
-    max-width: 650px;
-
-    img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-.container-img {
-    @extend .figure-style;
-    width: 100%;
-
-    img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-.fluid-img {
-    @extend .figure-style;
-    display: none;
-    width: 100%;
-    max-width: 100vw;
-
-    img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-figcaption {
-    padding: 0.5rem 1rem 0;
-}
-
-.content-header {
-    width: 90%;
-    max-width: 950px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.head {
-    @extend .content-header;
+.bd-head {
+    @extend .reset;
+    @extend .bd-header-style;
+    margin: 2.4rem auto 1.2rem;
+    font-family: $slab;
+    font-weight: normal;
+    font-style: normal;
     font-size: 8rem;
-    margin: 2.4re auto 1.2rem;
     line-height: 9.6rem;
+    color: black;
     @media (max-width: 480px) {
         font-size: 7rem;
         line-height: 8.4rem;
     }
 }
 
-.deck {
-    @extend .content-header;
+.bd-deck {
+    @extend .reset;
+    @extend .bd-header-style;
+    margin: 0 auto 2.4rem;
+    font-family: $slab;
+    font-weight: normal;
+    font-style: normal;
     font-size: 4rem;
     line-height: 6rem;
-    margin-bottom: 2.4rem;
+    color: black;
     @media (max-width: 480px) {
         font-size: 3rem;
         line-height: 4.8rem;
     }
 }
 
-.byline {
-    @extend .content-header;
-    line-height: 2.6rem !important;
-    margin-bottom: 0;
-    @media (max-width: 768px) {
-        font-size: 1.8rem !important;
-    }
-}
-
-.pub-date {
-    @extend .content-header;
-    margin: 0 auto 1.2rem;
-    font-size: 1.4rem !important;
+.bd-byline {
+    @extend .reset;
+    @extend .bd-header-style;
+    margin: 0 auto 0.6rem;
     font-family: $sans;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: black;
 }
 
-.sources-btn {
+.bd-date {
+    @extend .reset;
+    @extend .bd-header-style;
+    margin: 0 auto 1.2rem;
+    font-family: $sans;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.2rem !important;
+    line-height: 1.8rem;
+    color: black;
+}
+
+.bd-sources-btn {
     display: block;
-    margin: 1.2rem auto 6rem;
+    margin: 1.2rem auto 0;
     border: none;
     color: $lighter;
     padding: 0.7rem 1.2rem 0.5rem;
@@ -234,24 +96,6 @@ figcaption {
     border: 1px solid $lighter;
     font-family: $sans;
     font-size: 1.2rem;
-
-    &:hover {
-        background: lighten($lighter, 30%);
-        color: darken($lighter, 20%);
-    }
-
-    &:focus {
-        outline: none;
-    }
-}
-
-.sources-head {
-    display: none;
-    @extend .sources-footer;
-    @extend .sources-btn;
-    margin: 1.2rem auto 6rem;
-    width: 90%;
-    max-width: 650px;
 
     &:hover {
         background: lighten($lighter, 30%);
@@ -277,7 +121,20 @@ figcaption {
     }
 }
 
-.intro {
+/*
+-------------------------------------------
+II. Content well
+-------------------------------------------
+*/
+
+#content-well {
+    max-width: 650px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bd-intro {
     font-size: 2.6rem !important;
     line-height: 4.8rem !important;
     @media (max-width: 480px) {
@@ -287,21 +144,17 @@ figcaption {
 }
 
 p {
-    max-width: 650px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: 'Lyon',Georgia,serif;
-    font-size: 2rem !important;
+    font-family: $serif;
+    font-size: 2rem;
     margin-bottom: 2.4rem;
     line-height: 3.6rem;
     @media (max-width: 768px) {
-        font-size: 2rem !important;
-        line-height: 3.6rem !important;
+        font-size: 2rem;
+        line-height: 3.6rem;
     }
 }
 
-.dropcap {
+.bd-dropcap {
     float: left;
     font-size: 17rem;
     line-height: 18rem;
@@ -315,115 +168,233 @@ p {
     }
 }
 
-h3 {
-    width: 90%;
-    font-weight: bold;
-    font-family: $sans;
-    max-width: 950px;
-    font-size: 2.4rem;
-    margin: 0 0 1.2rem;
+/*
+-------------------------------------------
+III. Content footer
+-------------------------------------------
+*/
+
+#bd-footer {
+    @extend .bd-header-style;
+    max-width: 850px;
 }
 
-h4 {
-    width: 90%;
-    max-width: 650px;
+#bd-comments-heading {
+    float: left;
+    margin-top: 4rem;
+}
+
+/*
+-------------------------------------------
+IV. Section head, subhead
+-------------------------------------------
+*/
+
+.bd-section-head {
+    @extend .reset;
     font-weight: bold;
     font-family: $sans;
-    margin: auto;
-    font-size: 2rem !important;
+    font-size: 2.4rem;
     line-height: 3rem;
+    margin: 0 0 0.6rem;
 }
+
+.bd-subhead {
+    @extend .reset;
+    font-weight: bold;
+    font-family: $sans;
+    margin: 0 0 0.6rem;
+    font-size: 2rem;
+    line-height: 2.6rem;
+}
+
+/*
+-------------------------------------------
+V. Images: paragraph, container, fluid
+-------------------------------------------
+*/
+
+figure {
+    display: block;
+    margin: 1.2rem auto 3.6rem;
+    height: auto;
+}
+
+figcaption {
+    padding: 0.5rem 1rem 0;
+}
+
+.bd-paragraph-img {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.bd-container-img {
+    width: 100%;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.bd-fluid-img {
+    display: none;
+    width: 100%;
+    max-width: 100vw;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*
+-------------------------------------------
+VI. Video embeds
+-------------------------------------------
+*/
+
+/*
+-------------------------------------------
+VII. Blockquotes
+-------------------------------------------
+*/
 
 blockquote {
     border: none;
-    width: 90%;
-    max-width: 650px;
     margin: 3.6rem auto;
     position: relative;
     padding: 0;
+}
 
-    .quotemark-desk {
-        display: inline-block;
-        font-family: $slab;
-        font-size: 20rem;
-        font-weight: bold;
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin-left: -13rem;
-        margin-top: -5rem;
-        font-style: italic;
-
-        @media (max-width: 900px) {
-            display: none;
-        }
-    }
-
-    .quotemark-mob {
+.bd-quotemark-desk {
+    display: inline-block;
+    font-family: $slab;
+    font-size: 20rem;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -13rem;
+    margin-top: -5rem;
+    font-style: italic;
+    @media (max-width: 900px) {
         display: none;
-
-        @media (max-width: 900px) {
-            display: inline-block;
-            font-size: 15rem;
-            float: left;
-            line-height: 12rem;
-            margin: 0 2rem -10rem 0;
-            padding: 0;
-            padding-top: 0;
-            font-family: $slab;
-        }
     }
+}
+
+.bd-quotemark-mob {
+    display: none;
+    @media (max-width: 900px) {
+        display: inline-block;
+        font-size: 15rem;
+        float: left;
+        line-height: 12rem;
+        margin: 0 2rem -10rem 0;
+        padding: 0;
+        font-family: $slab;
+    }
+}
+
+.bd-quote {
+    @extend .reset;
+    font-family: $serif;
+    font-size: 4.8rem;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 6rem;
+    @media (max-width: 480px) {
+        font-size: 3.6rem;
+        line-height: 4.8rem;
+    }
+}
+
+.bd-attribution {
+    @extend .reset;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: right;
+    font-style: italic;
+    padding-right: 4rem;
+    margin: 2.4rem 0 0;
+    @media (max-width: 678px) {
+        font-size: 1.5rem;
+    }
+}
+
+/*
+-------------------------------------------
+VIII. Related links and fact boxes
+-------------------------------------------
+*/
+
+/*
+-------------------------------------------
+IX. Breakout boxes
+-------------------------------------------
+*/
+
+.bd-special-section {
+    text-align: left;
+    margin: 3.6rem auto;
 
     p {
-        font-family: $serif !important;
-        font-size: 4.8rem !important;
-        font-weight: bold;
-        width: 100% !important;
-        font-style: italic;
-        line-height: 6rem !important;
-
-        @media (max-width: 480px) {
-            font-size: 3.6rem !important;
-            line-height: 4.8rem !important;
-        }
-    }
-
-    .attribution {
-        font-size: 1.8rem;
-        font-weight: bold;
-        text-align: right;
-        font-style: italic;
-        padding-right: 4rem;
-
-        @media (max-width: 678px) {
-            font-size: 1.5rem;
-        }
-    }
-}
-
-.border-top {
-    padding-top: 2.4rem;
-    border-top: 0.5px solid $lighter;
-}
-
-.border-bottom {
-    border-bottom: 0.5px solid $lighter;
-    padding-bottom: 1.6rem;
-}
-
-.note {
-    margin: 2.4rem auto;
-
-    p {
-        color: $lighter;
-        font-size: 1.4rem !important;
-        line-height: 2rem !important;
+        width: 100%;
+        max-width: 950px;
+        font-size: 1.6rem !important;
+        line-height: 2.4rem !important;
         font-family: $sans;
-        margin: 0 auto 1.2rem !important;
+        margin-bottom: 1.2rem;
     }
 }
 
-.sources-footer {
+/*
+-------------------------------------------
+X. Notes and corrections
+-------------------------------------------
+*/
+
+.bd-note-wrapper {
+    margin: 2.4rem auto;
+}
+
+.bd-note {
+    @extend .reset;
+    color: $lighter;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-family: $sans;
+    margin: 0 auto 1.2rem;
+}
+
+/*
+-------------------------------------------
+XI. Sources
+-------------------------------------------
+*/
+
+.bd-sources-header {
+    display: none;
+    @extend #bd-sources-footer;
+    @extend .bd-sources-btn;
+    margin: 1.2rem auto 6rem;
+    width: 90%;
+    max-width: 650px;
+
+    &:hover {
+        background: lighten($lighter, 30%);
+        color: darken($lighter, 20%);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+#bd-sources-footer {
     p {
         color: $lighter;
         margin: 0 auto;
@@ -433,9 +404,15 @@ blockquote {
     }
 }
 
-.credits {
+/*
+-------------------------------------------
+XII. Credits
+-------------------------------------------
+*/
+
+.bd-credits {
     max-width: 650px;
-    @extend .content-header;
+    @extend .bd-header-style;
     margin: 0 auto 4.8rem;
     font-size: 1.2rem;
     padding-top: 1.2rem;
@@ -452,62 +429,53 @@ blockquote {
     }
 }
 
-.special-section {
-    @extend .content-header;
-    max-width: 850px;
+/*
+-------------------------------------------
+XIII. Suggested stories
+-------------------------------------------
+*/
+
+#bd-suggested-heading {
     text-align: left;
-    margin: 3.6rem auto;
-
-    p {
-        width: 100%;
-        max-width: 950px;
-        font-size: 1.6rem !important;
-        line-height: 2.4rem !important;
-        font-family: $sans;
-        margin-bottom: 1.2rem;
-    }
+    float: left;
 }
 
-h5 {
-    &.related-head {
-        font-weight: bold !important;
-        text-align: left;
-    }
+.bd-refer-head {
+    @extend .reset;
+    margin: 1.2rem 0 0.6rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.8rem;
 }
 
-.related-articles {
-    @extend .content-header;
-    max-width: 850px;
-    display: block;
-}
-
-.article {
+.bd-refer {
     height: 100%;
     width: calc((100% / 3) - 3%);
     margin-right: 3%;
     float: left;
     display: inline-block;
+    font-size: 1.5rem;
 
     &:last-child {
         margin-right: 0;
     }
-
     @media (max-width: 480px) {
         width: 100%;
         margin-right: 0;
     }
 }
 
-.related-deck {
+.bd-refer-deck {
+    @extend .reset;
     font-family: $sans;
-    font-size: 1.2rem !important;
-    line-height: 1.8rem !important;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
     text-align: left;
     margin: 0;
     width: 100%;
 }
 
-.related-img {
+.bd-refer-img {
     @media (max-width: 480px) {
         width: calc(50% - 3%) !important;
         float: left;
@@ -516,53 +484,254 @@ h5 {
     }
 }
 
-.description-wrapper {
+.bd-description-wrapper {
     @media (max-width: 480px) {
         width: 50%;
         float: left;
     }
 }
 
-#related-heading {
-    text-align: left;
+/*
+-------------------------------------------
+XIV. Nav
+-------------------------------------------
+*/
+
+#bd-nav-header {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    margin: 0;
+    height: 40px;
+    box-shadow: 0 0 2px 1px rgb(154, 154, 154);
+}
+
+.bd-nav-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    height: 40px;
+}
+
+#bd-nav-head {
+    display: inline-block;
+    width: auto;
     float: left;
+    padding-top: 10px;
+    color: white;
+    font-family: $cond;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.6rem;
 }
 
-#comments-heading {
-    float: left;
-    margin-top: 4rem;
+#bd-nav-desk {
+    float: right;
+    width: 60%;
+    max-width: 550px;
+    @media (max-width: 700px) {
+        display: none;
+    }
+
+    li {
+        height: 40px;
+        float: left;
+        width: calc(100% / 4);
+        text-align: center;
+        padding-top: 12px;
+        cursor: pointer;
+        padding: 1.2rem 0.5rem 0;
+
+        &:last-child {
+            border-right: none;
+        }
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        a {
+            color: rgba(255, 255, 255, 0.7);
+            text-transform: uppercase;
+            font-family: $cond;
+            font-size: 1.2rem;
+        }
+    }
+
+    .bd-nav-active {
+        color: white;
+    }
 }
 
-.comments {
-    @extend .content-header;
-    max-width: 850px;
+#bd-hamburger {
+    display: none;
+    @media (max-width: 700px) {
+        display: inline-block;
+        float: right;
+        height: 40px;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+        text-align: center;
+        padding: 0.6rem 2rem 0;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+    }
 }
 
+#bd-nav-mob {
+    display: none;
+    @media (max-width: 700px) {
+        display: none;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 80%;
+        // min-width: 300px;
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.8);
+        z-index: 9999;
+    }
 
+    #bd-nav-close {
+        float: right;
+        color: rgba(255, 255, 255, 0.1);
+        font-size: 3.6rem;
+        display: block;
+        width: auto;
+        cursor: pointer;
+        text-align: right;
+        padding: 1rem 2rem;
+        margin-bottom: 2rem;
 
-.fancy {
-  line-height: 0.5;
-  text-align: center;
+        &:hover {
+            color: white;
+        }
+    }
+
+    li {
+        padding: 1.8rem 3rem 1.2rem;
+        display: block;
+        height: 72px;
+
+        &:first-child {
+            margin-top: 4rem;
+        }
+
+        a {
+            color: rgba(255, 255, 255, 0.5);
+            text-transform: uppercase;
+            font-family: $cond;
+            font-size: 3rem;
+            display: block;
+
+            &:hover {
+                color: white;
+            }
+
+            .bd-nav-active {
+                color: white;
+            }
+        }
+    }
 }
-.fancy span {
-  display: inline-block;
-  position: relative;
+
+.bd-shadow {
+    display: none;
+    background: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    width: 100vw;
+    z-index: 8888;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
-.fancy span:before,
-.fancy span:after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
-  top: 0;
-  width: 600px;
+
+/*
+-------------------------------------------
+XV. Loader
+-------------------------------------------
+*/
+
+.bd-loader-wrapper {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100vw;
+    height: calc(100vh + 290px);
+    z-index: 9999999999;
+    /* 2147483647 is the z-index of lightbox ads 12/08/16 */
+    left: 0;
+    right: 0;
+    margin-top: -290px;
+    @media (max-width: 768px) {
+        height: calc(100vh + 165px);
+        margin-top: -165px;
+    }
 }
-.fancy span:before {
-  right: 100%;
-  margin-right: 15px;
-}
-.fancy span:after {
-  left: 100%;
-  margin-left: 15px;
+
+.bd-loader {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    -ms-transform: translateY(-50%);
+    /* IE 9 */
+    -webkit-transform: translateY(-50%);
+    /* Safari */
+    transform: translateY(-50%);
+
+    .bd-spinner {
+        margin: 3.6rem auto 0;
+        width: 70px;
+        text-align: center;
+
+        > div {
+            width: 18px;
+            height: 18px;
+            background-color: white;
+            border-radius: 100%;
+            display: inline-block;
+            -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+            animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        }
+
+        .bd-bounce1 {
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+        }
+
+        .bd-bounce2 {
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+        }
+        @-webkit-keyframes sk-bouncedelay {
+            0%,
+            100%,
+            80% {
+                -webkit-transform: scale(0);
+            }
+
+            40% {
+                -webkit-transform: scale(1.0);
+            }
+        }
+        @keyframes sk-bouncedelay {
+            0%,
+            100%,
+            80% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+
+            40% {
+                -webkit-transform: scale(1.0);
+                transform: scale(1.0);
+            }
+        }
+    }
 }

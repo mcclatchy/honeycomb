@@ -1,0 +1,33 @@
+$lighter: darken(#C0BDBE, 10%);
+$sans: 'McClatchy Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$serif: 'Lyon',Georgia,serif;
+$slab: 'McClatchy Slab',Georgia,Times,'Times New Roman',serif;
+$cond: 'McClatchy Sans Cond','Roboto Condensed Medium','HelveticaNeue-CondensedBold',sans-serif;
+
+
+.reset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    line-height: normal;
+    width: auto;
+    height: auto;
+    font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+    vertical-align: baseline;
+    text-transform: none;
+    text-align: left;
+}
+
+.bd-border-top {
+    padding-top: 2.4rem;
+    border-top: 0.5px solid #e9ebee;
+}
+
+.bd-border-bottom {
+    border-bottom: 0.5px solid #e9ebee;
+    padding-bottom: 1.6rem;
+}

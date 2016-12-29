@@ -1,17 +1,17 @@
 // Adding one of these four classes to an element will tell JS to add your site's unique color class and override the white default.
-.primary-color {
+.bd-primary-color {
     color: white;
 }
 
-.primary-background {
+.bd-primary-background {
     background-color: white;
 }
 
-.accent-color {
+.bd-accent-color {
     color: white;
 }
 
-.accent-background {
+.bd-accent-background {
     background-color: white;
 }
 
@@ -56,18 +56,18 @@
     (vidaenelvalle, #034A78, #0280D3) {
 
         .#{$paper-name}-primary-color {
-            color: $primary;
+            color: $primary !important;
         }
 
         .#{$paper-name}-primary-background {
-            background-color: $primary;
+            background-color: $primary !important;
         }
 
         .#{$paper-name}-accent-color {
-            color: $accent;
+            color: $accent !important;
         }
 
         .#{$paper-name}-accent-background {
-            background-color: $accent;
+            background-color: $accent !important;
         }
 }

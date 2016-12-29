@@ -1,469 +1,469 @@
-.primary-color {
+.bd-primary-color {
   color: white; }
 
-.primary-background {
+.bd-primary-background {
   background-color: white; }
 
-.accent-color {
+.bd-accent-color {
   color: white; }
 
-.accent-background {
+.bd-accent-background {
   background-color: white; }
 
 .beaufortgazette-primary-color {
-  color: #1E4971; }
+  color: #1E4971 !important; }
 
 .beaufortgazette-primary-background {
-  background-color: #1E4971; }
+  background-color: #1E4971 !important; }
 
 .beaufortgazette-accent-color {
-  color: #0184C1; }
+  color: #0184C1 !important; }
 
 .beaufortgazette-accent-background {
-  background-color: #0184C1; }
+  background-color: #0184C1 !important; }
 
 .bellinghamherald-primary-color {
-  color: #013B61; }
+  color: #013B61 !important; }
 
 .bellinghamherald-primary-background {
-  background-color: #013B61; }
+  background-color: #013B61 !important; }
 
 .bellinghamherald-accent-color {
-  color: #0280D3; }
+  color: #0280D3 !important; }
 
 .bellinghamherald-accent-background {
-  background-color: #0280D3; }
+  background-color: #0280D3 !important; }
 
 .bnd-primary-color {
-  color: #145288; }
+  color: #145288 !important; }
 
 .bnd-primary-background {
-  background-color: #145288; }
+  background-color: #145288 !important; }
 
 .bnd-accent-color {
-  color: #0078B2; }
+  color: #0078B2 !important; }
 
 .bnd-accent-background {
-  background-color: #0078B2; }
+  background-color: #0078B2 !important; }
 
 .bradenton-primary-color {
-  color: #1E4971; }
+  color: #1E4971 !important; }
 
 .bradenton-primary-background {
-  background-color: #1E4971; }
+  background-color: #1E4971 !important; }
 
 .bradenton-accent-color {
-  color: #0184BE; }
+  color: #0184BE !important; }
 
 .bradenton-accent-background {
-  background-color: #0184BE; }
+  background-color: #0184BE !important; }
 
 .centredaily-primary-color {
-  color: #0A4170; }
+  color: #0A4170 !important; }
 
 .centredaily-primary-background {
-  background-color: #0A4170; }
+  background-color: #0A4170 !important; }
 
 .centredaily-accent-color {
-  color: #3582C3; }
+  color: #3582C3 !important; }
 
 .centredaily-accent-background {
-  background-color: #3582C3; }
+  background-color: #3582C3 !important; }
 
 .charlotteobserver-primary-color {
-  color: #206FA8; }
+  color: #206FA8 !important; }
 
 .charlotteobserver-primary-background {
-  background-color: #206FA8; }
+  background-color: #206FA8 !important; }
 
 .charlotteobserver-accent-color {
-  color: #3AA2D7; }
+  color: #3AA2D7 !important; }
 
 .charlotteobserver-accent-background {
-  background-color: #3AA2D7; }
+  background-color: #3AA2D7 !important; }
 
 .elnuevoherald-primary-color {
-  color: #0079C1; }
+  color: #0079C1 !important; }
 
 .elnuevoherald-primary-background {
-  background-color: #0079C1; }
+  background-color: #0079C1 !important; }
 
 .elnuevoherald-accent-color {
-  color: #33B6E6; }
+  color: #33B6E6 !important; }
 
 .elnuevoherald-accent-background {
-  background-color: #33B6E6; }
+  background-color: #33B6E6 !important; }
 
 .encubahoy-primary-color {
-  color: #24418F; }
+  color: #24418F !important; }
 
 .encubahoy-primary-background {
-  background-color: #24418F; }
+  background-color: #24418F !important; }
 
 .encubahoy-accent-color {
-  color: #EC1D25; }
+  color: #EC1D25 !important; }
 
 .encubahoy-accent-background {
-  background-color: #EC1D25; }
+  background-color: #EC1D25 !important; }
 
 .flkeysnews-primary-color {
-  color: #2E3192; }
+  color: #2E3192 !important; }
 
 .flkeysnews-primary-background {
-  background-color: #2E3192; }
+  background-color: #2E3192 !important; }
 
 .flkeysnews-accent-color {
-  color: #D3B31B; }
+  color: #D3B31B !important; }
 
 .flkeysnews-accent-background {
-  background-color: #D3B31B; }
+  background-color: #D3B31B !important; }
 
 .fresnobee-primary-color {
-  color: #27395A; }
+  color: #27395A !important; }
 
 .fresnobee-primary-background {
-  background-color: #27395A; }
+  background-color: #27395A !important; }
 
 .fresnobee-accent-color {
-  color: #4C699A; }
+  color: #4C699A !important; }
 
 .fresnobee-accent-background {
-  background-color: #4C699A; }
+  background-color: #4C699A !important; }
 
 .heraldonline-primary-color {
-  color: #7C1D21; }
+  color: #7C1D21 !important; }
 
 .heraldonline-primary-background {
-  background-color: #7C1D21; }
+  background-color: #7C1D21 !important; }
 
 .heraldonline-accent-color {
-  color: #D02D34; }
+  color: #D02D34 !important; }
 
 .heraldonline-accent-background {
-  background-color: #D02D34; }
+  background-color: #D02D34 !important; }
 
 .idahostatesman-primary-color {
-  color: #1F405F; }
+  color: #1F405F !important; }
 
 .idahostatesman-primary-background {
-  background-color: #1F405F; }
+  background-color: #1F405F !important; }
 
 .idahostatesman-accent-color {
-  color: #2678C4; }
+  color: #2678C4 !important; }
 
 .idahostatesman-accent-background {
-  background-color: #2678C4; }
+  background-color: #2678C4 !important; }
 
 .incubatoday-primary-color {
-  color: #24418F; }
+  color: #24418F !important; }
 
 .incubatoday-primary-background {
-  background-color: #24418F; }
+  background-color: #24418F !important; }
 
 .incubatoday-accent-color {
-  color: #EC1D25; }
+  color: #EC1D25 !important; }
 
 .incubatoday-accent-background {
-  background-color: #EC1D25; }
+  background-color: #EC1D25 !important; }
 
 .islandpacket-primary-color {
-  color: #1E4971; }
+  color: #1E4971 !important; }
 
 .islandpacket-primary-background {
-  background-color: #1E4971; }
+  background-color: #1E4971 !important; }
 
 .islandpacket-accent-color {
-  color: #0184C1; }
+  color: #0184C1 !important; }
 
 .islandpacket-accent-background {
-  background-color: #0184C1; }
+  background-color: #0184C1 !important; }
 
 .kansas-primary-color {
-  color: #005EAB; }
+  color: #005EAB !important; }
 
 .kansas-primary-background {
-  background-color: #005EAB; }
+  background-color: #005EAB !important; }
 
 .kansas-accent-color {
-  color: #0093D0; }
+  color: #0093D0 !important; }
 
 .kansas-accent-background {
-  background-color: #0093D0; }
+  background-color: #0093D0 !important; }
 
 .kansascity-primary-color {
-  color: #145288; }
+  color: #145288 !important; }
 
 .kansascity-primary-background {
-  background-color: #145288; }
+  background-color: #145288 !important; }
 
 .kansascity-accent-color {
-  color: #0093D0; }
+  color: #0093D0 !important; }
 
 .kansascity-accent-background {
-  background-color: #0093D0; }
+  background-color: #0093D0 !important; }
 
 .kentucky-primary-color {
-  color: #094D73; }
+  color: #094D73 !important; }
 
 .kentucky-primary-background {
-  background-color: #094D73; }
+  background-color: #094D73 !important; }
 
 .kentucky-accent-color {
-  color: #1074AC; }
+  color: #1074AC !important; }
 
 .kentucky-accent-background {
-  background-color: #1074AC; }
+  background-color: #1074AC !important; }
 
 .kentuckysports-primary-color {
-  color: #18569E; }
+  color: #18569E !important; }
 
 .kentuckysports-primary-background {
-  background-color: #18569E; }
+  background-color: #18569E !important; }
 
 .kentuckysports-accent-color {
-  color: #3D7EC9; }
+  color: #3D7EC9 !important; }
 
 .kentuckysports-accent-background {
-  background-color: #3D7EC9; }
+  background-color: #3D7EC9 !important; }
 
 .ledgerenquirer-primary-color {
-  color: #174673; }
+  color: #174673 !important; }
 
 .ledgerenquirer-primary-background {
-  background-color: #174673; }
+  background-color: #174673 !important; }
 
 .ledgerenquirer-accent-color {
-  color: #2F76C1; }
+  color: #2F76C1 !important; }
 
 .ledgerenquirer-accent-background {
-  background-color: #2F76C1; }
+  background-color: #2F76C1 !important; }
 
 .lexgo-primary-color {
-  color: #DB8200; }
+  color: #DB8200 !important; }
 
 .lexgo-primary-background {
-  background-color: #DB8200; }
+  background-color: #DB8200 !important; }
 
 .lexgo-accent-color {
-  color: #FFA016; }
+  color: #FFA016 !important; }
 
 .lexgo-accent-background {
-  background-color: #FFA016; }
+  background-color: #FFA016 !important; }
 
 .losbanosenterprise-primary-color {
-  color: #0080B7; }
+  color: #0080B7 !important; }
 
 .losbanosenterprise-primary-background {
-  background-color: #0080B7; }
+  background-color: #0080B7 !important; }
 
 .losbanosenterprise-accent-color {
-  color: #56A9CC; }
+  color: #56A9CC !important; }
 
 .losbanosenterprise-accent-background {
-  background-color: #56A9CC; }
+  background-color: #56A9CC !important; }
 
 .macon-primary-color {
-  color: #1F3366; }
+  color: #1F3366 !important; }
 
 .macon-primary-background {
-  background-color: #1F3366; }
+  background-color: #1F3366 !important; }
 
 .macon-accent-color {
-  color: #3B6CBD; }
+  color: #3B6CBD !important; }
 
 .macon-accent-background {
-  background-color: #3B6CBD; }
+  background-color: #3B6CBD !important; }
 
 .mcclatchydc-primary-color {
-  color: #1D2E5C; }
+  color: #1D2E5C !important; }
 
 .mcclatchydc-primary-background {
-  background-color: #1D2E5C; }
+  background-color: #1D2E5C !important; }
 
 .mcclatchydc-accent-color {
-  color: #CDA01E; }
+  color: #CDA01E !important; }
 
 .mcclatchydc-accent-background {
-  background-color: #CDA01E; }
+  background-color: #CDA01E !important; }
 
 .mercedsunstar-primary-color {
-  color: #113511; }
+  color: #113511 !important; }
 
 .mercedsunstar-primary-background {
-  background-color: #113511; }
+  background-color: #113511 !important; }
 
 .mercedsunstar-accent-color {
-  color: #2E6D2F; }
+  color: #2E6D2F !important; }
 
 .mercedsunstar-accent-background {
-  background-color: #2E6D2F; }
+  background-color: #2E6D2F !important; }
 
 .miamiherald-primary-color {
-  color: #0066B3; }
+  color: #0066B3 !important; }
 
 .miamiherald-primary-background {
-  background-color: #0066B3; }
+  background-color: #0066B3 !important; }
 
 .miamiherald-accent-color {
-  color: #379AD3; }
+  color: #379AD3 !important; }
 
 .miamiherald-accent-background {
-  background-color: #379AD3; }
+  background-color: #379AD3 !important; }
 
 .modbee-primary-color {
-  color: #145288; }
+  color: #145288 !important; }
 
 .modbee-primary-background {
-  background-color: #145288; }
+  background-color: #145288 !important; }
 
 .modbee-accent-color {
-  color: #0093D0; }
+  color: #0093D0 !important; }
 
 .modbee-accent-background {
-  background-color: #0093D0; }
+  background-color: #0093D0 !important; }
 
 .myrtlebeachonline-primary-color {
-  color: #004377; }
+  color: #004377 !important; }
 
 .myrtlebeachonline-primary-background {
-  background-color: #004377; }
+  background-color: #004377 !important; }
 
 .myrtlebeachonline-accent-color {
-  color: #A72A2B; }
+  color: #A72A2B !important; }
 
 .myrtlebeachonline-accent-background {
-  background-color: #A72A2B; }
+  background-color: #A72A2B !important; }
 
 .newsobserver-primary-color {
-  color: #424242; }
+  color: #424242 !important; }
 
 .newsobserver-primary-background {
-  background-color: #424242; }
+  background-color: #424242 !important; }
 
 .newsobserver-accent-color {
-  color: #BA2814; }
+  color: #BA2814 !important; }
 
 .newsobserver-accent-background {
-  background-color: #BA2814; }
+  background-color: #BA2814 !important; }
 
 .sacbee-primary-color {
-  color: #145288; }
+  color: #145288 !important; }
 
 .sacbee-primary-background {
-  background-color: #145288; }
+  background-color: #145288 !important; }
 
 .sacbee-accent-color {
-  color: #0093D0; }
+  color: #0093D0 !important; }
 
 .sacbee-accent-background {
-  background-color: #0093D0; }
+  background-color: #0093D0 !important; }
 
 .sanluisobispo-primary-color {
-  color: #314B65; }
+  color: #314B65 !important; }
 
 .sanluisobispo-primary-background {
-  background-color: #314B65; }
+  background-color: #314B65 !important; }
 
 .sanluisobispo-accent-color {
-  color: #437BB3; }
+  color: #437BB3 !important; }
 
 .sanluisobispo-accent-background {
-  background-color: #437BB3; }
+  background-color: #437BB3 !important; }
 
 .sierrastar-primary-color {
-  color: #446896; }
+  color: #446896 !important; }
 
 .sierrastar-primary-background {
-  background-color: #446896; }
+  background-color: #446896 !important; }
 
 .sierrastar-accent-color {
-  color: #7991C4; }
+  color: #7991C4 !important; }
 
 .sierrastar-accent-background {
-  background-color: #7991C4; }
+  background-color: #7991C4 !important; }
 
 .startelegram-primary-color {
-  color: #8394AA; }
+  color: #8394AA !important; }
 
 .startelegram-primary-background {
-  background-color: #8394AA; }
+  background-color: #8394AA !important; }
 
 .startelegram-accent-color {
-  color: #5E6B7A; }
+  color: #5E6B7A !important; }
 
 .startelegram-accent-background {
-  background-color: #5E6B7A; }
+  background-color: #5E6B7A !important; }
 
 .sunherald-primary-color {
-  color: #035A84; }
+  color: #035A84 !important; }
 
 .sunherald-primary-background {
-  background-color: #035A84; }
+  background-color: #035A84 !important; }
 
 .sunherald-accent-color {
-  color: #008FD4; }
+  color: #008FD4 !important; }
 
 .sunherald-accent-background {
-  background-color: #008FD4; }
+  background-color: #008FD4 !important; }
 
 .thenewstribune-primary-color {
-  color: #0D6898; }
+  color: #0D6898 !important; }
 
 .thenewstribune-primary-background {
-  background-color: #0D6898; }
+  background-color: #0D6898 !important; }
 
 .thenewstribune-accent-color {
-  color: #00A0EF; }
+  color: #00A0EF !important; }
 
 .thenewstribune-accent-background {
-  background-color: #00A0EF; }
+  background-color: #00A0EF !important; }
 
 .theolympian-primary-color {
-  color: #2E6D2F; }
+  color: #2E6D2F !important; }
 
 .theolympian-primary-background {
-  background-color: #2E6D2F; }
+  background-color: #2E6D2F !important; }
 
 .theolympian-accent-color {
-  color: #204D21; }
+  color: #204D21 !important; }
 
 .theolympian-accent-background {
-  background-color: #204D21; }
+  background-color: #204D21 !important; }
 
 .thestate-primary-color {
-  color: #3B4858; }
+  color: #3B4858 !important; }
 
 .thestate-primary-background {
-  background-color: #3B4858; }
+  background-color: #3B4858 !important; }
 
 .thestate-accent-color {
-  color: #708095; }
+  color: #708095 !important; }
 
 .thestate-accent-background {
-  background-color: #708095; }
+  background-color: #708095 !important; }
 
 .tricityherald-primary-color {
-  color: #2656A3; }
+  color: #2656A3 !important; }
 
 .tricityherald-primary-background {
-  background-color: #2656A3; }
+  background-color: #2656A3 !important; }
 
 .tricityherald-accent-color {
-  color: #1991EC; }
+  color: #1991EC !important; }
 
 .tricityherald-accent-background {
-  background-color: #1991EC; }
+  background-color: #1991EC !important; }
 
 .vidaenelvalle-primary-color {
-  color: #034A78; }
+  color: #034A78 !important; }
 
 .vidaenelvalle-primary-background {
-  background-color: #034A78; }
+  background-color: #034A78 !important; }
 
 .vidaenelvalle-accent-color {
-  color: #0280D3; }
+  color: #0280D3 !important; }
 
 .vidaenelvalle-accent-background {
-  background-color: #0280D3; }
+  background-color: #0280D3 !important; }
 
 /*# sourceMappingURL=site-colors.css.map */
