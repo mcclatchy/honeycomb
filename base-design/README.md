@@ -26,7 +26,7 @@ Make sure you have a [GitHub](https://github.com/) account and [Git](https://git
 
 ####Existing dependencies
 - `css/base.css` and `scripts/base.js` contain all of the base styles and scripts. Changes to these files are not recommended. 
-- `css/custom.css` is where new styles should be added to build upon or overwrite those established in `css/base.css`.
+- `css/custom.css` is where new styles should be added to build upon or override those established in `css/base.css`.
 - `scripts/custom.js` is where new scripts should be added.
 - Note: `sass/base.scss` and `sass/custom.scss` are available and ready to compile into their .css counterparts if you prefer [writing with Sass](http://sass-lang.com/install). 
 
