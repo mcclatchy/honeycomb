@@ -548,9 +548,7 @@ display: block; } }
             <div class="row">
                 <div class="col-sm-12">
 
-                    <?php
-                        include 'custom.php';
-                    ?>
+                    <?php include 'custom.php';?>
 
                     <script type="text/javascript" language="javascript">
                         $(document).ready(function() {

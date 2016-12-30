@@ -93,7 +93,7 @@ $(document).ready(function() {
         return url;
     }
 
-    var sourcesList = $('#bd-sources-footer').html();
+    var sourcesList = $('#bd-sources-well').html();
     $('.bd-sources-header').html(sourcesList);
 
     $('.bd-sources-btn').click(function() {

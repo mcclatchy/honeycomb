@@ -11,14 +11,18 @@ IV    Section-head, subhead
 V     Images: paragraph, container, fluid
 VI    Video embeds
 VII   Blockquotes
-VIII  Related links and fact boxes
-IX    Breakout boxes
+VIII  Related links and fact box
+IX    Breakout section
 X     Notes and corrections
 XI    Sources
 XII   Credits
 XIII  Suggested stories
 XIV   Nav
 XV    Loader
+
+- See "site-colors.scss" for adding site colors
+- See "variables.scss" for non-site colors, fonts and other Sass variables
+- See "extendables.scss" for resets and reapeating classes using @extend
 
 /*
 -------------------------------------------
@@ -333,11 +337,11 @@ VIII. Related links and fact boxes
 
 /*
 -------------------------------------------
-IX. Breakout boxes
+IX. Breakout section
 -------------------------------------------
 */
 
-.bd-special-section {
+.bd-breakout-section {
     text-align: left;
     margin: 3.6rem auto;
 
@@ -378,7 +382,7 @@ XI. Sources
 
 .bd-sources-header {
     display: none;
-    @extend #bd-sources-footer;
+    @extend #bd-sources-well;
     @extend .bd-sources-btn;
     margin: 1.2rem auto 6rem;
     width: 90%;
@@ -394,7 +398,7 @@ XI. Sources
     }
 }
 
-#bd-sources-footer {
+#bd-sources-well {
     p {
         color: $lighter;
         margin: 0 auto;

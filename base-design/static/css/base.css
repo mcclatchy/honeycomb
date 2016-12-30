@@ -22,30 +22,6 @@
   border-bottom: 0.5px solid #e9ebee;
   padding-bottom: 1.6rem; }
 
-.reset, .bd-head, .bd-deck, .bd-byline, .bd-date, .bd-section-head, .bd-subhead, .bd-quote, .bd-attribution, .bd-note, .bd-refer-head, .bd-refer-deck {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  line-height: normal;
-  width: auto;
-  height: auto;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
-  vertical-align: baseline;
-  text-transform: none;
-  text-align: left; }
-
-.bd-border-top {
-  padding-top: 2.4rem;
-  border-top: 0.5px solid #e9ebee; }
-
-.bd-border-bottom {
-  border-bottom: 0.5px solid #e9ebee;
-  padding-bottom: 1.6rem; }
-
 .bd-header-style, .bd-head, .bd-deck, .bd-byline, .bd-date, #bd-footer, .bd-credits {
   width: 90%;
   max-width: 950px;
@@ -63,14 +39,18 @@ IV    Section-head, subhead
 V     Images: paragraph, container, fluid
 VI    Video embeds
 VII   Blockquotes
-VIII  Related links and fact boxes
-IX    Breakout boxes
+VIII  Related links and fact box
+IX    Breakout section
 X     Notes and corrections
 XI    Sources
 XII   Credits
 XIII  Suggested stories
 XIV   Nav
 XV    Loader
+
+- See "site-colors.scss" for adding site colors
+- See "variables.scss" for non-site colors, fonts and other Sass variables
+- See "extendables.scss" for resets and reapeating classes using @extend
 
 /*
 -------------------------------------------
@@ -325,13 +305,13 @@ VIII. Related links and fact boxes
 */
 /*
 -------------------------------------------
-IX. Breakout boxes
+IX. Breakout section
 -------------------------------------------
 */
-.bd-special-section {
+.bd-breakout-section {
   text-align: left;
   margin: 3.6rem auto; }
-  .bd-special-section p {
+  .bd-breakout-section p {
     width: 100%;
     max-width: 950px;
     font-size: 1.6rem !important;
@@ -370,7 +350,7 @@ XI. Sources
   .bd-sources-header:focus {
     outline: none; }
 
-#bd-sources-footer p, .bd-sources-header p {
+#bd-sources-well p, .bd-sources-header p {
   color: #a7a3a4;
   margin: 0 auto;
   font-size: 1.2rem !important;
