@@ -119,6 +119,14 @@
             <!-- intro paragraph -->
             <p class="bd-intro"><span class="bd-dropcap">B</span>acon ipsum dolor amet ham hock ribeye mollit andouille lorem duis. Sed cillum drumstick consequat biltong laboris. Nostrud et voluptate enim ut, anim qui aliquip est cupim kielbasa aliqua. Culpa occaecat fatback, cow reprehenderit sirloin pork chop pastrami ea elit incididunt sunt andouille.</p> <!-- /end intro paragraph -->
 
+            <span tabindex="0" role="link" class="pseudolink" onclick="location='http://www.willmaster.com'">Software to Make Your Website Work</span>
+
+            <!-- What about storing the URL in a data attribute on the span, using js to run an each function on the span class name to prepend the opening anchor tag with href from the data attribute and append the closing anchor tag? -->
+
+
+
+
+
             <p>Drumstick officia ullamco kielbasa, ex burgdoggen kevin andouille tail irure. Enim biltong in eu, ham hock proident prosciutto sunt voluptate pork loin et meatloaf hamburger. Pig enim kevin pariatur, ham flank corned beef biltong cupim
             nisi tongue. Landjaeger meatloaf ullamco, bresaola aliqua beef ribs ut consequat deserunt fatback leberkas.</p>
 

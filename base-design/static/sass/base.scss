@@ -1,5 +1,6 @@
 @import "variables.scss";
 @import "extendables.scss";
+@import "site-colors.scss";
 
 /*
 TABLE OF CONTENTS
@@ -115,6 +116,14 @@ I. Content header
     max-width: 650px;
     margin: 0 auto 1.2rem;
     text-align: center;
+
+    span {
+        display: block;
+        width: 33px;
+        height: 33px;
+        position: relative;
+        z-index: 1;
+    }
 
     li {
         .glyphicon {
@@ -528,7 +537,11 @@ XIV. Nav
     font-family: $cond;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+
+    @media (max-width: 850px) {
+        font-size: 1.6rem;
+    }
 }
 
 #bd-nav-desk {
@@ -544,9 +557,8 @@ XIV. Nav
         float: left;
         width: calc(100% / 4);
         text-align: center;
-        padding-top: 12px;
         cursor: pointer;
-        padding: 1.2rem 0.5rem 0;
+        padding: 1.1rem 0.5rem 0;
 
         &:last-child {
             border-right: none;
@@ -560,7 +572,11 @@ XIV. Nav
             color: rgba(255, 255, 255, 0.7);
             text-transform: uppercase;
             font-family: $cond;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
+
+            @media (max-width: 850px) {
+                font-size: 1.2rem;
+            }
         }
     }
 
@@ -579,7 +595,7 @@ XIV. Nav
         font-size: 2rem;
         cursor: pointer;
         text-align: center;
-        padding: 0.6rem 2rem 0;
+        padding: 0.6rem 0 0;
 
         &:hover {
             background: rgba(255, 255, 255, 0.1);
