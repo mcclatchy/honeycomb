@@ -19,10 +19,13 @@ Make sure you have a [GitHub](https://github.com/) account and [Git](https://git
 4. Clone the forked repository by pasting `git clone YOUR REPO URL` into your terminal.
 5. Navigate into your local Honeycomb directory and enter `php -S localhost:8000`.
 6. Go to the `localhost:8000` web address in your browser to see your new project and begin customizing project files.
-7. For sass: Go to `/honeycomb/static` in a new terminal window, enter `sass --watch sass:css` to begin watching your files.
+7. For Sass (optional): Go to `/honeycomb/static` in a new terminal window, enter `sass --watch sass:css` to begin watching your files.
 
 ## Navigating Honeycomb files
-`index.html` comes built with all of the code you need to view your project as if it were published on one of our standardized market sites. There are three sections you may customize:
+`index.php` creates a local version of the McClatchyDC page framework (i.e. the market's header/footer, styles, etc.). The contents of this file are only for local developing and shouldn't be edited or included in Newsgate.
+
+`custom.php` is a template where you may add custom code to build your project.
+
 - `<!-- custom head -->` is where you may add style and miscellaneous dependencies.
 - `<!-- custom body -->` is where you may add HTML.
 - `<!-- custom scripts -->` is where you may add JS or other script dependencies.
