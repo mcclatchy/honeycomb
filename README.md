@@ -22,19 +22,21 @@ Make sure you have a [GitHub](https://github.com/) account and [Git](https://git
 7. For Sass (optional): Go to `/honeycomb/static` in a new terminal window, enter `sass --watch sass:css` to begin watching your files.
 
 ## Navigating Honeycomb files
-`index.php` creates a local version of the McClatchyDC page framework (i.e. the market's header/footer, styles, etc.). The contents of this file are only for local developing and shouldn't be edited or included in Newsgate.
+`index.php` is a local version of a basic McClatchy page framework (i.e. the market's header/footer, styles, etc.). The contents of this file create a local developing environment for you but shouldn't be edited or included in Newsgate.
 
-`custom.php` is a template where you may add custom code to build your project.
-
-- `<!-- custom head -->` is where you may add style and miscellaneous dependencies.
-- `<!-- custom body -->` is where you may add HTML.
-- `<!-- custom scripts -->` is where you may add JS or other script dependencies.
+`custom.php` is where you may add custom code to build your project.
+  - `<!-- custom head -->` is where you may add style and miscellaneous dependencies.
+  - `<!-- custom body -->` is where you may add HTML.
+  - `<!-- custom scripts -->` is where you may add JS or other script dependencies.
 
 ####Existing dependencies
 - `css/base.css` and `scripts/base.js` contain all of the base styles and scripts. Changes to these files are not recommended. 
 - `css/custom.css` is where new styles should be added to build upon or override those established in `css/base.css`.
 - `scripts/custom.js` is where new scripts should be added.
-- Note: `sass/base.scss` and `sass/custom.scss` are available and ready to compile into their .css counterparts if you prefer [writing with Sass](http://sass-lang.com/install). 
+
+- Sass
+    - `sass/custom.scss` is available and ready to compile into its .css counterpart if you prefer [writing with Sass](http://sass-lang.com/install). 
+    - `sass/_variables.scss`, `sass/_extendables.scss` and `sass/_site-colors.scss`.
 
 ## Transferring to Newsgate
 1. Upload your `img`, `css` and `scripts` directories to your server.
