@@ -1,3 +1,5 @@
+
+
 <!-- custom head -->
     <link rel="stylesheet" type="text/css" href="static/css/base.css">
     <link rel="stylesheet" type="text/css" href="static/css/site-colors.css">
@@ -127,12 +129,11 @@
         <!-- /end correction note -->
 
         <!-- story content for prototyping -->
-        <article>
             <!-- intro paragraph -->
             <p class="hc-intro"><span class="hc-dropcap">B</span>acon ipsum dolor amet ham hock ribeye mollit andouille lorem duis. Sed cillum drumstick consequat biltong laboris. Nostrud et voluptate enim ut, anim qui aliquip est cupim kielbasa aliqua. Culpa occaecat fatback, cow reprehenderit sirloin pork chop pastrami ea elit incididunt sunt andouille.</p>
             <!-- /end intro paragraph -->
 
-            <span tabindex="0" role="link" class="pseudolink" onclick="location='http://www.willmaster.com'">Software to Make Your Website Work</span>
+            <!-- <span tabindex="0" role="link" class="pseudolink" onclick="location='http://www.willmaster.com'">Software to Make Your Website Work</span> -->
 
             <!-- What about storing the URL in a data attribute on the span, using js to run an each function on the span class name to prepend the opening anchor tag with href from the data attribute and append the closing anchor tag? -->
 
@@ -149,12 +150,12 @@
             <p>Proident rump kevin cupim, cillum exercitation capicola cupidatat meatloaf ipsum ham. Ut pork chop consequat cow. Pariatur burgdoggen ipsum, bresaola leberkas kielbasa quis lorem pork chop cupim. Strip steak leberkas fugiat officia,
             cupim jerky sausage laborum sirloin t-bone mollit. In meatloaf eiusmod cupim. Duis ball tip ullamco ut in magna.</p>
 
-            <!-- fluid-width image -->
+            <!-- container-width image -->
             <figure class="hc-container-img">
                 <img src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
                 <figcaption>Caption information goes here. (Photographer Name, Publication)</figcaption>
             </figure>
-            <!-- /end fluid-width image -->
+            <!-- /end container-width image -->
 
             <h4 class="hc-subhead hc-accent-color">This is a subhead</h4>
 
@@ -199,7 +200,6 @@
 
             <p>Lorem elit nostrud, venison tenderloin eu sed prosciutto incididunt chicken shankle pork cow andouille. Pig pastrami corned beef, ipsum fatback qui short loin tail culpa veniam est picanha meatloaf ham salami. Strip steak turkey pig,
             jerky swine excepteur exercitation capicola ground round venison esse kielbasa andouille. Aliqua biltong in, sausage spare ribs filet mignon capicola pork.</p>
-        </article>
         <!-- /end story content -->
 
         <!-- note -->

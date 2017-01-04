@@ -525,6 +525,10 @@ XV    Loader
 I. Content header
 -------------------------------------------
 */
+section.container {
+  min-width: 100%;
+  padding: 0; }
+
 #hc-header {
   margin-bottom: 6rem; }
 
@@ -696,7 +700,8 @@ figcaption {
   height: auto; }
 
 .hc-container-img {
-  width: 100%; }
+  width: 100%;
+  max-width: 1500px; }
   .hc-container-img img {
     width: 100%;
     height: auto; }

@@ -3,7 +3,7 @@ $(document).ready(function() {
     $.getJSON('static/scripts/sites.json', function(data) {
         addSiteColor(data);
         addLoader();
-        setImgWidth();
+        // setImgWidth();
         setShareURL();
     });
 
@@ -53,15 +53,17 @@ $(document).ready(function() {
         $('body').delay(4000).css('overflow', 'auto');
     }
 
-    function setImgWidth() {
-        var fluidImg = $('.hc-fluid-img').closest('section');
-        if ($('#hc-hero').hasClass('.hc-fluid-img') || $('figure').hasClass('.hc-fluid-img')) {
-            fluidImg.removeClass('container').addClass('container-fluid');
-            fluidImg.find('.row').removeClass('row').addClass('row-fluid');
-            fluidImg.find('.col-sm-12').css('padding', '0');
-        }
-        $('.hc-container-img').closest('section').find('.col-sm-12').css('padding', '0');
-    }
+    // function setImgWidth() {
+    //     var containerImg = $('.hc-fluid-img').closest('section').find('.container');
+    //     var fluidImg = $('.hc-fluid-img').closest('section').find('.container-fluid');
+    //
+    //     if ($('#hc-hero').hasClass('.hc-fluid-img') || $('figure').hasClass('.hc-fluid-img')) {
+    //         containerImg.removeClass('container').addClass('container-fluid');
+    //         fluidImg.find('.row').removeClass('row').addClass('row-fluid');
+    //         fluidImg.find('.col-sm-12').css('padding', '0');
+    //     }
+    //     $('.hc-container-img').closest('section').find('.col-sm-12').css('padding', '0');
+    // }
 
     function setShareURL() {
         var projectURL = window.location.href;
