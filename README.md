@@ -20,7 +20,7 @@ Make sure you have a [GitHub](https://github.com/) account and [Git](https://git
 5. Navigate into your local Honeycomb directory and enter `php -S localhost:8000`.
 6. Go to the `localhost:8000` web address in your browser to see your new project and begin customizing project files.
 
-If you're using Sass files:
+If you're using Sass file:
 1. Go to `/honeycomb/static` in a new terminal window.
 2. Enter `sass --watch sass:css` to begin watching and compiling your files.
 
