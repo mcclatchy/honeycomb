@@ -1,7 +1,7 @@
 # Honeycomb
 
 #### What is it?
-This is a starting design for McClatchy's Special Projects Template. It has been created for local development that can easily be moved over to Newsgate for testing and publishing. 
+This is a base design for McClatchy's Special Projects Template. It has been created for local development that can easily be moved over to Newsgate for testing and publishing. 
 
 #### Why use it?
 Honeycomb standardizes and streamlines the process of creating special project designs within Newsgate/Escenic by providing HTML, styles and scripts to give news developers a running start at customization.
@@ -13,10 +13,16 @@ Honeycomb is for McClatchy front-end developers who want to give projects a spec
 
 Make sure you have a [GitHub](https://github.com/) account and [Git](https://git-scm.com/downloads) installed on your computer.
 
-1. Fork the [base-design](https://github.com/mcclatchy/special-project-template/tree/master/base-design) repository to your GitHub account.
+1. Fork the Honeycomb repository to your GitHub account.
 2. Click `clone or download` and copy the URL from your forked repository.
 3. Open your terminal and navigate to the directory that your project will live in.
 4. Clone the forked repository by pasting `git clone YOUR REPO URL` into your terminal.
+5. Navigate into your local Honeycomb directory and enter `php -S localhost:8000`.
+6. Go to the `localhost:8000` web address in your browser to see your new project and begin customizing project files.
+
+If you're using Sass files:
+1. Go to `/honeycomb/static` in a new terminal window.
+2. Enter `sass --watch sass:css` to begin watching and compiling your files.
 
 ## Navigating Honeycomb files
 `index.html` comes built with all of the code you need to view your project as if it were published on one of our standardized market sites. There are three sections you may customize:
