@@ -39,11 +39,11 @@ Make sure you have a [GitHub](https://github.com/) account and [Git](https://git
 
 ####Writing Newsgate-safe classes
 One challenge in Newsgate is the possibility that its stylesheets could change significantly with updates. Below are a few tips to prevent updates from breaking your project:
-- Use classes to style common tags like `<p>`, <h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`
+- Use classes to style common tags like `<p>`, <h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>` instead of styling the tag itself`.
 - Use `hc-` or another prefix for classes to ensure they never override classes established in Newsgate.
 - Use the `.reset` class
-    - If writing in css: Add your class to the `.reset` list at the top of your stylesheet.
-    - If writing in sass: Add `@extend .reset` to the top of your class's properties.
+    - CSS: Add your class to the `.reset` list at the top of your stylesheet.
+    - Sass: Add `@extend .reset` to the top of your class's properties.
 
 ####Sass
     - `sass/custom.scss` is available and ready to compile into its .css counterpart if you prefer [writing with Sass](http://sass-lang.com/install). 
