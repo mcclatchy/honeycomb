@@ -37,17 +37,28 @@ Make sure you have a [GitHub](https://github.com/) account and [Git](https://git
 - `css/custom.css` is where new styles should be added to build upon or override those established in `css/base.css`.
 - `scripts/custom.js` is where new scripts should be added.
 
+####Sass
+   -`sass/custom.scss` is available and ready to compile into its .css counterpart if you prefer [writing with Sass](http://sass-lang.com/install). 
+   - `sass/_variables.scss`, `sass/_extendables.scss` and `sass/_site-colors.scss` are [partials] (http://sass-lang.com/guide/#partials).
+
+##Best practices
+
+####Using your market colors
+- If your project is publishing on only one site, it's more efficient to add Hex codes directly to your properties in CSS. Check out `sass/_site-colors.css` to find your primary and accent Hex codes.
+- If your project is publishing on more than one site, use the following classes to color an element. `scripts/base.js` will look for the publication URL and pre-defined classes to apply the correct market color or background-color to that element. 
+   - `.hc-primary-color`
+   - `.hc-accent-color`
+   - `.hc-primary-background`
+   - `.hc-accent-background`
+Note: Changing `publicationUrl: 'http://www.mcclatchydc.com/` to a market URL of interest will allow you to test other market colros locally.
+ 
 ####Writing Newsgate-safe classes
 One challenge in Newsgate is the possibility that its stylesheets could change significantly with updates. Below are a few tips to prevent updates from breaking your project:
-- Use classes to style common tags like `<p>`, `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>` instead of styling the tag itself`.
+- Use classes to style common tags like `<p>`, `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>` instead of styling the tag itself.
 - Use `hc-` or another prefix for classes to ensure they never override classes established in Newsgate.
 - Use the `.reset` class
     - CSS: Add your class to the `.reset` list at the top of your stylesheet.
     - Sass: Add `@extend .reset` to the top of your class's properties.
-
-####Sass
-    - `sass/custom.scss` is available and ready to compile into its .css counterpart if you prefer [writing with Sass](http://sass-lang.com/install). 
-    - `sass/_variables.scss`, `sass/_extendables.scss` and `sass/_site-colors.scss` are [partials] (http://sass-lang.com/guide/#partials).
 
 ## Transferring to Newsgate
 1. Upload your `img`, `css` and `scripts` directories to your server.
