@@ -7,27 +7,29 @@
 <!-- custom body -->
 
     <!-- loader -->
-    <div class="bd-loader-wrapper bd-primary-background">
-        <div class="bd-loader">
-            <div class="bd-loader-logo"></div>
-            <div class="bd-spinner">
-                <div class="bd-bounce1"></div>
-                <div class="bd-bounce2"></div>
-                <div class="bd-bounce3"></div>
+    <div class="hc-loader-wrapper hc-primary-background">
+        <div class="hc-loader">
+            <div class="hc-loader-logo"></div>
+            <div class="hc-spinner">
+                <div class="hc-bounce1"></div>
+                <div class="hc-bounce2"></div>
+                <div class="hc-bounce3"></div>
             </div>
         </div>
-    </div> <!-- end loader -->
+    </div>
+    <!-- end loader -->
 
     <!-- nav -->
-    <nav id="bd-nav-header" class="bd-primary-background">
+    <nav id="hc-nav-header" class="hc-primary-background">
+
         <!-- nav wrapper -->
-        <div class="bd-nav-wrapper">
-            <div id="bd-nav-head">Name of project goes here</div>
+        <div class="hc-nav-wrapper">
+            <div id="hc-nav-head">Name of project goes here</div>
 
             <!-- desktop nav list -->
-            <ul id="bd-nav-desk">
+            <ul id="hc-nav-desk">
                 <li>
-                    <a class="bd-nav-active" href="FILL THIS IN">Part one head</a>
+                    <a class="hc-nav-active" href="FILL THIS IN">Part one head</a>
                 </li>
                 <li>
                     <a href="FILL THIS IN">Part two head</a>
@@ -38,16 +40,17 @@
                 <li>
                     <a href="FILL THIS IN">Part four head</a>
                 </li>
-            </ul> <!-- /end desktop nav list -->
+            </ul>
+            <!-- /end desktop nav list -->
 
-            <div id="bd-hamburger">&#9776;</div>
+            <div id="hc-hamburger">&#9776;</div>
 
             <!-- mobile nav list -->
-            <div id="bd-nav-mob" class="bd-primary-background">
-                <div id="bd-nav-close">✕</div>
+            <div id="hc-nav-mob" class="hc-primary-background">
+                <div id="hc-nav-close">✕</div>
                 <ul>
                     <li>
-                        <a class="bd-nav-active" href="FILL THIS IN">Part one head</a>
+                        <a class="hc-nav-active" href="FILL THIS IN">Part one head</a>
                     </li>
                     <li>
                         <a href="FILL THIS IN">Part two head</a>
@@ -59,65 +62,75 @@
                         <a href="FILL THIS IN">Part four head</a>
                     </li>
                 </ul>
-            </div> <!-- /end mobile nav list -->
-            <div class="bd-shadow"></div>
-        </div> <!-- /end nav wrapper -->
-    </nav> <!-- /end nav -->
+            </div>
+            <!-- /end mobile nav list -->
+
+            <div class="hc-shadow"></div>
+        </div>
+        <!-- /end nav wrapper -->
+
+    </nav>
+    <!-- /end nav -->
 
     <!-- content header -->
-    <header id="bd-header">
+    <header id="hc-header">
 
         <!-- hero image -->
-        <figure id="bd-hero" class="bd-fluid-img">
+        <figure id="hc-hero" class="hc-fluid-img">
             <img src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
             <figcaption>Caption information goes here. (Photographer Name, Publication)</figcaption>
-        </figure> <!-- /end hero image -->
+        </figure>
+        <!-- /end hero image -->
 
         <!-- share icons -->
         <ul class="share-icons">
             <li class="facebook">
-                <a id="bd-facebook-share" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"
+                <a id="hc-facebook-share" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"
                     title="Share on Facebook"></a>
                 <div class="glyphicon glyphicon-facebook"></div>
             </li>
             <li class="twitter">
-                <a id="bd-twitter-share" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"
+                <a id="hc-twitter-share" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"
                     title="Share on Twitter"></a>
                 <div class="glyphicon glyphicon-twitter"></div>
             </li>
             <li class="email">
-                <a id="bd-email-share"></a>
+                <a id="hc-email-share"></a>
                 <div class="glyphicon glyphicon-envelope"></div>
             </li>
             <li class="print">
-                <a id="bd-print-share" onclick="window.print();"></a>
+                <a id="hc-print-share" onclick="window.print();"></a>
                 <div class="glyphicon glyphicon-print"></div>
             </li>
-        </ul> <!-- /end share icons -->
+        </ul>
+        <!-- /end share icons -->
 
-        <h1 class="bd-head">Headline lives here</h1>
-        <h2 class="bd-deck">This is the story of a deckhead that will grow up to live on this story page</h2>
+        <h1 class="hc-head">Headline lives here</h1>
+        <h2 class="hc-deck">This is the story of a deckhead that will grow up to live on this story page</h2>
 
-        <p class="bd-byline">By Firstname Lastname</p>
-        <p class="bd-date">Month ##, Year 0:00 AM</p>
+        <p class="hc-byline">By Firstname Lastname</p>
+        <p class="hc-date">Month ##, Year 0:00 AM</p>
 
-        <button class="bd-sources-btn">View sources</button>
-        <button class="bd-sources-header"></button>
+        <button class="hc-sources-btn">View sources</button>
+        <button class="hc-sources-header"></button>
 
-    </header> <!-- /end content header -->
+    </header>
+    <!-- /end content header -->
 
     <!-- main content well -->
     <main id="content-well">
 
         <!-- correction note -->
-        <div class="bd-note-wrapper">
-            <p class="bd-note"><strong>Correction:</strong> Opps, we made a mistake and here's what it is. Needs to give enough context to not confuse the reader since they're just beginning the story.</p>
-        </div> <!-- /end correction note -->
+        <div class="hc-note-wrapper">
+            <p class="hc-note"><strong>Correction:</strong> Opps, we made a mistake and here's what it is. Needs to give enough context to not confuse the reader since they're just beginning the story.</p>
+        </div>
+        <!-- /end correction note -->
 
         <!-- story content for prototyping -->
         <article>
             <!-- intro paragraph -->
-            <p class="bd-intro"><span class="bd-dropcap">B</span>acon ipsum dolor amet ham hock ribeye mollit andouille lorem duis. Sed cillum drumstick consequat biltong laboris. Nostrud et voluptate enim ut, anim qui aliquip est cupim kielbasa aliqua. Culpa occaecat fatback, cow reprehenderit sirloin pork chop pastrami ea elit incididunt sunt andouille.</p> <!-- /end intro paragraph -->
+            <p class="hc-intro"><span class="hc-dropcap">B</span>acon ipsum dolor amet ham hock ribeye mollit andouille lorem duis. Sed cillum drumstick consequat biltong laboris. Nostrud et voluptate enim ut, anim qui aliquip est cupim kielbasa aliqua. Culpa occaecat fatback, cow reprehenderit sirloin pork chop pastrami ea elit incididunt sunt andouille.</p>
+            <!-- /end intro paragraph -->
 
             <span tabindex="0" role="link" class="pseudolink" onclick="location='http://www.willmaster.com'">Software to Make Your Website Work</span>
 
@@ -137,12 +150,13 @@
             cupim jerky sausage laborum sirloin t-bone mollit. In meatloaf eiusmod cupim. Duis ball tip ullamco ut in magna.</p>
 
             <!-- fluid-width image -->
-            <figure class="bd-fluid-img">
+            <figure class="hc-fluid-img">
                 <img src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
                 <figcaption>Caption information goes here. (Photographer Name, Publication)</figcaption>
-            </figure> <!-- /end fluid-width image -->
+            </figure>
+            <!-- /end fluid-width image -->
 
-            <h4 class="bd-subhead bd-accent-color">This is a subhead</h4>
+            <h4 class="hc-subhead hc-accent-color">This is a subhead</h4>
 
             <p>Jowl flank magna picanha ham hock short ribs aute dolore tri-tip cupidatat. Magna ut quis enim labore, cillum deserunt nostrud pork belly. Tempor nostrud beef porchetta, kevin ham hock ullamco chuck fatback bacon. Alcatra bresaola
             pork belly, pariatur porchetta drumstick fugiat est shankle jowl sirloin sint t-bone swine.</p>
@@ -154,9 +168,9 @@
             kielbasa enim adipisicing jowl ex. Et landjaeger porchetta flank exercitation nostrud alcatra short loin sirloin.</p>
 
             <blockquote>
-                <div class="bd-quotemark-desk bd-accent-color">“</div>
-                <p class="bd-quote"><span class="bd-quotemark-mob bd-accent-color">“</span>This is a blockquote and lives inline because it always contains new content that is never repeated in the story.</p>
-                <p class="bd-attribution">— Firstname Lastname, Title here</p>
+                <div class="hc-quotemark-desk hc-accent-color">“</div>
+                <p class="hc-quote"><span class="hc-quotemark-mob hc-accent-color">“</span>This is a blockquote and lives inline because it always contains new content that is never repeated in the story.</p>
+                <p class="hc-attribution">— Firstname Lastname, Title here</p>
             </blockquote>
 
             <p>In pork belly veniam hamburger. Ipsum leberkas in cillum ut, ea cupim. Occaecat culpa enim, beef ribs shoulder anim dolore kevin veniam officia eiusmod aliquip minim pork tempor. Burgdoggen nisi id shank ham, tri-tip ham hock dolore.
@@ -185,89 +199,102 @@
 
             <p>Lorem elit nostrud, venison tenderloin eu sed prosciutto incididunt chicken shankle pork cow andouille. Pig pastrami corned beef, ipsum fatback qui short loin tail culpa veniam est picanha meatloaf ham salami. Strip steak turkey pig,
             jerky swine excepteur exercitation capicola ground round venison esse kielbasa andouille. Aliqua biltong in, sausage spare ribs filet mignon capicola pork.</p>
-        </article> <!-- /end story content -->
+        </article>
+        <!-- /end story content -->
 
         <!-- note -->
-        <div class="bd-note-wrapper">
-            <p class="bd-note">This is a note. Short loin excepteur venison t-bone salami. Burgdoggen minim enim eiusmod mollit. Adipisicing ex ham cow beef ribs tail porchetta et turkey shank. Picanha rump laborum cupim minim sed beef turkey prosciutto dolor tongue commodo.</p>
+        <div class="hc-note-wrapper">
+            <p class="hc-note">This is a note. Short loin excepteur venison t-bone salami. Burgdoggen minim enim eiusmod mollit. Adipisicing ex ham cow beef ribs tail porchetta et turkey shank. Picanha rump laborum cupim minim sed beef turkey prosciutto dolor tongue commodo.</p>
 
-            <p class="bd-note">Boudinsed minim ut, rump pork loin bacon ball tip et tail nostrud. Pig doner chuck culpa incididunt. Boudin duis aliquip, non irure dolore mollit kevin leberkas rump culpa ribeye pancetta fatback.</p>
-        </div> <!-- /end note -->
+            <p class="hc-note">Boudinsed minim ut, rump pork loin bacon ball tip et tail nostrud. Pig doner chuck culpa incididunt. Boudin duis aliquip, non irure dolore mollit kevin leberkas rump culpa ribeye pancetta fatback.</p>
+        </div>
+        <!-- /end note -->
 
         <!-- well source list -->
-        <div id="bd-sources-well">
+        <div id="hc-sources-well">
             <p><strong>Sources: </strong>thisIsMySource.com, The Real Source Or Else, sorcify.com, thisIsMySource.com, The Real Source Or Else, sorcify.com, thisIsMySource.com, The Real Source Or Else, sorcify.com</p>
-        </div> <!-- /end well source list -->
+        </div>
+        <!-- /end well source list -->
 
         <!-- credits -->
-        <div class="bd-credits">
+        <div class="hc-credits">
             <div><strong>Reporter: </strong>Firstname Lastname</div>
             <div><strong>Editor: </strong>Firstname Lastname</div>
             <div><strong>Copy editor: </strong>Firstname Lastname</div>
             <div><strong>Photos: </strong>Firstname Lastname</div>
             <div><strong>Graphics: </strong>Firstname Lastname</div>
             <div><strong>Design: </strong>Firstname Lastname</div>
-        </div> <!-- /end credits -->
+        </div>
+        <!-- /end credits -->
 
-    </main> <!-- /end main content well -->
+    </main>
+    <!-- /end main content well -->
 
     <!-- content footer -->
-    <footer id="bd-footer">
+    <footer id="hc-footer">
 
         <!-- breakout section -->
-        <section class="bd-breakout-section bd-border-top bd-border-bottom">
-            <h3 class="bd-section-head bd-accent-color">About this series</h3>
+        <section class="hc-breakout-section hc-border-top hc-border-bottom">
+            <h3 class="hc-section-head hc-accent-color">About this series</h3>
 
             <p>Lorem elit nostrud, venison tenderloin eu sed prosciutto incididunt chicken shankle pork cow andouille. Pig pastrami corned beef, ipsum fatback qui short loin tail culpa veniam est picanha meatloaf ham salami. Strip steak turkey pig, jerky swine excepteur exercitation capicola ground round venison esse kielbasa andouille. Aliqua biltong in, sausage spare ribs filet mignon capicola pork.</p>
 
             <p>Short loin excepteur venison t-bone salami. Burgdoggen minim enim eiusmod mollit. Adipisicing ex ham cow beef ribs tail porchetta et turkey shank. Picanha rump laborum cupim minim sed beef turkey prosciutto dolor tongue commodo. Boudin sed minim ut, rump pork loin bacon ball tip et tail nostrud. Pig doner chuck culpa incididunt. Boudin duis aliquip, non irure dolore mollit kevin leberkas rump culpa ribeye pancetta fatback labore.</p>
-        </section> <!-- /end breakout section -->
+        </section>
+        <!-- /end breakout section -->
 
         <!-- suggested stories -->
-        <section id="bd-suggested">
-            <h1 id="bd-suggested-heading" class="heading">Suggested for you</h1><br /><br />
+        <section id="hc-suggested">
+            <h1 id="hc-suggested-heading" class="heading">Suggested for you</h1><br /><br />
             <!-- refer wrapper -->
-            <div class="bd-refer-wrapper">
+            <div class="hc-refer-wrapper">
                 <!-- refer -->
-                <div class="bd-refer">
-                    <figure class="bd-container-img">
-                        <img class="bd-refer-img" src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
-                        <div class="bd-description-wrapper">
-                            <h5 class="bd-refer-head">Headline that describes this story</h5>
-                            <p class="bd-refer-deck">Deckhead that describes the story goes here. Should be complete sentences.</p>
+                <div class="hc-refer">
+                    <figure class="hc-container-img">
+                        <img class="hc-refer-img" src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
+                        <div class="hc-description-wrapper">
+                            <h5 class="hc-refer-head">Headline that describes this story</h5>
+                            <p class="hc-refer-deck">Deckhead that describes the story goes here. Should be complete sentences.</p>
                         </div>
                     </figure>
-                </div> <!-- /end refer -->
+                </div>
+                <!-- /end refer -->
                 <!-- refer -->
-                <div class="bd-refer">
-                    <figure class="bd-container-img">
-                        <img class="bd-refer-img" src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
-                        <div class="bd-description-wrapper">
-                            <h5 class="bd-refer-head">Headline that describes this story</h5>
-                            <p class="bd-refer-deck">Deckhead that describes the story goes here. Should be complete sentences.</p>
+                <div class="hc-refer">
+                    <figure class="hc-container-img">
+                        <img class="hc-refer-img" src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
+                        <div class="hc-description-wrapper">
+                            <h5 class="hc-refer-head">Headline that describes this story</h5>
+                            <p class="hc-refer-deck">Deckhead that describes the story goes here. Should be complete sentences.</p>
                         </div>
                     </figure>
-                </div> <!-- /end refer -->
+                </div>
+                <!-- /end refer -->
                 <!-- refer -->
-                <div class="bd-refer">
-                    <figure class="bd-container-img">
-                        <img class="bd-refer-img" src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
-                        <div class="bd-description-wrapper">
-                            <h5 class="bd-refer-head">Headline that describes this story</h5>
-                            <p class="bd-refer-deck">Deckhead that describes the story goes here. Should be complete sentences.</p>
+                <div class="hc-refer">
+                    <figure class="hc-container-img">
+                        <img class="hc-refer-img" src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
+                        <div class="hc-description-wrapper">
+                            <h5 class="hc-refer-head">Headline that describes this story</h5>
+                            <p class="hc-refer-deck">Deckhead that describes the story goes here. Should be complete sentences.</p>
                         </div>
                     </figure>
-                </div> <!-- /end refer -->
-            </div> <!-- /end refer wrapper -->
-        </section> <!-- /end suggested stories -->
+                </div>
+                <!-- /end refer -->
+            </div>
+            <!-- /end refer wrapper -->
+        </section>
+        <!-- /end suggested stories -->
 
         <!-- comments -->
-        <section id="bd-comments">
-            <h1 id="bd-comments-heading" class="heading">Comments</h1>
+        <section id="hc-comments">
+            <h1 id="hc-comments-heading" class="heading">Comments</h1>
             <div class="fb-comments" data-href="http://www.mcclatchydc.com/news/nation-world/world/article117747598.html" data-numposts="10" data-width="100%" data-colorscheme="light"></div>
-        </section> <!-- /end comments -->
+        </section>
+        <!-- /end comments -->
 
-    </footer> <!-- /end footer -->
+    </footer>
+    <!-- /end footer -->
 
 <!-- /end custom body -->
 

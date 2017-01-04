@@ -2,8 +2,6 @@
 @import "extendables.scss";
 @import "site-colors.scss";
 
-/* test */
-
 /*
 TABLE OF CONTENTS
 -----------------
@@ -33,13 +31,13 @@ I. Content header
 -------------------------------------------
 */
 
-#bd-header {
+#hc-header {
     margin-bottom: 6rem;
 }
 
-.bd-head {
+.hc-head {
     @extend .reset;
-    @extend .bd-header-style;
+    @extend .hc-header-style;
     margin: 2.4rem auto 1.2rem;
     font-family: $slab;
     font-weight: normal;
@@ -53,9 +51,9 @@ I. Content header
     }
 }
 
-.bd-deck {
+.hc-deck {
     @extend .reset;
-    @extend .bd-header-style;
+    @extend .hc-header-style;
     margin: 0 auto 2.4rem;
     font-family: $slab;
     font-weight: normal;
@@ -69,9 +67,9 @@ I. Content header
     }
 }
 
-.bd-byline {
+.hc-byline {
     @extend .reset;
-    @extend .bd-header-style;
+    @extend .hc-header-style;
     margin: 0 auto 0.6rem;
     font-family: $sans;
     font-weight: normal;
@@ -81,9 +79,9 @@ I. Content header
     color: black;
 }
 
-.bd-date {
+.hc-date {
     @extend .reset;
-    @extend .bd-header-style;
+    @extend .hc-header-style;
     margin: 0 auto 1.2rem;
     font-family: $sans;
     font-weight: normal;
@@ -93,7 +91,7 @@ I. Content header
     color: black;
 }
 
-.bd-sources-btn {
+.hc-sources-btn {
     display: block;
     margin: 1.2rem auto 0;
     border: none;
@@ -149,7 +147,7 @@ II. Content well
     margin-right: auto;
 }
 
-.bd-intro {
+.hc-intro {
     font-size: 2.6rem !important;
     line-height: 4.8rem !important;
     @media (max-width: 480px) {
@@ -169,7 +167,7 @@ p {
     }
 }
 
-.bd-dropcap {
+.hc-dropcap {
     float: left;
     font-size: 17rem;
     line-height: 18rem;
@@ -189,12 +187,12 @@ III. Content footer
 -------------------------------------------
 */
 
-#bd-footer {
-    @extend .bd-header-style;
+#hc-footer {
+    @extend .hc-header-style;
     max-width: 850px;
 }
 
-#bd-comments-heading {
+#hc-comments-heading {
     float: left;
     margin-top: 4rem;
 }
@@ -205,7 +203,7 @@ IV. Section head, subhead
 -------------------------------------------
 */
 
-.bd-section-head {
+.hc-section-head {
     @extend .reset;
     font-weight: bold;
     font-family: $sans;
@@ -214,7 +212,7 @@ IV. Section head, subhead
     margin: 0 0 0.6rem;
 }
 
-.bd-subhead {
+.hc-subhead {
     @extend .reset;
     font-weight: bold;
     font-family: $sans;
@@ -239,14 +237,14 @@ figcaption {
     padding: 0.5rem 1rem 0;
 }
 
-.bd-paragraph-img {
+.hc-paragraph-img {
     img {
         width: 100%;
         height: auto;
     }
 }
 
-.bd-container-img {
+.hc-container-img {
     width: 100%;
 
     img {
@@ -255,7 +253,7 @@ figcaption {
     }
 }
 
-.bd-fluid-img {
+.hc-fluid-img {
     display: none;
     width: 100%;
     max-width: 100vw;
@@ -285,7 +283,7 @@ blockquote {
     padding: 0;
 }
 
-.bd-quotemark-desk {
+.hc-quotemark-desk {
     display: inline-block;
     font-family: $slab;
     font-size: 20rem;
@@ -301,7 +299,7 @@ blockquote {
     }
 }
 
-.bd-quotemark-mob {
+.hc-quotemark-mob {
     display: none;
     @media (max-width: 900px) {
         display: inline-block;
@@ -314,7 +312,7 @@ blockquote {
     }
 }
 
-.bd-quote {
+.hc-quote {
     @extend .reset;
     font-family: $serif;
     font-size: 4.8rem;
@@ -327,7 +325,7 @@ blockquote {
     }
 }
 
-.bd-attribution {
+.hc-attribution {
     @extend .reset;
     font-size: 1.8rem;
     font-weight: bold;
@@ -352,7 +350,7 @@ IX. Breakout section
 -------------------------------------------
 */
 
-.bd-breakout-section {
+.hc-breakout-section {
     text-align: left;
     margin: 3.6rem auto;
 
@@ -372,11 +370,11 @@ X. Notes and corrections
 -------------------------------------------
 */
 
-.bd-note-wrapper {
+.hc-note-wrapper {
     margin: 2.4rem auto;
 }
 
-.bd-note {
+.hc-note {
     @extend .reset;
     color: $lighter;
     font-size: 1.4rem;
@@ -391,10 +389,10 @@ XI. Sources
 -------------------------------------------
 */
 
-.bd-sources-header {
+.hc-sources-header {
     display: none;
-    @extend #bd-sources-well;
-    @extend .bd-sources-btn;
+    @extend #hc-sources-well;
+    @extend .hc-sources-btn;
     margin: 1.2rem auto 6rem;
     width: 90%;
     max-width: 650px;
@@ -409,7 +407,7 @@ XI. Sources
     }
 }
 
-#bd-sources-well {
+#hc-sources-well {
     p {
         color: $lighter;
         margin: 0 auto;
@@ -425,9 +423,9 @@ XII. Credits
 -------------------------------------------
 */
 
-.bd-credits {
+.hc-credits {
     max-width: 650px;
-    @extend .bd-header-style;
+    @extend .hc-header-style;
     margin: 0 auto 4.8rem;
     font-size: 1.2rem;
     padding-top: 1.2rem;
@@ -450,12 +448,12 @@ XIII. Suggested stories
 -------------------------------------------
 */
 
-#bd-suggested-heading {
+#hc-suggested-heading {
     text-align: left;
     float: left;
 }
 
-.bd-refer-head {
+.hc-refer-head {
     @extend .reset;
     margin: 1.2rem 0 0.6rem;
     font-size: 1.5rem;
@@ -463,7 +461,7 @@ XIII. Suggested stories
     line-height: 1.8rem;
 }
 
-.bd-refer {
+.hc-refer {
     height: 100%;
     width: calc((100% / 3) - 3%);
     margin-right: 3%;
@@ -480,7 +478,7 @@ XIII. Suggested stories
     }
 }
 
-.bd-refer-deck {
+.hc-refer-deck {
     @extend .reset;
     font-family: $sans;
     font-size: 1.2rem;
@@ -490,7 +488,7 @@ XIII. Suggested stories
     width: 100%;
 }
 
-.bd-refer-img {
+.hc-refer-img {
     @media (max-width: 480px) {
         width: calc(50% - 3%) !important;
         float: left;
@@ -499,7 +497,7 @@ XIII. Suggested stories
     }
 }
 
-.bd-description-wrapper {
+.hc-description-wrapper {
     @media (max-width: 480px) {
         width: 50%;
         float: left;
@@ -512,7 +510,7 @@ XIV. Nav
 -------------------------------------------
 */
 
-#bd-nav-header {
+#hc-nav-header {
     display: none;
     position: fixed;
     top: 0;
@@ -524,13 +522,13 @@ XIV. Nav
     box-shadow: 0 0 2px 1px rgb(154, 154, 154);
 }
 
-.bd-nav-wrapper {
+.hc-nav-wrapper {
     width: 90%;
     margin: 0 auto;
     height: 40px;
 }
 
-#bd-nav-head {
+#hc-nav-head {
     display: inline-block;
     width: auto;
     float: left;
@@ -546,7 +544,7 @@ XIV. Nav
     }
 }
 
-#bd-nav-desk {
+#hc-nav-desk {
     float: right;
     width: 60%;
     max-width: 550px;
@@ -582,12 +580,12 @@ XIV. Nav
         }
     }
 
-    .bd-nav-active {
+    .hc-nav-active {
         color: white;
     }
 }
 
-#bd-hamburger {
+#hc-hamburger {
     display: none;
     @media (max-width: 700px) {
         display: inline-block;
@@ -605,7 +603,7 @@ XIV. Nav
     }
 }
 
-#bd-nav-mob {
+#hc-nav-mob {
     display: none;
     @media (max-width: 700px) {
         display: none;
@@ -619,7 +617,7 @@ XIV. Nav
         z-index: 9999;
     }
 
-    #bd-nav-close {
+    #hc-nav-close {
         float: right;
         color: rgba(255, 255, 255, 0.1);
         font-size: 3.6rem;
@@ -655,14 +653,14 @@ XIV. Nav
                 color: white;
             }
 
-            .bd-nav-active {
+            .hc-nav-active {
                 color: white;
             }
         }
     }
 }
 
-.bd-shadow {
+.hc-shadow {
     display: none;
     background: rgba(0, 0, 0, 0.2);
     height: 100vh;
@@ -679,7 +677,7 @@ XV. Loader
 -------------------------------------------
 */
 
-.bd-loader-wrapper {
+.hc-loader-wrapper {
     position: fixed;
     min-width: 100%;
     min-height: 100%;
@@ -696,7 +694,7 @@ XV. Loader
     }
 }
 
-.bd-loader {
+.hc-loader {
     position: absolute;
     left: 0;
     right: 0;
@@ -707,7 +705,7 @@ XV. Loader
     /* Safari */
     transform: translateY(-50%);
 
-    .bd-spinner {
+    .hc-spinner {
         margin: 3.6rem auto 0;
         width: 70px;
         text-align: center;
@@ -722,12 +720,12 @@ XV. Loader
             animation: sk-bouncedelay 1.4s infinite ease-in-out both;
         }
 
-        .bd-bounce1 {
+        .hc-bounce1 {
             -webkit-animation-delay: -0.32s;
             animation-delay: -0.32s;
         }
 
-        .bd-bounce2 {
+        .hc-bounce2 {
             -webkit-animation-delay: -0.16s;
             animation-delay: -0.16s;
         }

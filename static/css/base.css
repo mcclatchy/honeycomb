@@ -1,4 +1,4 @@
-.reset, .bd-head, .bd-deck, .bd-byline, .bd-date, .bd-section-head, .bd-subhead, .bd-quote, .bd-attribution, .bd-note, .bd-refer-head, .bd-refer-deck {
+.reset, .hc-head, .hc-deck, .hc-byline, .hc-date, .hc-section-head, .hc-subhead, .hc-quote, .hc-attribution, .hc-note, .hc-refer-head, .hc-refer-deck {
   margin: 0;
   padding: 0;
   border: 0;
@@ -14,31 +14,31 @@
   text-transform: none;
   text-align: left; }
 
-.bd-border-top {
+.hc-border-top {
   padding-top: 2.4rem;
   border-top: 0.5px solid #e9ebee; }
 
-.bd-border-bottom {
+.hc-border-bottom {
   border-bottom: 0.5px solid #e9ebee;
   padding-bottom: 1.6rem; }
 
-.bd-header-style, .bd-head, .bd-deck, .bd-byline, .bd-date, #bd-footer, .bd-credits {
+.hc-header-style, .hc-head, .hc-deck, .hc-byline, .hc-date, #hc-footer, .hc-credits {
   width: 90%;
   max-width: 950px;
   text-align: center;
   margin: 0 auto;
   display: block; }
 
-.bd-primary-color {
+.hc-primary-color {
   color: white; }
 
-.bd-primary-background {
+.hc-primary-background {
   background-color: white; }
 
-.bd-accent-color {
+.hc-accent-color {
   color: white; }
 
-.bd-accent-background {
+.hc-accent-background {
   background-color: white; }
 
 .beaufortgazette-primary-color {
@@ -497,7 +497,6 @@
 .vidaenelvalle-accent-background {
   background-color: #0280D3 !important; }
 
-/* test */
 /*
 TABLE OF CONTENTS
 -----------------
@@ -526,10 +525,10 @@ XV    Loader
 I. Content header
 -------------------------------------------
 */
-#bd-header {
+#hc-header {
   margin-bottom: 6rem; }
 
-.bd-head {
+.hc-head {
   margin: 2.4rem auto 1.2rem;
   font-family: "McClatchy Slab", Georgia, Times, "Times New Roman", serif;
   font-weight: normal;
@@ -538,11 +537,11 @@ I. Content header
   line-height: 9.6rem;
   color: black; }
   @media (max-width: 480px) {
-    .bd-head {
+    .hc-head {
       font-size: 7rem;
       line-height: 8.4rem; } }
 
-.bd-deck {
+.hc-deck {
   margin: 0 auto 2.4rem;
   font-family: "McClatchy Slab", Georgia, Times, "Times New Roman", serif;
   font-weight: normal;
@@ -551,11 +550,11 @@ I. Content header
   line-height: 6rem;
   color: black; }
   @media (max-width: 480px) {
-    .bd-deck {
+    .hc-deck {
       font-size: 3rem;
       line-height: 4.8rem; } }
 
-.bd-byline {
+.hc-byline {
   margin: 0 auto 0.6rem;
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: normal;
@@ -564,7 +563,7 @@ I. Content header
   line-height: 2rem;
   color: black; }
 
-.bd-date {
+.hc-date {
   margin: 0 auto 1.2rem;
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: normal;
@@ -573,7 +572,7 @@ I. Content header
   line-height: 1.8rem;
   color: black; }
 
-.bd-sources-btn, .bd-sources-header {
+.hc-sources-btn, .hc-sources-header {
   display: block;
   margin: 1.2rem auto 0;
   border: none;
@@ -583,10 +582,10 @@ I. Content header
   border: 1px solid #a7a3a4;
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.2rem; }
-  .bd-sources-btn:hover, .bd-sources-header:hover {
+  .hc-sources-btn:hover, .hc-sources-header:hover {
     background: #f2f1f1;
     color: #756f71; }
-  .bd-sources-btn:focus, .bd-sources-header:focus {
+  .hc-sources-btn:focus, .hc-sources-header:focus {
     outline: none; }
 
 .share-icons {
@@ -615,11 +614,11 @@ II. Content well
   margin-left: auto;
   margin-right: auto; }
 
-.bd-intro {
+.hc-intro {
   font-size: 2.6rem !important;
   line-height: 4.8rem !important; }
   @media (max-width: 480px) {
-    .bd-intro {
+    .hc-intro {
       font-size: 2.4rem !important;
       line-height: 3.6rem !important; } }
 
@@ -633,7 +632,7 @@ p {
       font-size: 2rem;
       line-height: 3.6rem; } }
 
-.bd-dropcap {
+.hc-dropcap {
   float: left;
   font-size: 17rem;
   line-height: 18rem;
@@ -641,7 +640,7 @@ p {
   padding-top: 0;
   font-family: "McClatchy Slab", Georgia, Times, "Times New Roman", serif; }
   @media (max-width: 480px) {
-    .bd-dropcap {
+    .hc-dropcap {
       font-size: 13rem;
       line-height: 14rem;
       margin-bottom: -5rem; } }
@@ -651,10 +650,10 @@ p {
 III. Content footer
 -------------------------------------------
 */
-#bd-footer {
+#hc-footer {
   max-width: 850px; }
 
-#bd-comments-heading {
+#hc-comments-heading {
   float: left;
   margin-top: 4rem; }
 
@@ -663,14 +662,14 @@ III. Content footer
 IV. Section head, subhead
 -------------------------------------------
 */
-.bd-section-head {
+.hc-section-head {
   font-weight: bold;
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 2.4rem;
   line-height: 3rem;
   margin: 0 0 0.6rem; }
 
-.bd-subhead {
+.hc-subhead {
   font-weight: bold;
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   margin: 0 0 0.6rem;
@@ -690,21 +689,21 @@ figure {
 figcaption {
   padding: 0.5rem 1rem 0; }
 
-.bd-paragraph-img img {
+.hc-paragraph-img img {
   width: 100%;
   height: auto; }
 
-.bd-container-img {
+.hc-container-img {
   width: 100%; }
-  .bd-container-img img {
+  .hc-container-img img {
     width: 100%;
     height: auto; }
 
-.bd-fluid-img {
+.hc-fluid-img {
   display: none;
   width: 100%;
   max-width: 100vw; }
-  .bd-fluid-img img {
+  .hc-fluid-img img {
     width: 100%;
     height: auto; }
 
@@ -724,7 +723,7 @@ blockquote {
   position: relative;
   padding: 0; }
 
-.bd-quotemark-desk {
+.hc-quotemark-desk {
   display: inline-block;
   font-family: "McClatchy Slab", Georgia, Times, "Times New Roman", serif;
   font-size: 20rem;
@@ -736,13 +735,13 @@ blockquote {
   margin-top: -5rem;
   font-style: italic; }
   @media (max-width: 900px) {
-    .bd-quotemark-desk {
+    .hc-quotemark-desk {
       display: none; } }
 
-.bd-quotemark-mob {
+.hc-quotemark-mob {
   display: none; }
   @media (max-width: 900px) {
-    .bd-quotemark-mob {
+    .hc-quotemark-mob {
       display: inline-block;
       font-size: 15rem;
       float: left;
@@ -751,18 +750,18 @@ blockquote {
       padding: 0;
       font-family: "McClatchy Slab", Georgia, Times, "Times New Roman", serif; } }
 
-.bd-quote {
+.hc-quote {
   font-family: "Lyon", Georgia, serif;
   font-size: 4.8rem;
   font-weight: bold;
   font-style: italic;
   line-height: 6rem; }
   @media (max-width: 480px) {
-    .bd-quote {
+    .hc-quote {
       font-size: 3.6rem;
       line-height: 4.8rem; } }
 
-.bd-attribution {
+.hc-attribution {
   font-size: 1.8rem;
   font-weight: bold;
   text-align: right;
@@ -770,7 +769,7 @@ blockquote {
   padding-right: 4rem;
   margin: 2.4rem 0 0; }
   @media (max-width: 678px) {
-    .bd-attribution {
+    .hc-attribution {
       font-size: 1.5rem; } }
 
 /*
@@ -783,10 +782,10 @@ VIII. Related links and fact boxes
 IX. Breakout section
 -------------------------------------------
 */
-.bd-breakout-section {
+.hc-breakout-section {
   text-align: left;
   margin: 3.6rem auto; }
-  .bd-breakout-section p {
+  .hc-breakout-section p {
     width: 100%;
     max-width: 950px;
     font-size: 1.6rem !important;
@@ -799,10 +798,10 @@ IX. Breakout section
 X. Notes and corrections
 -------------------------------------------
 */
-.bd-note-wrapper {
+.hc-note-wrapper {
   margin: 2.4rem auto; }
 
-.bd-note {
+.hc-note {
   color: #a7a3a4;
   font-size: 1.4rem;
   line-height: 2rem;
@@ -814,18 +813,18 @@ X. Notes and corrections
 XI. Sources
 -------------------------------------------
 */
-.bd-sources-header {
+.hc-sources-header {
   display: none;
   margin: 1.2rem auto 6rem;
   width: 90%;
   max-width: 650px; }
-  .bd-sources-header:hover {
+  .hc-sources-header:hover {
     background: #f2f1f1;
     color: #756f71; }
-  .bd-sources-header:focus {
+  .hc-sources-header:focus {
     outline: none; }
 
-#bd-sources-well p, .bd-sources-header p {
+#hc-sources-well p, .hc-sources-header p {
   color: #a7a3a4;
   margin: 0 auto;
   font-size: 1.2rem !important;
@@ -837,19 +836,19 @@ XI. Sources
 XII. Credits
 -------------------------------------------
 */
-.bd-credits {
+.hc-credits {
   max-width: 650px;
   margin: 0 auto 4.8rem;
   font-size: 1.2rem;
   padding-top: 1.2rem; }
   @media (max-width: 480px) {
-    .bd-credits {
+    .hc-credits {
       margin: 1.2 auto 4.8rem; } }
-  .bd-credits div {
+  .hc-credits div {
     display: inline-block;
     padding: 0 2rem 0 0; }
     @media (max-width: 480px) {
-      .bd-credits div {
+      .hc-credits div {
         display: block; } }
 
 /*
@@ -857,31 +856,31 @@ XII. Credits
 XIII. Suggested stories
 -------------------------------------------
 */
-#bd-suggested-heading {
+#hc-suggested-heading {
   text-align: left;
   float: left; }
 
-.bd-refer-head {
+.hc-refer-head {
   margin: 1.2rem 0 0.6rem;
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.8rem; }
 
-.bd-refer {
+.hc-refer {
   height: 100%;
   width: calc((100% / 3) - 3%);
   margin-right: 3%;
   float: left;
   display: inline-block;
   font-size: 1.5rem; }
-  .bd-refer:last-child {
+  .hc-refer:last-child {
     margin-right: 0; }
   @media (max-width: 480px) {
-    .bd-refer {
+    .hc-refer {
       width: 100%;
       margin-right: 0; } }
 
-.bd-refer-deck {
+.hc-refer-deck {
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.2rem;
   line-height: 1.8rem;
@@ -890,14 +889,14 @@ XIII. Suggested stories
   width: 100%; }
 
 @media (max-width: 480px) {
-  .bd-refer-img {
+  .hc-refer-img {
     width: calc(50% - 3%) !important;
     float: left;
     margin-right: 3%;
     display: inline-block; } }
 
 @media (max-width: 480px) {
-  .bd-description-wrapper {
+  .hc-description-wrapper {
     width: 50%;
     float: left; } }
 
@@ -906,7 +905,7 @@ XIII. Suggested stories
 XIV. Nav
 -------------------------------------------
 */
-#bd-nav-header {
+#hc-nav-header {
   display: none;
   position: fixed;
   top: 0;
@@ -917,12 +916,12 @@ XIV. Nav
   height: 40px;
   box-shadow: 0 0 2px 1px #9a9a9a; }
 
-.bd-nav-wrapper {
+.hc-nav-wrapper {
   width: 90%;
   margin: 0 auto;
   height: 40px; }
 
-#bd-nav-head {
+#hc-nav-head {
   display: inline-block;
   width: auto;
   float: left;
@@ -933,42 +932,42 @@ XIV. Nav
   font-weight: bold;
   font-size: 1.8rem; }
   @media (max-width: 850px) {
-    #bd-nav-head {
+    #hc-nav-head {
       font-size: 1.6rem; } }
 
-#bd-nav-desk {
+#hc-nav-desk {
   float: right;
   width: 60%;
   max-width: 550px; }
   @media (max-width: 700px) {
-    #bd-nav-desk {
+    #hc-nav-desk {
       display: none; } }
-  #bd-nav-desk li {
+  #hc-nav-desk li {
     height: 40px;
     float: left;
     width: calc(100% / 4);
     text-align: center;
     cursor: pointer;
     padding: 1.1rem 0.5rem 0; }
-    #bd-nav-desk li:last-child {
+    #hc-nav-desk li:last-child {
       border-right: none; }
-    #bd-nav-desk li:hover {
+    #hc-nav-desk li:hover {
       background: rgba(255, 255, 255, 0.1); }
-    #bd-nav-desk li a {
+    #hc-nav-desk li a {
       color: rgba(255, 255, 255, 0.7);
       text-transform: uppercase;
       font-family: "McClatchy Sans Cond", "Roboto Condensed Medium", "HelveticaNeue-CondensedBold", sans-serif;
       font-size: 1.4rem; }
       @media (max-width: 850px) {
-        #bd-nav-desk li a {
+        #hc-nav-desk li a {
           font-size: 1.2rem; } }
-  #bd-nav-desk .bd-nav-active {
+  #hc-nav-desk .hc-nav-active {
     color: white; }
 
-#bd-hamburger {
+#hc-hamburger {
   display: none; }
   @media (max-width: 700px) {
-    #bd-hamburger {
+    #hc-hamburger {
       display: inline-block;
       float: right;
       height: 40px;
@@ -977,13 +976,13 @@ XIV. Nav
       cursor: pointer;
       text-align: center;
       padding: 0.6rem 0 0; }
-      #bd-hamburger:hover {
+      #hc-hamburger:hover {
         background: rgba(255, 255, 255, 0.1); } }
 
-#bd-nav-mob {
+#hc-nav-mob {
   display: none; }
   @media (max-width: 700px) {
-    #bd-nav-mob {
+    #hc-nav-mob {
       display: none;
       height: 100vh;
       position: fixed;
@@ -992,7 +991,7 @@ XIV. Nav
       width: 80%;
       box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.8);
       z-index: 9999; } }
-  #bd-nav-mob #bd-nav-close {
+  #hc-nav-mob #hc-nav-close {
     float: right;
     color: rgba(255, 255, 255, 0.1);
     font-size: 3.6rem;
@@ -1002,26 +1001,26 @@ XIV. Nav
     text-align: right;
     padding: 1rem 2rem;
     margin-bottom: 2rem; }
-    #bd-nav-mob #bd-nav-close:hover {
+    #hc-nav-mob #hc-nav-close:hover {
       color: white; }
-  #bd-nav-mob li {
+  #hc-nav-mob li {
     padding: 1.8rem 3rem 1.2rem;
     display: block;
     height: 72px; }
-    #bd-nav-mob li:first-child {
+    #hc-nav-mob li:first-child {
       margin-top: 4rem; }
-    #bd-nav-mob li a {
+    #hc-nav-mob li a {
       color: rgba(255, 255, 255, 0.5);
       text-transform: uppercase;
       font-family: "McClatchy Sans Cond", "Roboto Condensed Medium", "HelveticaNeue-CondensedBold", sans-serif;
       font-size: 3rem;
       display: block; }
-      #bd-nav-mob li a:hover {
+      #hc-nav-mob li a:hover {
         color: white; }
-      #bd-nav-mob li a .bd-nav-active {
+      #hc-nav-mob li a .hc-nav-active {
         color: white; }
 
-.bd-shadow {
+.hc-shadow {
   display: none;
   background: rgba(0, 0, 0, 0.2);
   height: 100vh;
@@ -1036,7 +1035,7 @@ XIV. Nav
 XV. Loader
 -------------------------------------------
 */
-.bd-loader-wrapper {
+.hc-loader-wrapper {
   position: fixed;
   min-width: 100%;
   min-height: 100%;
@@ -1048,11 +1047,11 @@ XV. Loader
   right: 0;
   margin-top: -290px; }
   @media (max-width: 768px) {
-    .bd-loader-wrapper {
+    .hc-loader-wrapper {
       height: calc(100vh + 165px);
       margin-top: -165px; } }
 
-.bd-loader {
+.hc-loader {
   position: absolute;
   left: 0;
   right: 0;
@@ -1062,11 +1061,11 @@ XV. Loader
   -webkit-transform: translateY(-50%);
   /* Safari */
   transform: translateY(-50%); }
-  .bd-loader .bd-spinner {
+  .hc-loader .hc-spinner {
     margin: 3.6rem auto 0;
     width: 70px;
     text-align: center; }
-    .bd-loader .bd-spinner > div {
+    .hc-loader .hc-spinner > div {
       width: 18px;
       height: 18px;
       background-color: white;
@@ -1074,10 +1073,10 @@ XV. Loader
       display: inline-block;
       -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
       animation: sk-bouncedelay 1.4s infinite ease-in-out both; }
-    .bd-loader .bd-spinner .bd-bounce1 {
+    .hc-loader .hc-spinner .hc-bounce1 {
       -webkit-animation-delay: -0.32s;
       animation-delay: -0.32s; }
-    .bd-loader .bd-spinner .bd-bounce2 {
+    .hc-loader .hc-spinner .hc-bounce2 {
       -webkit-animation-delay: -0.16s;
       animation-delay: -0.16s; }
 @-webkit-keyframes sk-bouncedelay {

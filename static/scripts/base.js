@@ -9,21 +9,21 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
 		var distanceFromTop = $(this).scrollTop();
-		if (distanceFromTop >= $('#bd-hero').offset().top + $('#bd-nav-header').height()) {
-			$('#bd-nav-header').slideDown();
+		if (distanceFromTop >= $('#hc-hero').offset().top + $('#hc-nav-header').height()) {
+			$('#hc-nav-header').slideDown();
 		} else {
-			$('#bd-nav-header').slideUp();
+			$('#hc-nav-header').slideUp();
 		}
     });
 
-    $('#bd-hamburger').click(function () {
-        $('#bd-nav-mob').show();
-        $('.bd-shadow').show();
+    $('#hc-hamburger').click(function () {
+        $('#hc-nav-mob').show();
+        $('.hc-shadow').show();
     });
 
-    $('#bd-nav-close').click(function () {
-        $('#bd-nav-mob').hide();
-        $('.bd-shadow').hide();
+    $('#hc-nav-close').click(function () {
+        $('#hc-nav-mob').hide();
+        $('.hc-shadow').hide();
     });
 
     // look through all site urls and find the one that your page matches
@@ -33,32 +33,32 @@ $(document).ready(function() {
 
         $.each(data, function(k, v) {
             if (v.site === siteURL) {
-                $('.bd-primary-color').addClass(v.name + "-primary-color");
-                $('.bd-primary-background').addClass(v.name + "-primary-background");
-                $('.bd-accent-color').addClass(v.name + "-accent-color");
-                $('.bd-accent-background').addClass(v.name + "-accent-background");
+                $('.hc-primary-color').addClass(v.name + "-primary-color");
+                $('.hc-primary-background').addClass(v.name + "-primary-background");
+                $('.hc-accent-color').addClass(v.name + "-accent-color");
+                $('.hc-accent-background').addClass(v.name + "-accent-background");
             }
         });
     }
 
     function addLoader() {
         var logo = $('#masthead-logo').html();
-        $('.bd-loader-logo').html(logo);
+        $('.hc-loader-logo').html(logo);
 
         $('body').css('overflow', 'hidden');
-        $('.bd-fluid-img').delay(3000).show();
-        $('.bd-loader').delay(2000).fadeOut('slow');
-        $('.bd-loader-wrapper').delay(3000).fadeOut('slow');
+        $('.hc-fluid-img').delay(3000).show();
+        $('.hc-loader').delay(2000).fadeOut('slow');
+        $('.hc-loader-wrapper').delay(3000).fadeOut('slow');
         $('html, body').scrollTop(0);
         $('body').delay(4000).css('overflow', 'auto');
     }
 
     function setImgWidth() {
-        var fluidImg = $('.bd-fluid-img').closest('section');
+        var fluidImg = $('.hc-fluid-img').closest('section');
         fluidImg.removeClass('container').addClass('container-fluid');
         fluidImg.find('.row').removeClass('row').addClass('row-fluid');
         fluidImg.find('.col-sm-12').css('padding', '0');
-        $('.bd-container-img').closest('section').find('.col-sm-12').css('padding', '0');
+        $('.hc-container-img').closest('section').find('.col-sm-12').css('padding', '0');
     }
 
     function setShareURL() {
@@ -67,7 +67,7 @@ $(document).ready(function() {
 
         // Facebook
         var facebookURL = "http://www.facebook.com/sharer/sharer.php?u=" + projectURL;
-        $('#bd-facebook-share').attr("href", facebookURL);
+        $('#hc-facebook-share').attr("href", facebookURL);
 
         // Twitter
         var metaTitle = $('meta[name=title]').attr('content');
@@ -75,12 +75,12 @@ $(document).ready(function() {
         var twitterPartial = encodeURI(title[0]);
         twitterPartial = amperOctoPlus(twitterPartial);
         var twitterURL = "https://twitter.com/home?status=" + twitterPartial + "%20" + projectURL;
-        $("#bd-twitter-share").attr("href", twitterURL);
+        $("#hc-twitter-share").attr("href", twitterURL);
 
         // Email
         var emailPartial = "mailto:?subject=Voters Make the Call: 69 voicemails from 25 states&body=";
         var emailURL = emailPartial + projectURL;
-        $("#bd-email-share").attr("href", emailURL);
+        $("#hc-email-share").attr("href", emailURL);
     }
 
     // Clean up ampersands, octothorpes, and pluses
@@ -93,16 +93,16 @@ $(document).ready(function() {
         return url;
     }
 
-    var sourcesList = $('#bd-sources-well').html();
-    $('.bd-sources-header').html(sourcesList);
+    var sourcesList = $('#hc-sources-well').html();
+    $('.hc-sources-header').html(sourcesList);
 
-    $('.bd-sources-btn').click(function() {
-        $('.bd-sources-btn').hide();
-        $('.bd-sources-header').show().css('display', 'block');
+    $('.hc-sources-btn').click(function() {
+        $('.hc-sources-btn').hide();
+        $('.hc-sources-header').show().css('display', 'block');
     });
 
-    $('.bd-sources-header').click(function() {
-        $('.bd-sources-header').hide();
-        $('.bd-sources-btn').show().css('display', 'block');
+    $('.hc-sources-header').click(function() {
+        $('.hc-sources-header').hide();
+        $('.hc-sources-btn').show().css('display', 'block');
     });
 });
