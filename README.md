@@ -19,9 +19,10 @@ Make sure you have a [GitHub](https://github.com/) account and [Git](https://git
 4. Clone the forked repository by pasting `git clone YOUR REPO URL` into your terminal.
 5. Navigate into your local Honeycomb directory and enter `php -S localhost:8000`.
 6. Go to the `localhost:8000` web address in your browser to see your new project and begin customizing project files.
-  * If you're using Sass file:
-    1. Go to `/honeycomb/static` in a new terminal window.
-    2. Enter `sass --watch sass:css` to begin watching and compiling your files.
+
+*If you're using Sass file:*
+1. Go to `/honeycomb/static` in a new terminal window.
+2. Enter `sass --watch sass:css` to begin watching and compiling your files.
 
 ## Navigating Honeycomb files
 `index.html` comes built with all of the code you need to view your project as if it were published on one of our standardized market sites. There are three sections you may customize:
