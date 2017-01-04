@@ -24,9 +24,12 @@ Make sure you have a [GitHub](https://github.com/) account and [Git](https://git
 ## Navigating Honeycomb files
 `index.php` is a local version of a basic McClatchy page framework (i.e. the market's header/footer, styles, etc.). The contents of this file create a local developing environment for you but shouldn't be edited or included in Newsgate.
 
-`custom.php` is where you may add custom code to build your project.
+`custom.php` starts with a sample story and generic elements that is your canvass to customize.
   - `<!-- custom head -->` is where you may add style and miscellaneous dependencies.
-  - `<!-- custom body -->` is where you may add HTML.
+  - `<!-- custom body -->` is where you may add HTML and usually includes:
+      1. `<!-- content header -->` for hero images/videos, title text and other top hierarchy elements.
+      2. `<!-- content body -->` for story text, art and other elements weaved throughout the story.
+      3. `<!-- content footer -->` for breakout sections, suggested stories, comments and other bottom hierarchy elements.
   - `<!-- custom scripts -->` is where you may add JS or other script dependencies.
 
 ####Existing dependencies
@@ -34,14 +37,22 @@ Make sure you have a [GitHub](https://github.com/) account and [Git](https://git
 - `css/custom.css` is where new styles should be added to build upon or override those established in `css/base.css`.
 - `scripts/custom.js` is where new scripts should be added.
 
-- Sass
+####Writing Newsgate-safe classes
+One challenge in Newsgate is the possibility that its stylesheets could change significantly with updates. Below are a few tips to prevent updates from breaking your project:
+- Use classes to style common tags like `<p>`, <h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`
+- Use `hc-` or another prefix for classes to ensure they never override classes established in Newsgate.
+- Use the `.reset` class
+    - If writing in css: Add your class to the `.reset` list at the top of your stylesheet.
+    - If writing in sass: Add `@extend .reset` to the top of your class's properties.
+
+####Sass
     - `sass/custom.scss` is available and ready to compile into its .css counterpart if you prefer [writing with Sass](http://sass-lang.com/install). 
-    - `sass/_variables.scss`, `sass/_extendables.scss` and `sass/_site-colors.scss`.
+    - `sass/_variables.scss`, `sass/_extendables.scss` and `sass/_site-colors.scss` are [partials] (http://sass-lang.com/guide/#partials).
 
 ## Transferring to Newsgate
 1. Upload your `img`, `css` and `scripts` directories to your server.
-2. Update your `custom dependencies` in `index.html` with their new URLs.
-3. Paste your `custom body code` (excluding body copy) from `index.html` into Newsgate's `mm_link` sections. Include their `mm_embed` counterparts within the story copy.
+2. Update your dependencies and image links in `custom.php` with their new URLs.
+3. Paste your `custom body` code (excluding body copy) from `custom.php` into Newsgate's `mm_link` sections. Include their `mm_embed` counterparts within the story copy.
 
 ## Code Cookbook
 
