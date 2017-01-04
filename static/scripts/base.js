@@ -55,9 +55,11 @@ $(document).ready(function() {
 
     function setImgWidth() {
         var fluidImg = $('.hc-fluid-img').closest('section');
-        fluidImg.removeClass('container').addClass('container-fluid');
-        fluidImg.find('.row').removeClass('row').addClass('row-fluid');
-        fluidImg.find('.col-sm-12').css('padding', '0');
+        if ($('#hc-hero').hasClass('.hc-fluid-img') || $('figure').hasClass('.hc-fluid-img')) {
+            fluidImg.removeClass('container').addClass('container-fluid');
+            fluidImg.find('.row').removeClass('row').addClass('row-fluid');
+            fluidImg.find('.col-sm-12').css('padding', '0');
+        }
         $('.hc-container-img').closest('section').find('.col-sm-12').css('padding', '0');
     }
 

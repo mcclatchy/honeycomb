@@ -76,7 +76,7 @@
     <header id="hc-header">
 
         <!-- hero image -->
-        <figure id="hc-hero" class="hc-fluid-img">
+        <figure id="hc-hero" class="hc-container-img">
             <img src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
             <figcaption>Caption information goes here. (Photographer Name, Publication)</figcaption>
         </figure>
@@ -150,7 +150,7 @@
             cupim jerky sausage laborum sirloin t-bone mollit. In meatloaf eiusmod cupim. Duis ball tip ullamco ut in magna.</p>
 
             <!-- fluid-width image -->
-            <figure class="hc-fluid-img">
+            <figure class="hc-container-img">
                 <img src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
                 <figcaption>Caption information goes here. (Photographer Name, Publication)</figcaption>
             </figure>

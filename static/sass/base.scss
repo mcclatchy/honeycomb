@@ -141,10 +141,12 @@ II. Content well
 */
 
 #content-well {
-    max-width: 650px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    p {
+        max-width: 650px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .hc-intro {
@@ -216,9 +218,11 @@ IV. Section head, subhead
     @extend .reset;
     font-weight: bold;
     font-family: $sans;
-    margin: 0 0 0.6rem;
+    margin: 0 auto 0.6rem;
     font-size: 2rem;
     line-height: 2.6rem;
+    max-width: 650px;
+    width: 90%;
 }
 
 /*
@@ -277,6 +281,8 @@ VII. Blockquotes
 */
 
 blockquote {
+    max-width: 650px;
+    width: 90%;
     border: none;
     margin: 3.6rem auto;
     position: relative;
@@ -319,6 +325,7 @@ blockquote {
     font-weight: bold;
     font-style: italic;
     line-height: 6rem;
+    width: 100%;
     @media (max-width: 480px) {
         font-size: 3.6rem;
         line-height: 4.8rem;
