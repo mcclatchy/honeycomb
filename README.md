@@ -1,13 +1,13 @@
-# Base Design
+# Honeycomb
 
 #### What is it?
 This is a starting design for McClatchy's Special Projects Template. It has been created for local development that can easily be moved over to Newsgate for testing and publishing. 
 
 #### Why use it?
-Base Design standardizes and streamlines the process of creating special project designs within Newsgate/Escenic by providing HTML, styles and scripts to give news developers a running start at customization.
+Honeycomb standardizes and streamlines the process of creating special project designs within Newsgate/Escenic by providing HTML, styles and scripts to give news developers a running start at customization.
 
 #### Who is it for?
-Base Design is for McClatchy front-end developers who want to give projects a special treatment beyond the standard article page.
+Honeycomb is for McClatchy front-end developers who want to give projects a special treatment beyond the standard article page.
 
 ## Setup
 
@@ -18,7 +18,7 @@ Make sure you have a [GitHub](https://github.com/) account and [Git](https://git
 3. Open your terminal and navigate to the directory that your project will live in.
 4. Clone the forked repository by pasting `git clone YOUR REPO URL` into your terminal.
 
-## Navigating Base Design files
+## Navigating Honeycomb files
 `index.html` comes built with all of the code you need to view your project as if it were published on one of our standardized market sites. There are three sections you may customize:
 - `<!-- custom head -->` is where you may add style and miscellaneous dependencies.
 - `<!-- custom body -->` is where you may add HTML.
