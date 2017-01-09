@@ -35,7 +35,7 @@
     <meta property="og:site_name" content="mcclatchydc" />
     <meta property="fb:app_id" content="1407731799445564" />
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="McClatchyDC">
+    <meta name="twitter:site" content="mcclatchydc">
     <meta name="twitter:title" content="Special template test">
     <meta name="twitter:description" content="Bacon ipsum dolor amet ham hock ribeye mollit andouille lorem duis. Sed cillum drumstick consequat biltong laboris. Nostrud et voluptate enim ut, anim qui aliquip est cupim kielbasa aliqua. Culpa occaecat fatback, cow reprehenderit sirloin pork chop pastrami ea elit incididunt sunt andouille. Ex bacon capicola, veniam flank cupim ullamco sint pariatur duis. Brisket fatback tongue pastrami cow swine sunt adipisicing eiusmod turducken duis doner non. Tri-tip pariatur rump meatloaf enim.">
     <meta name="msapplication-TileImage" content="http://www.mcclatchydc.com/static/theme/mcclatchydc/base/ico/windowsmetro-144.png" />
@@ -70,7 +70,7 @@
             'marketInfo.addcities': 'New York, Los Angeles, Chicago, Houston',
             'marketInfo.staticDirectory': 'mcclatchydc',
             'marketInfo.state_abbreviation': 'DC',
-            'publication.domain': 'McClatchyDC.com',
+            'publication.domain': 'mcclatchydc.com',
             'accuweather.partnerCode': 'MCCLATCHY',
             'marketInfo.domain': 'mcclatchydc',
             'facebook.app.id': '1407731799445564',
@@ -283,7 +283,7 @@ Referenced feature mi.masterConfig.searchBarType, which was empty. Attempting fa
                     <div class="masthead-row">
                         <div id="masthead-main">
                             <div id="masthead-logo">
-                                <a href="http://www.mcclatchydc.com/" target="_top"><img src="http://www.mcclatchydc.com/static/images/mcclatchydc/logo-lg.png" alt="McClatchy DC | McClatchyDC.com" class="img-responsive center-block"></a>
+                                <a href="http://www.mcclatchydc.com/" target="_top"><img src="http://www.mcclatchydc.com/static/images/mcclatchydc/logo-lg.png" alt="McClatchy DC | mcclatchydc.com" class="img-responsive center-block"></a>
                             </div>
                             <div id="quick-nav" class="hidden-xs">
                                 <ul class=" nav navbar-nav">
@@ -601,7 +601,7 @@ display: block; } }
             <div id="footer">
                 <header id="footer-logo">
                     <div class="container text-center">
-                        <a href="http://www.mcclatchydc.com/" target="_top"><img src="http://www.mcclatchydc.com/static/images/mcclatchydc/logo-sm.png" alt="McClatchy DC | McClatchyDC.com" class="img-responsive"></a>
+                        <a href="http://www.mcclatchydc.com/" target="_top"><img src="http://www.mcclatchydc.com/static/images/mcclatchydc/logo-sm.png" alt="McClatchy DC | mcclatchydc.com" class="img-responsive"></a>
                     </div>
                 </header>
                 <div class="container hidden-xs">
@@ -660,17 +660,17 @@ Social, Mobile & More
 </h2>
                                         <ul class=" footer-menu">
                                             <li>
-                                                <a href="https://www.facebook.com/pages/McClatchyDC/27177163800#navlink=mi_footer" target="_blank">
+                                                <a href="https://www.facebook.com/pages/mcclatchydc/27177163800#navlink=mi_footer" target="_blank">
 Facebook
 </a>
                                             </li>
                                             <li>
-                                                <a href="https://twitter.com/McClatchyDC#navlink=mi_footer" target="_blank">
+                                                <a href="https://twitter.com/mcclatchydc#navlink=mi_footer" target="_blank">
 Twitter
 </a>
                                             </li>
                                             <li>
-                                                <a href="https://www.youtube.com/user/McClatchyDC#navlink=mi_footer" target="_blank">
+                                                <a href="https://www.youtube.com/user/mcclatchydc#navlink=mi_footer" target="_blank">
 YouTube
 </a>
                                             </li>
@@ -792,17 +792,17 @@ Social, Mobile & More
                             <div class="panel-body">
                                 <ul class=" footer-menu">
                                     <li>
-                                        <a href="https://www.facebook.com/pages/McClatchyDC/27177163800#navlink=mi_footer" target="_blank">
+                                        <a href="https://www.facebook.com/pages/mcclatchydc/27177163800#navlink=mi_footer" target="_blank">
 Facebook
 </a>
                                     </li>
                                     <li>
-                                        <a href="https://twitter.com/McClatchyDC#navlink=mi_footer" target="_blank">
+                                        <a href="https://twitter.com/mcclatchydc#navlink=mi_footer" target="_blank">
 Twitter
 </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.youtube.com/user/McClatchyDC#navlink=mi_footer" target="_blank">
+                                        <a href="https://www.youtube.com/user/mcclatchydc#navlink=mi_footer" target="_blank">
 YouTube
 </a>
                                     </li>

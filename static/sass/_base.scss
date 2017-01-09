@@ -145,12 +145,52 @@ II. Content well
 -------------------------------------------
 */
 
-#content-well {
+p {
+    max-width: 650px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $serif;
+    font-size: 2rem;
+    margin-bottom: 2.4rem;
+    line-height: 3.6rem;
+    @media (max-width: 768px) {
+        font-size: 2rem;
+        line-height: 3.6rem;
+    }
+}
+
+[id*="content-body-"] {
+
     p {
-        max-width: 650px;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
+        @extend p;
+
+        &.hc-quote {
+            @extend .reset;
+            font-family: $serif;
+            font-size: 4.8rem;
+            font-weight: bold;
+            font-style: italic;
+            line-height: 6rem;
+            width: 100%;
+            @media (max-width: 480px) {
+                font-size: 3.6rem;
+                line-height: 4.8rem;
+            }
+        }
+
+        &.hc-attribution {
+            @extend .reset;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-align: right;
+            font-style: italic;
+            padding-right: 4rem;
+            margin: 2.4rem 0 0;
+            @media (max-width: 678px) {
+                font-size: 1.5rem;
+            }
+        }
     }
 }
 
@@ -164,6 +204,10 @@ II. Content well
 }
 
 p {
+    max-width: 650px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     font-family: $serif;
     font-size: 2rem;
     margin-bottom: 2.4rem;
@@ -230,6 +274,22 @@ IV. Section head, subhead
     width: 90%;
 }
 
+.hc-label {
+    font-size: 1.6rem;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 0.5rem;
+    padding: 0.8rem 0.8rem 0.6rem;
+    min-width: 8rem;
+    display: inline-block;
+    margin: 0;
+    border-bottom: none;
+    text-align: center;
+    font-family: $cond;
+    margin: 0 0 1rem;
+}
+
 /*
 -------------------------------------------
 V. Images: paragraph, container, fluid
@@ -246,7 +306,19 @@ figcaption {
     padding: 0.5rem 1rem 0;
 }
 
+.hc-mug-img {
+    width: 100%;
+    max-width: 200px;
+    display: inline-block;
+    margin: 0 auto;
+    img {
+        width: 100%;
+    }
+}
+
 .hc-paragraph-img {
+    max-width: 650px;
+    width: 90%;
     img {
         width: 100%;
         height: auto;
@@ -288,7 +360,7 @@ VII. Blockquotes
 
 blockquote {
     max-width: 650px;
-    width: 90%;
+    width: 100%;
     border: none;
     margin: 3.6rem auto;
     position: relative;
@@ -321,33 +393,6 @@ blockquote {
         margin: 0 2rem -10rem 0;
         padding: 0;
         font-family: $slab;
-    }
-}
-
-.hc-quote {
-    @extend .reset;
-    font-family: $serif;
-    font-size: 4.8rem;
-    font-weight: bold;
-    font-style: italic;
-    line-height: 6rem;
-    width: 100%;
-    @media (max-width: 480px) {
-        font-size: 3.6rem;
-        line-height: 4.8rem;
-    }
-}
-
-.hc-attribution {
-    @extend .reset;
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-align: right;
-    font-style: italic;
-    padding-right: 4rem;
-    margin: 2.4rem 0 0;
-    @media (max-width: 678px) {
-        font-size: 1.5rem;
     }
 }
 
