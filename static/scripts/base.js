@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $.getJSON('static/scripts/sites.json', function(data) {
+    $.getJSON('http://media.mcclatchydc.com/static/honeycomb/v1/newsroom-sites.json', function(data) {
         addSiteColor(data);
         addLoader();
         // setImgWidth();
