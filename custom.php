@@ -13,7 +13,6 @@
 <!-- /end custom head -->
 
 <!-- custom body -->
-    <section id="content-body-well">
         <!-- MM_LINK ███████████████████████████████████████████████████ -->
         <!-- content header -->
         <header id="hc-header">
@@ -51,8 +50,8 @@
             <h1 class="hc-head">Headline lives here</h1>
             <h2 class="hc-deck">This is the story of a deckhead that will grow up to live on this story page</h2>
 
-            <p class="hc-byline">By Firstname Lastname</p>
-            <p class="hc-date">Month ##, Year 0:00 AM</p>
+            <div class="hc-byline">By Firstname Lastname</div>
+            <div class="hc-date">Month ##, Year 0:00 AM</div>
 
             <button class="hc-sources-btn">View sources</button>
             <button class="hc-sources-header"></button>
@@ -63,7 +62,7 @@
 
 
         <!-- content well -->
-
+        <section id="content-body-well">
             <!-- MM_LINK ███████████████████████████████████████████████████ -->
             <!-- intro paragraph -->
             <p class="hc-intro"><span class="hc-dropcap">B</span>acon ipsum dolor amet ham hock ribeye mollit andouille lorem duis. Sed cillum drumstick consequat biltong laboris. Nostrud et voluptate enim ut, anim qui aliquip est cupim kielbasa aliqua. Culpa occaecat fatback, cow reprehenderit sirloin pork chop pastrami ea elit incididunt sunt andouille.</p>
@@ -104,8 +103,8 @@
             <!-- MM_LINK ███████████████████████████████████████████████████ -->
             <blockquote>
                 <div class="hc-quotemark-desk hc-accent-color">“</div>
-                <p class="hc-quote"><span class="hc-quotemark-mob hc-accent-color">“</span>This is a blockquote and lives inline because it always contains new content that is never repeated in the story.</p>
-                <p class="hc-attribution">— Firstname Lastname, Title here</p>
+                <div class="hc-quote"><span class="hc-quotemark-mob hc-accent-color">“</span>This is a blockquote and lives inline because it always contains new content that is never repeated in the story.</div>
+                <div class="hc-attribution">— Firstname Lastname, Title here</div>
             </blockquote>
             <!-- ██████████████████████████████████████████████ /END MM_LINK -->
 
@@ -164,9 +163,9 @@
                 <div><strong>Design: </strong>Firstname Lastname</div>
             </div>
             <!-- /end credits -->
-
+            <!-- ██████████████████████████████████████████████ /END MM_LINK -->
         <!-- /end content well -->
-    </section>
+        </section>
 
     <!-- content footer -->
     <footer id="hc-footer">
@@ -192,7 +191,7 @@
                         <img class="hc-refer-img" src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
                         <div class="hc-description-wrapper">
                             <h5 class="hc-refer-head">Headline that describes this story</h5>
-                            <p class="hc-refer-deck">Deckhead that describes the story goes here. Should be complete sentences.</p>
+                            <div class="hc-refer-deck">Deckhead that describes the story goes here. Should be complete sentences.</div>
                         </div>
                     </figure>
                 </div>
@@ -203,7 +202,7 @@
                         <img class="hc-refer-img" src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
                         <div class="hc-description-wrapper">
                             <h5 class="hc-refer-head">Headline that describes this story</h5>
-                            <p class="hc-refer-deck">Deckhead that describes the story goes here. Should be complete sentences.</p>
+                            <div class="hc-refer-deck">Deckhead that describes the story goes here. Should be complete sentences.</div>
                         </div>
                     </figure>
                 </div>
@@ -214,7 +213,7 @@
                         <img class="hc-refer-img" src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
                         <div class="hc-description-wrapper">
                             <h5 class="hc-refer-head">Headline that describes this story</h5>
-                            <p class="hc-refer-deck">Deckhead that describes the story goes here. Should be complete sentences.</p>
+                            <div class="hc-refer-deck">Deckhead that describes the story goes here. Should be complete sentences.</div>
                         </div>
                     </figure>
                 </div>

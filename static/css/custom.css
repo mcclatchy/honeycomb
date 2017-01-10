@@ -1,4 +1,4 @@
-.reset, .hc-head, .hc-deck, .hc-byline, .hc-date, [id*="content-body-"] p.hc-quote, [id*="content-body-"] p.hc-attribution, .hc-section-head, .hc-subhead, .hc-note, .hc-refer-head, .hc-refer-deck {
+.reset, .hc-head, .hc-deck, .hc-byline, .hc-date, .hc-section-head, .hc-subhead, .hc-quote, .hc-attribution, .hc-note, .hc-refer-head, .hc-refer-deck {
   margin: 0;
   padding: 0;
   border: 0;
@@ -626,28 +626,6 @@ p, [id*="content-body-"] p {
       font-size: 2rem;
       line-height: 3.6rem; } }
 
-[id*="content-body-"] p.hc-quote {
-  font-family: "Lyon", Georgia, serif;
-  font-size: 4.8rem;
-  font-weight: bold;
-  font-style: italic;
-  line-height: 6rem;
-  width: 100%; }
-  @media (max-width: 480px) {
-    [id*="content-body-"] p.hc-quote {
-      font-size: 3.6rem;
-      line-height: 4.8rem; } }
-[id*="content-body-"] p.hc-attribution {
-  font-size: 1.8rem;
-  font-weight: bold;
-  text-align: right;
-  font-style: italic;
-  padding-right: 4rem;
-  margin: 2.4rem 0 0; }
-  @media (max-width: 678px) {
-    [id*="content-body-"] p.hc-attribution {
-      font-size: 1.5rem; } }
-
 .hc-intro {
   font-size: 2.6rem !important;
   line-height: 4.8rem !important; }
@@ -791,6 +769,30 @@ blockquote {
   margin: 3.6rem auto;
   position: relative;
   padding: 0; }
+
+.hc-quote {
+  font-family: "Lyon", Georgia, serif;
+  font-size: 4.8rem;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 6rem;
+  width: 100%; }
+  @media (max-width: 480px) {
+    .hc-quote {
+      font-size: 3.6rem;
+      line-height: 4.8rem; } }
+
+.hc-attribution {
+  font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: right;
+  font-style: italic;
+  padding-right: 4rem;
+  margin: 2.4rem 0 0; }
+  @media (max-width: 678px) {
+    .hc-attribution {
+      font-size: 1.5rem; } }
 
 .hc-quotemark-desk {
   display: inline-block;
