@@ -1,9 +1,8 @@
 $(document).ready(function() {
-
-    $.getJSON('http://media.mcclatchydc.com/static/honeycomb/v1/newsroom-sites.json', function(data) {
+    // http://media.mcclatchydc.com/static/honeycomb/v1/newsroom-sites.json
+    $.getJSON('static/scripts/newsroom-sites.json', function(data) {
         addSiteColor(data);
         addLoader();
-        // setImgWidth();
         setShareURL();
     });
 
@@ -52,18 +51,6 @@ $(document).ready(function() {
         $('html, body').scrollTop(0);
         $('body').delay(4000).css('overflow', 'auto');
     }
-
-    // function setImgWidth() {
-    //     var containerImg = $('.hc-fluid-img').closest('section').find('.container');
-    //     var fluidImg = $('.hc-fluid-img').closest('section').find('.container-fluid');
-    //
-    //     if ($('#hc-hero').hasClass('.hc-fluid-img') || $('figure').hasClass('.hc-fluid-img')) {
-    //         containerImg.removeClass('container').addClass('container-fluid');
-    //         fluidImg.find('.row').removeClass('row').addClass('row-fluid');
-    //         fluidImg.find('.col-sm-12').css('padding', '0');
-    //     }
-    //     $('.hc-container-img').closest('section').find('.col-sm-12').css('padding', '0');
-    // }
 
     function setShareURL() {
         var projectURL = window.location.href;

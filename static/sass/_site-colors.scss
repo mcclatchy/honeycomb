@@ -1,6 +1,6 @@
-// Adding one of these four classes to an element will tell JS to add your site's unique color class and override the white default.
+// Adding one of these four classes to an element will tell JS to add your site's unique color class and override the default color property.
 .hc-primary-color {
-    color: white;
+    color: black;
 }
 
 .hc-primary-background {
@@ -8,7 +8,7 @@
 }
 
 .hc-accent-color {
-    color: white;
+    color: black;
 }
 
 .hc-accent-background {

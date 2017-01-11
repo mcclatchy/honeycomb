@@ -132,9 +132,11 @@ section.container {
 
     li {
         .glyphicon {
+            position: absolute;
             left: 0;
             right: 0;
             background: $lighter;
+            padding-left: 0.5rem;
         }
     }
 }
@@ -164,6 +166,10 @@ p {
 
     p {
         @extend p;
+    }
+
+    ul {
+        margin: auto;
     }
 }
 
@@ -273,6 +279,10 @@ figure {
     display: block;
     margin: 1.2rem auto 3.6rem;
     height: auto;
+
+    img {
+        margin-bottom: -2rem;
+    }
 }
 
 figcaption {

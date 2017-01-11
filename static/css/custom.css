@@ -30,13 +30,13 @@
   display: block; }
 
 .hc-primary-color {
-  color: white; }
+  color: black; }
 
 .hc-primary-background {
   background-color: white; }
 
 .hc-accent-color {
-  color: white; }
+  color: black; }
 
 .hc-accent-background {
   background-color: white; }
@@ -603,9 +603,11 @@ section.container {
     position: relative;
     z-index: 1; }
   .share-icons li .glyphicon {
+    position: absolute;
     left: 0;
     right: 0;
-    background: #a7a3a4; }
+    background: #a7a3a4;
+    padding-left: 0.5rem; }
 
 /*
 -------------------------------------------
@@ -625,6 +627,9 @@ p, [id*="content-body-"] p {
     p, [id*="content-body-"] p {
       font-size: 2rem;
       line-height: 3.6rem; } }
+
+[id*="content-body-"] ul {
+  margin: auto; }
 
 .hc-intro {
   font-size: 2.6rem !important;
@@ -718,6 +723,8 @@ figure {
   display: block;
   margin: 1.2rem auto 3.6rem;
   height: auto; }
+  figure img {
+    margin-bottom: -2rem; }
 
 figcaption {
   padding: 0.5rem 1rem 0; }
