@@ -1,19 +1,8 @@
-<!-- <span tabindex="0" role="link" class="pseudolink" onclick="location='http://www.willmaster.com'">Software to Make Your Website Work</span> -->
-
-<!-- What about storing the URL in a data attribute on the span, using js to run an each function on the span class name to prepend the opening anchor tag with href from the data attribute and append the closing anchor tag? -->
-
 <!-- custom head -->
-
     <link rel="stylesheet" type="text/css" href="static/css/custom.css">
-
-    <!-- MM_LINK ███████████████████████████████████████████████████ -->
-    <!-- <style>PASTE CUSTOM.CSS HERE</style> -->
-    <!-- ██████████████████████████████████████████████ /END MM_LINK -->
-
 <!-- /end custom head -->
 
 <!-- custom body -->
-    <!-- MM_LINK ███████████████████████████████████████████████████ -->
     <!-- content header -->
     <section id="content-body-well">
 
@@ -58,15 +47,12 @@
 
         </header>
         <!-- /end content header -->
-        <!-- ██████████████████████████████████████████████ /END MM_LINK -->
 
 
         <!-- content well -->
-            <!-- MM_LINK ███████████████████████████████████████████████████ -->
             <!-- intro paragraph -->
             <p class="hc-intro"><span class="hc-dropcap">B</span>acon ipsum dolor amet ham hock ribeye mollit andouille lorem duis. Sed cillum drumstick consequat biltong laboris. Nostrud et voluptate enim ut, anim qui aliquip est cupim kielbasa aliqua. Culpa occaecat fatback, cow reprehenderit sirloin pork chop pastrami ea elit incididunt sunt andouille.</p>
             <!-- /end intro paragraph -->
-            <!-- ██████████████████████████████████████████████ /END MM_LINK -->
 
 
             <p>Drumstick officia ullamco kielbasa, ex burgdoggen kevin andouille tail irure. Enim biltong in eu, ham hock proident prosciutto sunt voluptate pork loin et meatloaf hamburger. Pig enim kevin pariatur, ham flank corned beef biltong cupim
@@ -85,10 +71,7 @@
             <p>Proident rump kevin cupim, cillum exercitation capicola cupidatat meatloaf ipsum ham. Ut pork chop consequat cow. Pariatur burgdoggen ipsum, bresaola leberkas kielbasa quis lorem pork chop cupim. Strip steak leberkas fugiat officia,
             cupim jerky sausage laborum sirloin t-bone mollit. In meatloaf eiusmod cupim. Duis ball tip ullamco ut in magna.</p>
 
-            <!-- MM_LINK ███████████████████████████████████████████████████ -->
             <h4 class="hc-subhead hc-accent-color">This is a subhead</h4>
-            <!-- ██████████████████████████████████████████████ /END MM_LINK -->
-
 
             <p>Jowl flank magna picanha ham hock short ribs aute dolore tri-tip cupidatat. Magna ut quis enim labore, cillum deserunt nostrud pork belly. Tempor nostrud beef porchetta, kevin ham hock ullamco chuck fatback bacon. Alcatra bresaola
             pork belly, pariatur porchetta drumstick fugiat est shankle jowl sirloin sint t-bone swine.</p>
@@ -99,14 +82,11 @@
             <p>Occaecat officia nisi turducken veniam prosciutto duis. Occaecat dolore ground round, labore t-bone sunt pig boudin. Dolor kevin ut, in eu ea esse. Enim culpa pig ipsum tri-tip. Beef ribs pig cupidatat burgdoggen pork occaecat ea in
             kielbasa enim adipisicing jowl ex. Et landjaeger porchetta flank exercitation nostrud alcatra short loin sirloin.</p>
 
-            <!-- MM_LINK ███████████████████████████████████████████████████ -->
             <blockquote>
                 <div class="hc-quotemark-desk hc-accent-color">“</div>
                 <div class="hc-quote"><span class="hc-quotemark-mob hc-accent-color">“</span>This is a blockquote and lives inline because it always contains new content that is never repeated in the story.</div>
                 <div class="hc-attribution">— Firstname Lastname, Title here</div>
             </blockquote>
-            <!-- ██████████████████████████████████████████████ /END MM_LINK -->
-
 
             <p>In pork belly veniam hamburger. Ipsum leberkas in cillum ut, ea cupim. Occaecat culpa enim, beef ribs shoulder anim dolore kevin veniam officia eiusmod aliquip minim pork tempor. Burgdoggen nisi id shank ham, tri-tip ham hock dolore.
             In tail ipsum do. Capicola laborum eu ham hock, andouille tongue jerky.</p>
@@ -118,14 +98,12 @@
             <p>Ham hock ball tip veniam labore shoulder, cillum pastrami doner anim aliquip velit ground round rump ham. Pig laborum exercitation, minim officia quis nisi andouille alcatra incididunt cupim sirloin shankle. Cow sed officia pork belly
             drumstick alcatra non flank reprehenderit adipisicing aute swine ipsum. Anim ex strip steak, alcatra ham eiusmod cillum occaecat irure ribeye venison turkey pancetta ad.</p>
 
-            <!-- MM_LINK ███████████████████████████████████████████████████ -->
             <!-- paragraph-width image -->
             <figure class="hc-paragraph-img">
                 <img src="http://www.mcclatchydc.com/news/v2zydn/picture116721638/binary/placeholder1.png"/>
                 <figcaption>Caption information goes here. (Photographer Name, Publication)</figcaption>
             </figure>
             <!-- /end paragraph-width image -->
-            <!-- ██████████████████████████████████████████████ /END MM_LINK -->
 
             <p>Sausage venison elit qui jerky, do beef ribs meatball anim. Eu ribeye velit chuck, dolore incididunt sint pig commodo ipsum short loin nulla drumstick pariatur picanha. In pancetta sed tongue, andouille cow quis eu kevin swine est
             turducken. Cupim pork dolore occaecat officia pancetta, sirloin pork loin. Swine frankfurter officia shoulder pork loin kevin sirloin beef ribs eiusmod do consectetur doner. Ipsum ham exercitation laboris frankfurter short loin
@@ -145,7 +123,6 @@
             jerky swine excepteur exercitation capicola ground round venison esse kielbasa andouille. Aliqua biltong in, sausage spare ribs filet mignon capicola pork.</p>
             <!-- /end story content -->
 
-            <!-- MM_LINK ███████████████████████████████████████████████████ -->
             <!-- well source list -->
             <div id="hc-sources-well">
                 <p><strong>Sources: </strong>thisIsMySource.com, The Real Source Or Else, sorcify.com, thisIsMySource.com, The Real Source Or Else, sorcify.com, thisIsMySource.com, The Real Source Or Else, sorcify.com</p>
@@ -230,19 +207,11 @@
 
         </footer>
         <!-- /end footer -->
-        <!-- ██████████████████████████████████████████████ /END MM_LINK -->
 
     </section>
 <!-- /end custom body -->
 
 <!-- custom scripts -->
-
     <script type="text/javascript" src="static/scripts/base.js"></script>
     <script type="text/javascript" src="static/scripts/custom.js"></script>
-
-    <!-- MM_LINK ███████████████████████████████████████████████████ -->
-    <!-- <script> paste base.js scripts here </script> -->
-    <!-- <script> paste custom.js scripts here </script> -->
-    <!-- ██████████████████████████████████████████████ /END MM_LINK -->
-
 <!-- /end custom scripts -->
