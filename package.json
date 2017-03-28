@@ -1,0 +1,41 @@
+{
+  "name": "honeycomb",
+  "version": "1.0.0",
+  "description": "McClatchy starting developer template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcclatchy/honeycomb.git"
+  },
+  "keywords": [
+    "honeycomb",
+    "mcclatchy",
+    "template"
+  ],
+  "author": "Kristi Walker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcclatchy/honeycomb/issues"
+  },
+  "homepage": "https://github.com/mcclatchy/honeycomb#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-changed": "^2.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-declare": "^0.3.0",
+    "gulp-handlebars": "^4.0.0",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-uncss": "^1.0.6",
+    "gulp-useref": "^3.1.2",
+    "gulp-wrap": "^0.13.0",
+    "run-sequence": "^1.2.2"
+  }
+}
