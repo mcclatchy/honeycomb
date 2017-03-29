@@ -15,6 +15,7 @@
             wrate: 1
         };
     </script>
+
     <script type='text/javascript'>
         (function() {
             var a = window;
@@ -444,8 +445,12 @@
 <script src="http://www.mcclatchydc.com/static/js/respond.min.js?sVer=1.0.100-98b9c26"></script>
 <script type="text/javascript" src="http://www.mcclatchydc.com/static/js/mi-scripts/pollyfill.js?sVer=1.0.100-98b9c26"></script>
 <![endif]-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+
     <script type="text/javascript" src="http://www.mcclatchydc.com/static/js/jquery-1.10.2.min.js?sVer=1.0.100-98b9c26"></script>
     <script type="text/javascript" src="http://www.mcclatchydc.com/static/js/mi-wf-site-1.0.100-98b9c26-min.js"></script>
+
     <script type="text/javascript">
         mi.pageInfo.setConf({
             'marketInfo.pagelevel': 'story',
@@ -887,7 +892,7 @@ display: block; } }
                 });
             </script>
         </header>
-        <div class="container ">
+        <div class="container">
             <div id="leaderboard-ad" class="ad border-bottom">
                 <div class="visible-xs">
                     <div>
@@ -907,10 +912,26 @@ display: block; } }
                     <div id="content-body-23894431-128729769">
 
                     <!-- custom content here -->
-                        <!-- <?php include 'custom.php';?> -->
+
+                        <!-- custom head -->
+                            <!--build:css static/css/styles.min.css-->
+                            <link rel="stylesheet" type="text/css" href="static/css/custom.css">
+                            <!--endbuild-->
+                        <!-- /end custom head -->
+
                         <div id="story">
                             <!-- story.handlebars populates here -->
                         </div>
+
+                        <!-- custom scripts -->
+                            <!--build:js static/scripts/scripts.min.js -->
+                            <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script> -->
+                                <script src="static/scripts/templates/templates.js"></script>
+                                <script src="static/scripts/base.js"></script>
+                                <script src="static/scripts/custom.js"></script>
+                            <!-- endbuild -->
+                        <!-- /end custom scripts -->
+
                     <!-- /end custom content -->
 
                     </div>

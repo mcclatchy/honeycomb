@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+    /********************************************************
+    APPENDS TEMPLATES
+    ********************************************************/
+
     var storyTemplate = Handlebars.templates.story;
     $("#story").append(storyTemplate);
 
@@ -27,7 +31,7 @@ $(document).ready(function() {
     var emailURL = emailPartial + projectURL;
     $("#hc-email-share").attr("href", emailURL);
 
-    // Clean up ampersands, octothorpes, and pluses
+    // Cleans up ampersands, octothorpes, and pluses
     function amperOctoPlus(url) {
         url = url.replace(/&/g, '%26');
         url = url.replace(/#/g, '%23');
@@ -38,7 +42,7 @@ $(document).ready(function() {
     }
 
     /********************************************************
-    GET AND ADD NEWSROOM COLORS
+    GETS AND ADDS NEWSROOM COLORS
     ********************************************************/
 
     $.getJSON('static/scripts/newsroom-sites.json', function(data) {
@@ -46,8 +50,8 @@ $(document).ready(function() {
     });
 
     /*
-    Look through all site urls and find the one that your page matches.
-    Add the class that corresponds to that url.
+    Looks through all site urls and find the one that your page matches.
+    Adds the class that corresponds to that url.
     */
 
     function addSiteColor(data) {

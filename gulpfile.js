@@ -23,7 +23,7 @@ DEVELOPMENT TASKS
 
 // runs all development tasks in order listed with the 'gulp' command (default)
 gulp.task('default', function(callback) {
-    runSequence(['sass', 'browserSync', 'watch'],
+    runSequence(['sass', 'handlebars', 'browserSync', 'watch'],
         callback
     );
 });
@@ -55,16 +55,20 @@ gulp.task('watch', function() {
     gulp.watch('build/static/scripts/**/*.js', browserSync.reload);
 });
 
-gulp.task('templates', function(){
-  gulp.src('build/templates/*.hbs')
-    .pipe(handlebars())
+// precombiles handlebars templates into templates.js
+gulp.task('handlebars', function(){
+  gulp.src('build/static/scripts/templates/*.handlebars')
+    .pipe(handlebars({
+      // Pass your local handlebars version
+      handlebars: require('handlebars')
+    }))
     .pipe(wrap('Handlebars.template(<%= contents %>)'))
     .pipe(declare({
-      namespace: 'story.templates',
+      namespace: 'Handlebars.templates',
       noRedeclare: true, // Avoid duplicate declarations
     }))
     .pipe(concat('templates.js'))
-    .pipe(gulp.dest('build/static/scripts/'));
+    .pipe(gulp.dest('build/static/scripts/templates'));
 });
 
 /*******************************************************************************
