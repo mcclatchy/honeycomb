@@ -4,6 +4,22 @@ $(document).ready(function() {
     APPENDS TEMPLATES
     ********************************************************/
 
+    // require.config({
+    // 	paths: {
+    // 		text: 'lib/text/text',
+    // 		hb: 'lib/requirejs-handlebars/hb',
+    // 		'handlebars.runtime': 'node_modules/handlebars/handlebars.runtime.amd'
+    // 	},
+    // 	packages: [
+    // 		{
+    // 			name: 'handlebars',
+    // 			location: 'node_modules/handlebars/dist/amd',
+    // 			main: './handlebars'
+    // 		}
+    // 	]
+    // });
+
+    // var handlebars = require('handlebars');
     var storyTemplate = Handlebars.templates.story;
     $("#story").append(storyTemplate);
 
